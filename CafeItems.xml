@@ -164,7 +164,23 @@
 <wod id="3169" n="Static" g="Wall" t="Window1" cash="4000" gold="0" friends="0" goldNoFriends="0" releaseDate="1771271131" world="0" events="0" xp="0" level="5" />
 <wod id="3170" n="Static" g="Wall" t="Window2" cash="4000" gold="0" friends="0" goldNoFriends="0" releaseDate="1771271131" world="0" events="0" xp="0" level="5" />
 <wod id="3171" n="Static" g="Wall" t="Window3" cash="4000" gold="0" friends="0" goldNoFriends="0" releaseDate="1771271131" world="0" events="0" xp="0" level="5" />
-
+<wod id="3172" n="Static" g="Tile" t="Invisible" walkable="1" rotatetype="0" cash="30" gold="0" friends="0" goldNoFriends="0" releaseDate="1778691600" world="0" events="0" xp="0" level="5" />
+<wod id="3172" n="Static" g="Wall" t="Invisible" cash="100" gold="0" friends="0" goldNoFriends="0" releaseDate="1778691600" world="0" events="0" xp="0" level="5" />
+<wod id="3173" n="Basic" g="Chair" t="VipChairGreen" walkable="0" rotatetype="3" cash="950" gold="0" friends="0" goldNoFriends="0" releaseDate="1778698800" world="0" events="0" xp="0" level="5" />
+<wod id="3174" n="Basic" g="Chair" t="Dinergreen" walkable="0" rotatetype="3" cash="1600" gold="0" friends="0" goldNoFriends="0" releaseDate="1778698800" world="0" events="0" xp="0" level="1" />
+<wod id="3175" n="Basic" g="Deco" t="Drinkshelftrop" walkable="0" rotatetype="2" cash="25000" gold="0" friends="0" goldNoFriends="0" releaseDate="1778698800" world="0" events="0" xp="0" level="10" />
+<wod id="3176" n="Basic" g="Deco" t="Drinkshelfwhite" walkable="0" rotatetype="2" cash="0" gold="1" friends="0" goldNoFriends="0" releaseDate="1778698800" world="0" events="0" xp="0" level="5" />
+<wod id="3177" n="Basic" g="Deco" t="Drinkshelfblack" walkable="0" rotatetype="2" cash="0" gold="1" friends="0" goldNoFriends="0" releaseDate="1778698800" world="0" events="0" xp="0" level="5" />
+<wod id="3178" n="Basic" g="Stove" t="Dinerblack" walkable="0" rotatetype="3" cash="0" gold="4" friends="0" goldNoFriends="0" releaseDate="1778698800" world="0" events="0" xp="0" level="1" />
+<wod id="3179" n="Basic" g="Stove" t="Springpink" walkable="0" rotatetype="3" cash="15000" gold="0" friends="0" goldNoFriends="0" releaseDate="1778698800" world="0" events="0" xp="0" level="1" />
+<wod id="3180" n="Basic" g="Stove" t="Springblue" walkable="0" rotatetype="3" cash="15000" gold="0" friends="0" goldNoFriends="0" releaseDate="1778698800" world="0" events="0" xp="0" level="1" />
+<wod id="3181" n="Basic" g="Stove" t="Golden" walkable="0" rotatetype="3" cash="0" gold="99" friends="0" goldNoFriends="0" releaseDate="1778698800" world="0" events="0" xp="0" level="10" />
+<wod id="3182" n="Basic" g="Table" t="Daisygreen" walkable="0" rotatetype="1" cash="7500" gold="0" friends="0" goldNoFriends="0" releaseDate="1778698800" world="0" events="0" xp="0" level="1" />
+<wod id="3183" n="Basic" g="Table" t="VipGreenTable" walkable="0" rotatetype="1" cash="808" gold="0" friends="0" goldNoFriends="0" releaseDate="1778698800" world="0" events="0" xp="0" level="5" />
+<wod id="3184" n="Basic" g="Table" t="Dinersquaregreen" walkable="0" rotatetype="1" cash="1500" gold="0" friends="0" goldNoFriends="0" releaseDate="1778698800" world="0" events="0" xp="0" level="1" />
+<wod id="3185" n="Static" g="Wall" t="Basicwisteria" cash="20" gold="0" friends="0" goldNoFriends="0" releaseDate="1778698800" world="0" events="0" xp="0" level="1" />
+<wod id="3186" n="Static" g="Wall" t="Basicforest" cash="20" gold="0" friends="0" goldNoFriends="0" releaseDate="1778698800" world="0" events="0" xp="0" level="1" />
+<wod id="3187" n="Basic" g="Deco" t="Countryflag" walkable="0" rotatetype="2" cash="9999" gold="0" friends="0" goldNoFriends="0" releaseDate="1778698800" world="0" events="0" xp="0" level="5" />
 
 <wod id="4000" n="Animated" g="Deco" t="fJewelmaker" walkable="0" rotatetype="3" cash="0" gold="1" friends="0" goldNoFriends="0" releaseDate="1770082667" world="0" events="0" xp="0" level="5" />
 <wod id="4001" n="Animated" g="Deco" t="fSeamstress" walkable="0" rotatetype="3" cash="0" gold="1" friends="0" goldNoFriends="0" releaseDate="1770082667" world="0" events="0" xp="0" level="5" />
@@ -790,21 +806,21 @@
 <wod id="2028" n="Basic" g="Achievement" t="Muffinmancash" />
 <wod id="2029" n="Basic" g="Achievement" t="Muffinmangold" />
 <wod id="2030" n="Basic" g="Achievement" t="Wheeloffortune" />
-<wod id="2101" n="Basic" g="Coop" t="1" events="0" maxMember="5" maxLevel="129" chips="1274" xp="40" gold="1" duration="1260" dishes="1204+20#1203+6#1202+2#2215+15" />
-<wod id="2102" n="Basic" g="Coop" t="2" events="0" maxMember="5" maxLevel="129" chips="4490" xp="50" gold="1" duration="2000" dishes="1210+30#1207+40#1206+50#2223+20"/>
-<wod id="2103" n="Basic" g="Coop" t="3" events="0" maxMember="5" maxLevel="129" chips="2131" xp="210" gold="2" duration="6520" dishes="1219+25#1218+25" />
-<wod id="2104" n="Basic" g="Coop" t="4" events="0" maxMember="5" maxLevel="129" chips="1421" xp="150" gold="2" duration="4560" dishes="1208+15#1207+10#1206+15#1220+12" />
-<wod id="2105" n="Basic" g="Coop" t="5" events="0" maxMember="5" maxLevel="129" chips="1426" xp="100" gold="2" duration="3480" dishes="1203+20#1213+15#2222+10" />
-<wod id="2106" n="Basic" g="Coop" t="6" events="0" maxMember="5" maxLevel="129" chips="1654" xp="35" gold="1" duration="1080" dishes="1203+5#1201+40#1205+5#1217+8" />
-<wod id="2107" n="Basic" g="Coop" t="7" events="0" maxMember="5" maxLevel="129" chips="2053" xp="95" gold="2" duration="3120" dishes="1203+15#1212+8#1215+10#2214+30" />
-<wod id="2108" n="Basic" g="Coop" t="8" events="0" maxMember="5" maxLevel="129" chips="3679" xp="55" gold="1" duration="1650" dishes="1221+25#1206+15#1209+12#2216+15" />
-<wod id="2109" n="Basic" g="Coop" t="9" events="0" maxMember="5" maxLevel="129" chips="1640" xp="80" gold="1" duration="2280" dishes="1216+8#1202+10#1221+30#1222+6" />
-<wod id="2110" n="Basic" g="Coop" t="10" events="3" maxMember="5" maxLevel="129" chips="1550" xp="220" gold="2" duration="4800" dishes="1230+12#1229+10#1201+100#1203+10" />
-<wod id="2111" n="Basic" g="Coop" t="11" events="0" maxMember="5" maxLevel="129" chips="5256" xp="250" gold="2" duration="4440" dishes="1224+45#1226+30#1227+50#1228+40" />
-<wod id="2112" n="Basic" g="Coop" t="12" events="0" maxMember="5" maxLevel="129" chips="5025" xp="170" gold="2" duration="3780" dishes="1204+250#1212+44#1231+8#2218+40" />
-<wod id="2113" n="Basic" g="Coop" t="13" events="0" maxMember="5" maxLevel="129" chips="6831" xp="285" gold="2" duration="3060" dishes="1217+100#1225+25#2226+30" />
-<wod id="2114" n="Basic" g="Coop" t="14" events="0" maxMember="5" maxLevel="129" chips="8691" xp="565" gold="2" duration="6740" dishes="1232+65#1234+20#1214+100" />
-<wod id="2115" n="Basic" g="Coop" t="15" events="0" maxMember="5" maxLevel="129" chips="8613" xp="265" gold="2" duration="3000" dishes="1224+50#1233+80" />
+<wod id="2101" n="Basic" g="Coop" t="1" events="0" maxMember="5" maxLevel="129" chips="1274" xp="40" gold="1" duration="2520" dishes="1204+20#1203+6#1202+2#2215+15" />
+<wod id="2102" n="Basic" g="Coop" t="2" events="0" maxMember="5" maxLevel="129" chips="4490" xp="50" gold="2" duration="4000" dishes="1210+30#1207+40#1206+50#2223+20"/>
+<wod id="2103" n="Basic" g="Coop" t="3" events="0" maxMember="5" maxLevel="129" chips="2131" xp="210" gold="2" duration="13040" dishes="1219+25#1218+25" />
+<wod id="2104" n="Basic" g="Coop" t="4" events="0" maxMember="5" maxLevel="129" chips="1421" xp="150" gold="2" duration="9120" dishes="1208+15#1207+10#1206+15#1220+12" />
+<wod id="2105" n="Basic" g="Coop" t="5" events="0" maxMember="5" maxLevel="129" chips="1426" xp="100" gold="2" duration="6960" dishes="1203+20#1213+15#2222+10" />
+<wod id="2106" n="Basic" g="Coop" t="6" events="0" maxMember="5" maxLevel="129" chips="1654" xp="35" gold="2" duration="2160" dishes="1203+5#1201+40#1205+5#1217+8" />
+<wod id="2107" n="Basic" g="Coop" t="7" events="0" maxMember="5" maxLevel="129" chips="2053" xp="95" gold="3" duration="6240" dishes="1203+15#1212+8#1215+10#2214+30" />
+<wod id="2108" n="Basic" g="Coop" t="8" events="0" maxMember="5" maxLevel="129" chips="3679" xp="55" gold="3" duration="3300" dishes="1221+25#1206+15#1209+12#2216+15" />
+<wod id="2109" n="Basic" g="Coop" t="9" events="0" maxMember="5" maxLevel="129" chips="1640" xp="80" gold="3" duration="4560" dishes="1216+8#1202+10#1221+30#1222+6" />
+<wod id="2110" n="Basic" g="Coop" t="10" events="3" maxMember="5" maxLevel="129" chips="1550" xp="220" gold="5" duration="9600" dishes="1230+12#1229+10#1201+100#1203+10" />
+<wod id="2111" n="Basic" g="Coop" t="11" events="0" maxMember="5" maxLevel="129" chips="5256" xp="250" gold="4" duration="8880" dishes="1224+45#1226+30#1227+50#1228+40" />
+<wod id="2112" n="Basic" g="Coop" t="12" events="0" maxMember="5" maxLevel="129" chips="5025" xp="170" gold="4" duration="7560" dishes="1204+250#1212+44#1231+8#2218+40" />
+<wod id="2113" n="Basic" g="Coop" t="13" events="0" maxMember="5" maxLevel="129" chips="6831" xp="285" gold="4" duration="6120" dishes="1217+100#1225+25#2226+30" />
+<wod id="2114" n="Basic" g="Coop" t="14" events="0" maxMember="5" maxLevel="129" chips="8691" xp="565" gold="5" duration="13480" dishes="1232+65#1234+20#1214+100" />
+<wod id="2115" n="Basic" g="Coop" t="15" events="0" maxMember="5" maxLevel="129" chips="8613" xp="265" gold="5" duration="6000" dishes="1224+50#1233+80" />
 <wod id="2201" n="Smoothie" g="Fastfood" t="Tomatojuice" cash="1000" gold="0" friends="0" goldNoFriends="0" releaseDate="0" world="0" events="0" xp="5" level="0" incomePerServing="1" servings="10" color="D83600" ratingBonus="20" />
 <wod id="2202" n="Smoothie" g="Fastfood" t="Greensmoothie" cash="2500" gold="0" friends="0" goldNoFriends="0" releaseDate="0" world="0" events="0" xp="8" level="0" incomePerServing="2" servings="30" color="B1CC28" ratingBonus="40" />
 <wod id="2203" n="Smoothie" g="Fastfood" t="Kiba" cash="0" gold="1" friends="0" goldNoFriends="0" releaseDate="0" world="0" events="0" xp="12" level="0" incomePerServing="3" servings="30" color="E65C8A" ratingBonus="60" />

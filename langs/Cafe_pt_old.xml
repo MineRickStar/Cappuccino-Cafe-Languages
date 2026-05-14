@@ -1038,6 +1038,7 @@ Apenas disponível por tempo limitado!" />
 		<text id="preparestep_corncake_eggs" name="Bater ovos" />
 		<text id="preparestep_corncake_milk" name="Adicionar leite" />
 		<text id="preparestep_corncake_sugar" name="Adoçar a massa" />
+		<text id="preparestep_corncake_cinnamon" name="Moer canela" />
 		<text id="preparestep_pinapjuice_pinapple" name="Cortar abacaxi" />
 		<text id="preparestep_pinapjuice_vanilla" name="Adicionar baunilha" />
 		<text id="preparestep_orangejuice_orange" name="Fatiar laranjas" />
@@ -1063,7 +1064,6 @@ Apenas disponível por tempo limitado!" />
 		<text id="preparestep_strawberryjuice_vanilla" name="Adicionar baunilha" />
 		<text id="preparestep_cappuccino_cookfest" name="Pensar no próximo Cookfest" />
 		<text id="preparestep_cappuccino_cinnamon" name="Polvilhar canela" />
-		<text id="preparestep_corncake_cinnamon" name="Moer canela" />
 		<text id="preparestep_feijoada_beans" name="Cozinhar feijões" />
 		<text id="preparestep_feijoada_bacon" name="Cortar pedaços de bacon" />
 		<text id="preparestep_feijoada_sausages" name="Cortar linguiças" />
@@ -1343,6 +1343,7 @@ Apenas disponível por tempo limitado!" />
 	<preparestep_fancy>
 		<text id="preparestep_bananasplit_vanilla" name="raspar baunilha" />
 		<text id="preparestep_blackforestcherrycake_vanilla" name="raspar baunilha" />
+		<text id="preparestep_pizzasalad_chili" name="Chop chili" />
 		<text id="preparestep_cheeseburger_chili" name="Cortar Chili" />
 		<text id="preparestep_cheesedish_parsley" name="Picar salsinha" />
 		<text id="preparestep_cheesefondue_chili" name="Cortar Chili" />
