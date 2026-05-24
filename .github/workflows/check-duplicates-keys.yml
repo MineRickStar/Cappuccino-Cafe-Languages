@@ -1,0 +1,37 @@
+name: Check Duplicate Translation Keys
+
+on:
+  push:
+    paths:
+      - "langs/Cafe_*.xml"
+
+jobs:
+  check-duplicates:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          fetch-depth: 0
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Debug
+        run: echo "${{ github.event.before }}"
+
+      - name: Get changed lang files
+        id: changed-files
+        run: |
+          if [ "${{ github.event.before }}" = "0000000000000000000000000000000000000000" ]; then
+            CHANGED=$(git show --name-only --format='' ${{ github.sha }} -- 'langs/Cafe_*.xml' | xargs basename -a | tr '\n' ' ')
+          else
+            CHANGED=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} -- 'langs/Cafe_*.xml' | xargs basename -a | tr '\n' ' ')
+          fi
+          echo "files=$CHANGED" >> $GITHUB_OUTPUT
+
+      - name: Check duplicate keys
+        if: steps.changed-files.outputs.files != ''
+        env:
+          CHANGED_FILES: ${{ steps.changed-files.outputs.files }}
+        run: npm run duplicates --silent
