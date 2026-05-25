@@ -889,6 +889,7 @@
 	</ingame_tooltips>
 	<ingredients>
 		<text id="ingredient_cookfest" name="Event Ingredients" />
+		<text id="ingredient_limelemon" name="Citrus" />
 		<text id="ingredient_citrus" name="Citrus" />
 		<text id="ingredient_apple" name="Pommes" />
 		<text id="ingredient_bacon" name="Lardons" />
@@ -1010,7 +1011,9 @@
 		<text id="preparestep_cherrycompote_sugar" name="Carameliser le sucre" />
 		<text id="preparestep_chickenburger_chicken" name="Découper la poule" />
 		<text id="preparestep_chickenburger_cucumber" name="Couper le cocombre" />
-		<text id="preparestep_chickenburger_flour" name="Tamiser la farine" />>
+		<text id="preparestep_chickenburger_flour" name="Tamiser la farine" />
+		<text id="preparestep_spanishomelette_parsley" name="Chop parsley" />
+		&gt;
 		<text id="preparestep_sausagepasta_pasta" name="Cuire les pâtes" />
 		<text id="preparestep_sausagepasta_sausages" name="Couper les saucisses" />
 		<text id="preparestep_sausagepasta_tomato" name="Faire une sauce tomate" />
