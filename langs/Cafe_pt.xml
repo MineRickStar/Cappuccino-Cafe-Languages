@@ -1029,7 +1029,6 @@ Apenas disponível por tempo limitado!" />
 		<text id="preparestep_pizzasalad_lettuce" name="Lavar alface" />
 		<text id="preparestep_pizzasalad_cheese" name="Ralar queijo" />
 		<text id="preparestep_pizzasalad_flour" name="Peneirar farinha" />
-		<text id="preparestep_pizzasalad_chili" name="Picar chili" />
 		<text id="preparestep_tripleomelette_eggs" name="Quebrar ovos com força" />
 		<text id="preparestep_tripleomelette_chili" name="Apimentar com chili" />
 		<text id="preparestep_chocolatewaffles_flour" name="Medir farinha" />
@@ -1413,8 +1412,8 @@ Apenas disponível por tempo limitado!" />
 		<text id="preparestep_dorayaki_vanilla" name="Scrape out vanilla" />
 		<text id="preparestep_tiramisu_vanilla" name="Scrape out vanilla" />
 		<text id="preparestep_bananasplit_vanilla" name="raspar baunilha" />
-		<text id="preparestep_blackforestcherrycake_vanilla" name="raspar baunilha" />
-		<text id="preparestep_pizzasalad_chili" name="Chop chili" />
+		<text id="preparestep_blackforestcherrycake_vanilla" name="Raspar baunilha" />
+		<text id="preparestep_pizzasalad_chili" name="Picar Chili" />
 		<text id="preparestep_cheeseburger_chili" name="Cortar Chili" />
 		<text id="preparestep_cheesedish_parsley" name="Picar salsinha" />
 		<text id="preparestep_cheesefondue_chili" name="Cortar Chili" />
