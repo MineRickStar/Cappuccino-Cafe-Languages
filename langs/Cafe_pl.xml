@@ -219,6 +219,12 @@
 		<text id="cookstep_dorayaki2" name="Letting it cool" />
 		<text id="cookstep_tiramisu1" name="Layering dessert" />
 		<text id="cookstep_tiramisu2" name="Chilling tiramisu" />
+		<text id="cookstep_pridecupcakes1" name="Mixing batter" />
+		<text id="cookstep_pridecupcakes2" name="Decorating" />
+		<text id="cookstep_ratatouille1" name="Prepping vegetables" />
+		<text id="cookstep_ratatouille2" name="Stacking" />
+		<text id="cookstep_hotcherryricepudding1" name="Cooking rice" />
+		<text id="cookstep_hotcherryricepudding2" name="Adding cherries" />
 		<text id="cookstep_cheeseburger1" name="przypiec mięso mielone" />
 		<text id="cookstep_cheeseburger2" name="dodać składniki do burgera" />
 		<text id="cookstep_cheesedish1" name="przyrządźić ser" />
@@ -416,6 +422,45 @@
 		<text id="coop_title_7" name="NIEZWYKŁE JEDZENIE SZKOLNE" />
 		<text id="coop_title_8" name="IMPREZA URODZINOWA" />
 		<text id="coop_title_9" name="WŁOSKI BUFET" />
+		<text id="coop_title_16" name="MORNING RUSH!" />
+		<text id="coop_desc_short_16" name="Start the day right!" />
+		<text id="coop_desc_long_16" name="Chef cupcakekittycat8 will host a big breakfast at the Marketplace. Can you provide some of what will be served?" />
+		<text id="coop_title_17" name="POST-LUNCH DESSERTS" />
+		<text id="coop_desc_short_17" name="Craving sweets are we?" />
+		<text id="coop_desc_long_17" name="Chef Gabriel served a salty lunch and the costumers are craving many sweets! Help out and sweeten the day!" />
+		<text id="coop_title_18" name="FOOD CRITIC VISIT!" />
+		<text id="coop_desc_short_18" name="Cook to impress!" />
+		<text id="coop_desc_long_18" name="Chef cupcakekittycat8 invited a food critic to visit your Café and he has a refined taste! It is time to cook!" />
+		<text id="coop_title_19" name="LAN PARTY!" />
+		<text id="coop_desc_short_19" name="Fast food for fast games!" />
+		<text id="coop_desc_long_19" name="Chef Surfguiger5 decided to join a LAN party and was tasked with bringing the food. The attendees want a lot, though! Help out!" />
+		<text id="coop_title_20" name="LATE NIGHT DRIVE THRU" />
+		<text id="coop_desc_short_20" name="A quick dinner for a long day!" />
+		<text id="coop_desc_long_20" name="Chef Patawka opened a drive-thru and is willing to share profits with anyone that helps provide food for it. Participate!" />
+		<text id="coop_title_21" name="FIT FOOD ONLY!" />
+		<text id="coop_desc_short_21" name="It&apos;s time to eat well!" />
+		<text id="coop_desc_long_21" name="Chef Surfguiger5 learned about the craze of Triple Omelettes and is concerned about weight gain. Cook healthy food to prove that your Café is healthy too!" />
+		<text id="coop_title_22" name="HOTEL BRUNCH" />
+		<text id="coop_desc_short_22" name="Want a quick bite?" />
+		<text id="coop_desc_long_22" name="Chef Surfguiger5 was asked by the local hotel to provide food for a brunch. However, the stoves broke and it&apos;s up to you to help! Profits will be shared." />
+		<text id="coop_title_23" name="BRAZILIAN WAY" />
+		<text id="coop_desc_short_23" name="Enjoy what Brazil has to offer!" />
+		<text id="coop_desc_long_23" name="Chef Surfguiger5 wants everyone to taste Brazilian food. Cook it!" />
+		<text id="coop_title_24" name="THE CARB COUNTER" />
+		<text id="coop_desc_short_24" name="An energy refill!" />
+		<text id="coop_desc_long_24" name="The local gym asked chef Artemis to supply dishes rich in carbs to keep the clients energized. Help out to earn your share too!" />
+		<text id="coop_title_25" name="WEDDING TASTING" />
+		<text id="coop_desc_short_25" name="A marriage is coming!" />
+		<text id="coop_desc_long_25" name="Chef Kvmxl said that the Café Lady and the Muffin Man are getting married! It was said that they will pay nicely for any Café that has their favorite food. Are the rumors true?" />
+		<text id="coop_title_26" name="DINNER BUFFET" />
+		<text id="coop_desc_short_26" name="Eat up!" />
+		<text id="coop_desc_long_26" name="Chef Cupcakekittycat8 wants a dinner with plenty of food. Help out!" />
+		<text id="coop_title_27" name="OISH-SOME" />
+		<text id="coop_desc_short_27" name="So great!" />
+		<text id="coop_desc_long_27" name="Chef Nao wants to serve food for an anime convention happening at the Café next door. Give a hand!" />
+		<text id="coop_title_28" name="COCOANFESSION" />
+		<text id="coop_desc_short_28" name="The true love is Chocolate!" />
+		<text id="coop_desc_long_28" name="Chef Nao wants to popularize chocolate dishes around the neighborhood and will pay for it. Why not participate?" />
 	</coopmission>
 	<dialogs>
 		<text id="dialogwin_achievement_title" name="Odznaczenia" />
@@ -1099,6 +1144,18 @@
 		<text id="preparestep_tiramisu_cookies" name="Soak cookies" />
 		<text id="preparestep_tiramisu_quark" name="Whip quark" />
 		<text id="preparestep_tiramisu_eggs" name="Separate eggs" />
+		<text id="preparestep_pridecupcakes_flour" name="Sift flour" />
+		<text id="preparestep_pridecupcakes_eggs" name="Crack eggs" />
+		<text id="preparestep_pridecupcakes_sugar" name="Measure sugar" />
+		<text id="preparestep_pridecupcakes_milk" name="Measure milk" />
+		<text id="preparestep_ratatouille_tomato" name="Cut tomatoes" />
+		<text id="preparestep_ratatouille_eggplant" name="Slice eggplant" />
+		<text id="preparestep_ratatouille_onion" name="Chop onions" />
+		<text id="preparestep_ratatouille_oil" name="Measure oil" />
+		<text id="preparestep_hotcherryricepudding_rice" name="Weigh rice" />
+		<text id="preparestep_hotcherryricepudding_cherries" name="Pit cherries" />
+		<text id="preparestep_hotcherryricepudding_sugar" name="Measure sugar" />
+		<text id="preparestep_hotcherryricepudding_milk" name="Measure milk" />
 		<text id="preparestep_blackforestcherrycake_flour" name="przesiać mąkę" />
 		<text id="preparestep_cheeseburger_cheese" name="pokroić ser" />
 		<text id="preparestep_cheeseburger_flour" name="przesiać mąkę" />
@@ -1387,6 +1444,9 @@
 		<text id="preparestep_francesinha_chili" name="Chop chili" />
 		<text id="preparestep_dorayaki_vanilla" name="Scrape out vanilla" />
 		<text id="preparestep_tiramisu_vanilla" name="Scrape out vanilla" />
+		<text id="preparestep_pridecupcakes_vanilla" name="Scrape out vanilla" />
+		<text id="preparestep_ratatouille_rosemary" name="Chop rosemary" />
+		<text id="preparestep_hotcherryricepudding_cinnamon" name="Sprinkle cinnamon" />
 		<text id="preparestep_bananasplit_vanilla" name="rozetrzeć wanilię" />
 		<text id="preparestep_blackforestcherrycake_vanilla" name="wyskrobać wanilię" />
 		<text id="preparestep_pizzasalad_chili" name="Chop chili" />
@@ -1497,6 +1557,9 @@
 		<text id="recipe_francesinha" name="Francesinha" />
 		<text id="recipe_dorayaki" name="Dorayaki" />
 		<text id="recipe_tiramisu" name="Tiramisù" />
+		<text id="recipe_pridecupcakes" name="Pride Cupcakes" />
+		<text id="recipe_ratatouille" name="Ratatouille" />
+		<text id="recipe_hotcherryricepudding" name="Rice Pudding with Hot Cherries" />
 		<text id="recipe_blackforestcherrycake" name="Wiśniowy tort ze Schwarzwaldu" />
 		<text id="recipe_cheeseburger" name="Cheeseburger" />
 		<text id="recipe_cheesedish" name="Talerz serów" />
