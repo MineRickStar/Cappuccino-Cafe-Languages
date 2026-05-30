@@ -1173,11 +1173,13 @@ Apenas disponível por tempo limitado!" />
 		<text id="preparestep_cappuccino_cinnamon" name="Polvilhar canela" />
 		<text id="preparestep_pridecupcakes_flour" name="Peneirar a farinha" />
 		<text id="preparestep_pridecupcakes_eggs" name="Quebrar ovos com orgulho" />
+		<text id="preparestep_pridecupcakes_coconut" name="Shave coconut" />
 		<text id="preparestep_pridecupcakes_sugar" name="Adoçar bem" />
 		<text id="preparestep_pridecupcakes_milk" name="Medir leite" />
 		<text id="preparestep_ratatouille_tomato" name="Cortar tomates" />
 		<text id="preparestep_ratatouille_eggplant" name="Cortar berinjela" />
 		<text id="preparestep_ratatouille_onion" name="Cortar cebolas" />
+		<text id="preparestep_ratatouille_cream" name="Mix cream" />
 		<text id="preparestep_ratatouille_oil" name="Medir óleo" />
 		<text id="preparestep_hotcherryricepudding_rice" name="Pesar arroz" />
 		<text id="preparestep_hotcherryricepudding_cherries" name="Preparar cerejas" />

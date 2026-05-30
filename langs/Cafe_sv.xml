@@ -1150,11 +1150,13 @@
 		<text id="preparestep_tiramisu_eggs" name="Separate eggs" />
 		<text id="preparestep_pridecupcakes_flour" name="Sift flour" />
 		<text id="preparestep_pridecupcakes_eggs" name="Crack eggs" />
+		<text id="preparestep_pridecupcakes_coconut" name="Shave coconut" />
 		<text id="preparestep_pridecupcakes_sugar" name="Measure sugar" />
 		<text id="preparestep_pridecupcakes_milk" name="Measure milk" />
 		<text id="preparestep_ratatouille_tomato" name="Cut tomatoes" />
 		<text id="preparestep_ratatouille_eggplant" name="Slice eggplant" />
 		<text id="preparestep_ratatouille_onion" name="Chop onions" />
+		<text id="preparestep_ratatouille_cream" name="Mix cream" />
 		<text id="preparestep_ratatouille_oil" name="Measure oil" />
 		<text id="preparestep_hotcherryricepudding_rice" name="Weigh rice" />
 		<text id="preparestep_hotcherryricepudding_cherries" name="Pit cherries" />
