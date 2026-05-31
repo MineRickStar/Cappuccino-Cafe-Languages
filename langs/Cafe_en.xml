@@ -494,6 +494,14 @@ If you put it into storage, you will lose the remaining portions!"  />
 			<text id="coop_title_28" name="COCOANFESSION" />
 			<text id="coop_desc_short_28" name="The true love is Chocolate!" />
 			<text id="coop_desc_long_28" name="Chef Nao wants to popularize chocolate dishes around the neighborhood and will pay for it. Why not participate?" />
+
+			<text id="coop_title_29" name="CURRY FESTIVAL" />
+			<text id="coop_desc_short_29" name="There's an option for everyone!" />
+			<text id="coop_desc_long_29" name="A local Indian festival wants to hand out as much curry as possible to guests. Can you help?" />
+
+			<text id="coop_title_30" name="A MOUSE IN THE KITCHEN!" />
+			<text id="coop_desc_short_30" name="Don't let anyone see it!" />
+			<text id="coop_desc_long_30" name="A mouse was spotted in your Café and it wants fancy food to be served or it will ruin your business! Why does this feel familiar?" />
 		</coopmission>
 		<dialogs>
 			<text id="dialogwin_achievement_title" name="Achievements"  />
@@ -602,7 +610,7 @@ Why don&#039;t you start one!"  />
 			<text id="dialogwin_giftbox_ggsgifts_empty" name="No gifts! You will receive new gifts with the login bonus!"  />
 			<text id="dialogwin_giftbox_mygifts_empty" name="You havn't received any gifts today. Send some to your friends, maybe they'll send you something back."  />
 			<text id="dialogwin_giftbox_remove" name="Delete"  />
-			<text id="dialogwin_giftbox_send" name="send"  />
+			<text id="dialogwin_giftbox_send" name="Send"  />
 			<text id="dialogwin_giftbox_sendablegifts_empty" name="No gifts today."  />
 			<text id="dialogwin_giftbox_title" name="Gifts!"  />
 			<text id="dialogwin_giftbox_use" name="Use"  />
@@ -678,7 +686,7 @@ Give some of it to your friends!"  />
 			<text id="dialogwin_muffinman_toohighbet" name="You can&#039;t bet that much! Your maximum bet is {0} Gold and {1} Cafédollars!"  />
 			<text id="dialogwin_muffinman_wonbet" name="Yumm! You found the filling! Let&#039;s try again."  />
 			<text id="dialogwin_nomoney_avatarchange" name="You haven&#039;t got enough Gold to change clothes!"  />
-			<text id="dialogwin_nomoney_clean_copy" name="You don&#039;t have enough Cafédollars to clean your stove."  />
+			<text id="dialogwin_nomoney_clean_copy" name="You don&#039;t have enough Cafédollars to clean your stove. It costs 1 Cafédollar to clean it!"  />
 			<text id="dialogwin_nomoney_copy" name="Oops, you haven&#039;t got enough Cafédollars/Gold to buy this item!"  />
 			<text id="dialogwin_nomoney_courier" name="Oops, you don&#039;t have enough Cafédollars/Gold to pay the courier!"  />
 			<text id="dialogwin_nomoney_instantcook_copy" name="You don&#039;t have enough Gold to do instant cooking."  />
@@ -843,7 +851,7 @@ You can find your prize in your inventory!"  />
 			<text id="jobrefill_errorcode_1" name="Job permissions are sold out at the moment."  />
 			<text id="jobrefill_errorcode_61" name="You can only fill up your job permissions once per day."  />
 			<text id="joincafe_error" name="Not possible!"  />
-			<text id="joincafe_errorcode_20" name="Private party! There is no room left for more."  />
+			<text id="joincafe_errorcode_20" name="This player is decorating their Café. Come back later!"  />
 			<text id="joincafe_errorcode_21" name="You are already visiting this café!"  />
 			<text id="joincafe_errorcode_22" name="This café does not exist!"  />
 			<text id="level_error" name="Café is faulty. Please contact the Cappuccino support team."  />
@@ -1006,7 +1014,7 @@ Available for limited time only!"  />
 			<text id="ingredient_banana" name="Bananas"  />
 			<text id="ingredient_basil" name="Basil"  />
 			<text id="ingredient_beans" name="Beans"  />
-			<text id="ingredient_beetroot" name="Beet root"  />
+			<text id="ingredient_beetroot" name="Beetroot"  />
 			<text id="ingredient_butter" name="Butter"  />
 			<text id="ingredient_carrots" name="Carrots"  />
 			<text id="ingredient_cheese" name="Cheese"  />
@@ -1031,10 +1039,10 @@ Available for limited time only!"  />
 			<text id="ingredient_horseradish" name="Horseradish"  />
 			<text id="ingredient_kidney" name="Kidneys"  />
 			<text id="ingredient_lettuce" name="Lettuce"  />
-			<text id="ingredient_maplesyrup" name="Maple syrup"  />
+			<text id="ingredient_maplesyrup" name="Maple Syrup"  />
 			<text id="ingredient_meat" name="Meat"  />
 			<text id="ingredient_milk" name="Milk"  />
-			<text id="ingredient_mincemeat" name="Minced meat"  />
+			<text id="ingredient_mincemeat" name="Minced Meat"  />
 			<text id="ingredient_nutmeg" name="Nutmeg"  />
 			<text id="ingredient_oil" name="Oil"  />
 			<text id="ingredient_onion" name="Onions"  />
@@ -1049,16 +1057,16 @@ Available for limited time only!"  />
 			<text id="ingredient_rice" name="Rice"  />
 			<text id="ingredient_rosemary" name="Rosemary"  />
 			<text id="ingredient_sausages" name="Sausages"  />
-			<text id="ingredient_spicemix" name="Spice mix"  />
+			<text id="ingredient_spicemix" name="Spice Mix"  />
 			<text id="ingredient_strawberry" name="Strawberries"  />
 			<text id="ingredient_sugar" name="Sugar"  />
 			<text id="ingredient_sweetcorn" name="Corn"  />
 			<text id="ingredient_tofu" name="Tofu"  />
 			<text id="ingredient_tomato" name="Tomatoes"  />
-			<text id="ingredient_turkeymix" name="Turkey mix"  />
+			<text id="ingredient_turkeymix" name="Turkey Mix"  />
 			<text id="ingredient_vanilla" name="Vanilla"  />
-			<text id="ingredient_vegiemix" name="Vegetable mix"  />
-			<text id="ingredient_whitechocolat" name="White chocolate"  />
+			<text id="ingredient_vegiemix" name="Vegetable Mix"  />
+			<text id="ingredient_whitechocolat" name="White Chocolate"  />
 		</ingredients>
 		<loggedin_msg id=""  />
 		<panels>
@@ -1086,7 +1094,7 @@ Available for limited time only!"  />
 			<text id="panelwin_social_goout" name="has left the café"  />
 			<text id="panelwin_social_gooutmarketplace" name="has left the market place"  />
 			<text id="panelwin_social_noingamefriends" name="You don&#039;t have any friends yet!"  />
-			<text id="panelwin_social_noplayerincafe" name="Right now you are alone here."  />
+			<text id="panelwin_social_noplayerincafe" name="No one else is here, sadly."  />
 			<text id="panelwin_social_say" name=":"  />
 			<text id="panelwin_social_standardanswer" name="Soon you will be able to chat with other players in your café!"  />
 			<text id="panelwin_social_welcome_marketplace" name="Welcome! Click onto the black board if you are looking for a job!"  />
@@ -2235,7 +2243,7 @@ If you have any questions about this blockage, please contact support."  />
 				<text id="generic_register_unlock" name="Unlock this function!"  />
 			</register>
 			<report>
-				<text id="generic_report_muted_badword1_copy" name="Watch your manner of expression, please. Otherwise you will get blocked from the chat or your account will be temporarily closed. Reason: {0}"  />
+				<text id="generic_report_muted_badword1_copy" name="You tried to type in a word that is not allowed. The context of this chat was automatically reported to the admin team. If this was a mistake, nothing will happen. Be nice! Reason: {0}"  />
 				<text id="generic_report_muted_badword2_copy" name="You cannot use the chat function for the next {0} due to repeated misconduct. Reason: {1}"  />
 				<text id="generic_report_muted_domain1" name="Don't write any URLs in the chat!"  />
 				<text id="generic_report_muted_reported_copy" name="Several players have complained about you. You are being blocked from the chat for the next {0}. Reason: {1}"  />
