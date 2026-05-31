@@ -465,15 +465,12 @@ Se você estocá-la, as porções existentes serão perdidas!" />
 		<text id="coop_title_28" name="COCOAFISSÃO" />
 		<text id="coop_desc_short_28" name="O verdadeiro amor é Chocolate!" />
 		<text id="coop_desc_long_28" name="Chef Nao quer popularizar pratos de chocolate pelo bairro e vai pagar por isso. Por que não participar?" />
-		<text id="coop_title_31" name="CURRY FESTIVAL" />
-		<text id="coop_desc_short_31" name="There&apos;s an option for everyone!" />
-		<text id="coop_desc_long_31" name="A local Indian festival wants to hand out as much curry as possible to guests. Can you help?" />
+		<text id="coop_title_31" name="UM RATO NA COZINHA!" />
+		<text id="coop_desc_short_31" name="Não deixe ninguém ver!" />
+		<text id="coop_desc_long_31" name="Um rato travesso invadiu seu Café e ele quer comidas refinadas ou vai arruinar seus negócios! Isso parece familiar..." />
 		<text id="coop_title_29" name="FESTIVAL DO CURRY" />
 		<text id="coop_desc_short_29" name="Tem uma opção para todo mundo!" />
 		<text id="coop_desc_long_29" name="Um festival indiano local quer servir muito curry aos visitantes. Você pode ajudar?" />
-		<text id="coop_title_30" name="UM RATO NA COZINHA!" />
-		<text id="coop_desc_short_30" name="Não deixe ninguém ver!" />
-		<text id="coop_desc_long_30" name="Um rato travesso invadiu seu Café e ele quer comidas refinadas ou vai arruinar seus negócios! Isso parece familiar..." />
 	</coopmission>
 	<dialogs>
 		<text id="dialogwin_achievement_title" name="Conquistas" />
@@ -966,7 +963,7 @@ Apenas disponível por tempo limitado!" />
 	</ingame_tooltips>
 	<ingredients>
 		<text id="ingredient_cookfest" name="Ingredientes de Evento" />
-		<text id="ingredient_citrus" name="Citrus Fruits" />
+		<text id="ingredient_citrus" name="Frutas Cítricas" />
 		<text id="ingredient_apple" name="Maçãs" />
 		<text id="ingredient_bacon" name="Bacon" />
 		<text id="ingredient_bakingmix" name="Mistura de Bolo" />
