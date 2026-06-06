@@ -243,6 +243,14 @@ If you put it into storage, you will lose the remaining portions!"  />
 			<text id="cookstep_chickenbiryani2" name="Spicing rice" />
 			<text id="cookstep_cottagepotatoes1" name="Preparing potatoes" />
 			<text id="cookstep_cottagepotatoes2" name="Spreading cottage" />
+			<text id="cookstep_cuzcuzcomovo1" name="Steaming cornmeal" />
+			<text id="cookstep_cuzcuzcomovo2" name="Frying eggs" />
+			<text id="cookstep_malaichickennaan1" name="Prepping batter"/>
+			<text id="cookstep_malaichickennaan2" name="Folding naan"/>
+			<text id="cookstep_veganplate1" name="Cooking rice"/>
+			<text id="cookstep_veganplate2" name="Spreading rice"/>
+			<text id="cookstep_neapolitancake1" name="Melting ingredients"/>
+			<text id="cookstep_neapolitancake2" name="Baking cake" />
 			<text id="cookstep_blackforestcherrycake1" name="Mixing ingredients"  />
 			<text id="cookstep_blackforestcherrycake2" name="Baking cake"  />
 			<text id="cookstep_cheeseburger1" name="Searing minced meat"  />
@@ -514,6 +522,22 @@ If you put it into storage, you will lose the remaining portions!"  />
 			<text id="coop_title_30" name="A MOUSE IN THE KITCHEN!" />
 			<text id="coop_desc_short_30" name="Don't let anyone see it!" />
 			<text id="coop_desc_long_30" name="A mouse was spotted in your Café and it wants fancy food to be served or it will ruin your business! Why does this feel familiar?" />
+
+			<text id="coop_title_32" name="BRAZIL AND PORTUGAL" />
+			<text id="coop_desc_short_32" name="Shorten the distance with food!" />
+			<text id="coop_desc_long_32" name="An international event is happening but Brazilian and Portugese visitors are homesick. Make traditional food to make them happy!" />
+
+			<text id="coop_title_33" name="DEV'S CHOICE!" />
+			<text id="coop_desc_short_33" name="Fuel for more development!" />
+			<text id="coop_desc_long_33" name="Chef Gab needs very large amounts of his favorite food to be cooked to stress test the servers! Help out!" />
+
+			<text id="coop_title_34" name="MOUSSE BATTLE!" />
+			<text id="coop_desc_short_34" name="Which one is the best?" />
+			<text id="coop_desc_long_34" name="Chefs all around the world are battling to see which mousse is the best. Play for all teams and see what's up!" />
+
+			<text id="coop_title_35" name="FAMILY FEAST" />
+			<text id="coop_desc_short_35" name="So many guests!" />
+			<text id="coop_desc_long_35" name="Your whole family, their friends, your friends and their families are ALL coming to your Café to celebrate your business. Do them proud!" />
 		</coopmission>
 		<dialogs>
 			<text id="dialogwin_achievement_title" name="Achievements"  />
@@ -1280,6 +1304,7 @@ Available for limited time only!"  />
 
 			<text id="preparestep_coconutcake_flour" name="Sift flour" />
 			<text id="preparestep_coconutcake_eggs" name="Crack eggs" />
+			<text id="preparestep_coconutcake_milk" name="Pour milk" />
 			<text id="preparestep_coconutcake_coconut" name="Grate coconut" />
 			<text id="preparestep_coconutcake_sugar" name="Measure sugar" />
 
@@ -1315,6 +1340,28 @@ Available for limited time only!"  />
 			<text id="preparestep_cottagepotatoes_quark" name="Whip quark" />
 			<text id="preparestep_cottagepotatoes_butter" name="Add butter" />
 			<text id="preparestep_cottagepotatoes_potato" name="Boil potatoes" />
+
+			<text id="preparestep_cuzcuzcomovo_sweetcorn" name="Prepare cornmeal" />
+			<text id="preparestep_cuzcuzcomovo_eggs" name="Crack eggs" />
+			<text id="preparestep_cuzcuzcomovo_butter" name="Melt butter" />
+
+			<text id="preparestep_malaichickennaan_chicken" name="Cut chicken" />
+			<text id="preparestep_malaichickennaan_cream" name="Whip cream" />
+			<text id="preparestep_malaichickennaan_garlic" name="Press garlic" />
+			<text id="preparestep_malaichickennaan_oil" name="Heat oil" />
+			<text id="preparestep_malaichickennaan_flour" name="Sift flour" />
+
+			<text id="preparestep_veganplate_carrots" name="Peel carrots" />
+			<text id="preparestep_veganplate_peas" name="Cook peas" />
+			<text id="preparestep_veganplate_cucumber" name="Slice cucumber" />
+			<text id="preparestep_veganplate_tomato" name="Cut tomatoes" />
+			<text id="preparestep_veganplate_rice" name="Cook rice" />
+
+			<text id="preparestep_neapolitancake_whitechocolat" name="Melt white chocolate" />
+			<text id="preparestep_neapolitancake_chocolate" name="Melt chocolate" />
+			<text id="preparestep_neapolitancake_strawberry" name="Mash strawberries" />
+			<text id="preparestep_neapolitancake_flour" name="Sift flour" />
+			<text id="preparestep_neapolitancake_milk" name="Pour milk" />
 
 			<text id="preparestep_bananasplit_cream" name="Whip cream"  />
 			<text id="preparestep_bananasplit_milk" name="Measure milk"  />
@@ -1623,13 +1670,17 @@ Available for limited time only!"  />
 			<text id="preparestep_pridecupcakes_vanilla" name="Scrape out vanilla" />
 			<text id="preparestep_ratatouille_rosemary" name="Chop rosemary" />
 			<text id="preparestep_hotcherryricepudding_cinnamon" name="Sprinkle cinnamon" />
-			<text id="preparestep_fancy_coconutcake_vanilla" name="Scrape out vanilla" />
+			<text id="preparestep_coconutcake_vanilla" name="Scrape out vanilla" />
 			<text id="preparestep_paodequeijo_rosemary" name="Add rosemary" />
 			<text id="preparestep_baiaodedois_coriander" name="Chop coriander" />
 			<text id="preparestep_bakedalaska_vanilla" name="Add vanilla" />
 			<text id="preparestep_butterchicken_coriander" name="Chop coriander" />
 			<text id="preparestep_chickenbiryani_coriander" name="Add coriander" />
 			<text id="preparestep_cottagepotatoes_parsley" name="Chop parsley" />
+			<text id="preparestep_cuzcuzcomovo_parsley" name="Chop parsley" />
+			<text id="preparestep_malaichickennaan_coriander" name="Chop coriander" />
+			<text id="preparestep_veganplate_parsley" name="Chop parsley" />
+			<text id="preparestep_neapolitancake_vanilla" name="Scrape out vanilla" />
 			<text id="preparestep_bananasplit_vanilla" name="Scrape out vanilla"  />
 			<text id="preparestep_blackforestcherrycake_vanilla" name="Scrape out vanilla"  />
 			<text id="preparestep_pizzasalad_chili" name="Chop chili" />
@@ -1750,6 +1801,10 @@ Available for limited time only!"  />
 			<text id="recipe_butterchicken" name="Butter Chicken" />
 			<text id="recipe_chickenbiryani" name="Chicken Biriyani" />
 			<text id="recipe_cottagepotatoes" name="Cottage Potatoes" />
+			<text id="recipe_cuzcuzcomovo" name="Couscous with Egg" />
+			<text id="recipe_malaichickennaan" name="Malai Chicken Naan" />
+			<text id="recipe_veganplate" name="Vegan Plate" />
+			<text id="recipe_neapolitancake" name="Neapolitan Cake" />
 			<text id="recipe_beefstew" name="Stew"  />
 			<text id="recipe_blackforestcherrycake" name="Black Forest Cake"  />
 			<text id="recipe_cheeseburger" name="Cheeseburger"  />
@@ -1779,7 +1834,7 @@ Available for limited time only!"  />
 			<text id="recipe_greensalad" name="Garden Salad"  />
 			<text id="recipe_gumbo" name="Gumbo"  />
 			<text id="recipe_hamburger" name="Hamburger"  />
-			<text id="recipe_hotcherrywaffles" name="Waffels with Hot Cherries"  />
+			<text id="recipe_hotcherrywaffles" name="Waffles w/ Hot Cherries"  />
 			<text id="recipe_jamspongepudding" name="Jam Sponge Pudding"  />
 			<text id="recipe_lasagne" name="Lasagne"  />
 			<text id="recipe_macncheese" name="Mac'n'Cheese"  />
@@ -1914,10 +1969,10 @@ Available for limited time only!"  />
 			<text id="tt_CafeClearStoveDialog_btn_instantcook_na" name="You can't do any more 'Instant cooking' today."  />
 			<text id="tt_CafeClearStoveDialog_instantButton" name="Instant cooking"  />
 			<text id="tt_CafeCookBookDialog_0" name="Sweets"  />
-			<text id="tt_CafeCookBookDialog_1" name="Main dishes"  />
+			<text id="tt_CafeCookBookDialog_1" name="Main Dishes"  />
 			<text id="tt_CafeCookBookDialog_2" name="Soups"  />
 			<text id="tt_CafeCookBookDialog_3" name="Salads"  />
-			<text id="tt_CafeCookBookDialog_4" name="Vegetarian option"  />
+			<text id="tt_CafeCookBookDialog_4" name="Vegetarian"  />
 			<text id="tt_CafeCookBookDialog_5" name="Snacks"  />
 			<text id="tt_CafeCookBookDialog_btn_cook" name="Cooking"  />
 			<text id="tt_CafeCookBookDialog_btn_cook_disabled" name="You are missing some ingredients!"  />
