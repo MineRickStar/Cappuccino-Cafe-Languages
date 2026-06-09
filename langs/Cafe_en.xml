@@ -253,6 +253,8 @@ If you put it into storage, you will lose the remaining portions!"  />
 			<text id="cookstep_neapolitancake2" name="Baking cake" />
 			<text id="cookstep_strawberrycheesecake1" name="Mixing ingredients" />
 			<text id="cookstep_strawberrycheesecake2" name="Baking cake" />
+			<text id="cookstep_combomeal1" name="Frying burger meat" />
+			<text id="cookstep_combomeal2" name="Frying fries somehow" />
 			<text id="cookstep_blackforestcherrycake1" name="Mixing ingredients"  />
 			<text id="cookstep_blackforestcherrycake2" name="Baking cake"  />
 			<text id="cookstep_cheeseburger1" name="Searing minced meat"  />
@@ -1375,6 +1377,12 @@ Available for limited time only!"  />
 			<text id="preparestep_strawberrycheesecake_quark" name="Add Quark" />
 			<text id="preparestep_strawberrycheesecake_strawberry" name="Add Strawberries" />
 
+			<text id="preparestep_combomeal_flour" name="Make instant bread" />
+			<text id="preparestep_combomeal_mincemeat" name="Make patties" />
+			<text id="preparestep_combomeal_cheese" name="Slice cheese" />
+			<text id="preparestep_combomeal_potato" name="Cut fries" />
+			<text id="preparestep_combomeal_oil" name="Add lots of oil" />
+
 			<text id="preparestep_bananasplit_cream" name="Whip cream"  />
 			<text id="preparestep_bananasplit_milk" name="Measure milk"  />
 			<text id="preparestep_bananasplit_sugar" name="Measure sugar"  />
@@ -1694,6 +1702,7 @@ Available for limited time only!"  />
 			<text id="preparestep_veganplate_parsley" name="Chop parsley" />
 			<text id="preparestep_neapolitancake_vanilla" name="Scrape out vanilla" />
 			<text id="preparestep_strawberrycheesecake_vanilla" name="Add Vanilla" />
+			<text id="preparestep_combomeal_chili" name="Make spicy sauce packets" />
 			<text id="preparestep_bananasplit_vanilla" name="Scrape out vanilla"  />
 			<text id="preparestep_blackforestcherrycake_vanilla" name="Scrape out vanilla"  />
 			<text id="preparestep_pizzasalad_chili" name="Chop chili" />
@@ -1819,6 +1828,7 @@ Available for limited time only!"  />
 			<text id="recipe_veganplate" name="Vegan Plate" />
 			<text id="recipe_neapolitancake" name="Neapolitan Cake" />
 			<text id="recipe_strawberrycheesecake" name="Strawberry Cheesecake" />
+			<text id="recipe_combomeal" name="Combo Meal" />
 			<text id="recipe_beefstew" name="Stew"  />
 			<text id="recipe_blackforestcherrycake" name="Black Forest Cake"  />
 			<text id="recipe_cheeseburger" name="Cheeseburger"  />
