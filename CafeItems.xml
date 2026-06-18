@@ -806,7 +806,7 @@
 <wod id="1343" n="Basic" g="Ingredient" t="Tofu" cash="650" gold="0" friends="0" goldNoFriends="0" releaseDate="0" world="0" events="0" xp="0" level="20" category="vegatables" amount="1" />
 <wod id="1344" n="Basic" g="Ingredient" t="Sausages" cash="1000" gold="0" friends="0" goldNoFriends="0" releaseDate="0" world="0" events="0" xp="0" level="17" category="meat" amount="1" />
 <wod id="1345" n="Basic" g="Ingredient" t="Apple" cash="500" gold="0" friends="0" goldNoFriends="0" releaseDate="0" world="0" events="0" xp="0" level="12" category="fruits" amount="1" />
-<wod id="1346" n="Basic" g="Ingredient" t="Cookfest" cash="800" gold="0" friends="0" goldNoFriends="0" releaseDate="0" world="0" events="0" xp="0" level="1" category="other" amount="1" />
+<wod id="1346" n="Basic" g="Ingredient" t="Cookfest" cash="800" gold="0" friends="0" goldNoFriends="0" releaseDate="0" world="0" events="0" xp="0" level="4" category="other" amount="1" />
 <wod id="1401" n="Basic" g="Ingredient" t="Basil" cash="0" gold="1" friends="0" goldNoFriends="0" releaseDate="0" world="0" events="0" xp="0" level="0" category="fancy" amount="10" />
 <wod id="1402" n="Basic" g="Ingredient" t="Chili" cash="0" gold="1" friends="0" goldNoFriends="0" releaseDate="0" world="0" events="0" xp="0" level="0" category="fancy" amount="10" />
 <wod id="1403" n="Basic" g="Ingredient" t="Coriander" cash="0" gold="1" friends="0" goldNoFriends="0" releaseDate="0" world="0" events="0" xp="0" level="0" category="fancy" amount="10" />
