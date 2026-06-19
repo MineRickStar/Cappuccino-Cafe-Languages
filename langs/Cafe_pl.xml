@@ -251,6 +251,16 @@
 		<text id="cookstep_strawberrycheesecake2" name="Pieczenie ciasta" />
 		<text id="cookstep_combomeal1" name="Frying burger meat" />
 		<text id="cookstep_combomeal2" name="Frying fries somehow" />
+		<text id="cookstep_zcordonbleu1" name="Preparing chicken" />
+		<text id="cookstep_zcordonbleu2" name="Adding lemon slices" />
+		<text id="cookstep_brazilianpastel1" name="Frying pastels" />
+		<text id="cookstep_brazilianpastel2" name="Almost there" />
+		<text id="cookstep_lechonkawali1" name="Preparing pork belly" />
+		<text id="cookstep_lechonkawali2" name="Frying until crispy" />
+		<text id="cookstep_sweetpizza1" name="Spreading chocolate" />
+		<text id="cookstep_sweetpizza2" name="Baking sweet pizza" />
+		<text id="cookstep_shakshuka1" name="Melting tomatoes" />
+		<text id="cookstep_shakshuka2" name="Simmering sauce" />
 		<text id="cookstep_cheeseburger1" name="Przypikanie mięsa mielonego" />
 		<text id="cookstep_cheeseburger2" name="Dodawanie składników do burgera" />
 		<text id="cookstep_cheesedish1" name="Przygotowywanie sera" />
@@ -1277,6 +1287,27 @@
 		<text id="preparestep_combomeal_cheese" name="Krojenie sera" />
 		<text id="preparestep_combomeal_potato" name="Krojenie ziemniaków" />
 		<text id="preparestep_combomeal_oil" name="Dodawanie dużo oleju" />
+		<text id="preparestep_zcordonbleu_chicken" name="Flatten chicken" />
+		<text id="preparestep_zcordonbleu_flour" name="Sift flour" />
+		<text id="preparestep_zcordonbleu_cheese" name="Slice cheese" />
+		<text id="preparestep_zcordonbleu_oil" name="Heat oil" />
+		<text id="preparestep_zcordonbleu_eggs" name="Beat eggs" />
+		<text id="preparestep_brazilianpastel_flour" name="Make pastel dough" />
+		<text id="preparestep_brazilianpastel_cheese" name="Grate cheese" />
+		<text id="preparestep_brazilianpastel_oil" name="Heat oil" />
+		<text id="preparestep_brazilianpastel_sugar" name="Make sugarcane drink" />
+		<text id="preparestep_lechonkawali_bacon" name="Slice bacon" />
+		<text id="preparestep_lechonkawali_cucumber" name="Slice cucumber" />
+		<text id="preparestep_lechonkawali_garlic" name="Crush garlic" />
+		<text id="preparestep_lechonkawali_oil" name="Heat oil" />
+		<text id="preparestep_sweetpizza_flour" name="Prepare pizza dough" />
+		<text id="preparestep_sweetpizza_chocolate" name="Melt chocolate" />
+		<text id="preparestep_sweetpizza_strawberry" name="Slice strawberries" />
+		<text id="preparestep_sweetpizza_cookfest" name="Find fruits" />
+		<text id="preparestep_shakshuka_onion" name="Chop onions" />
+		<text id="preparestep_shakshuka_garlic" name="Crush garlic" />
+		<text id="preparestep_shakshuka_tomato" name="Chop tomatoes" />
+		<text id="preparestep_shakshuka_eggs" name="Crack eggs" />
 		<text id="preparestep_blackforestcherrycake_flour" name="Przesiewanie mąki" />
 		<text id="preparestep_cheeseburger_cheese" name="Krojenie sera" />
 		<text id="preparestep_cheeseburger_flour" name="Przesiewanie mąki" />
@@ -1581,6 +1612,11 @@
 		<text id="preparestep_neapolitancake_vanilla" name="Skrobanie wanilii" />
 		<text id="preparestep_strawberrycheesecake_vanilla" name="Dodawanie wanilii" />
 		<text id="preparestep_combomeal_chili" name="Robienie saszetek z ostrym sosem" />
+		<text id="preparestep_zcordonbleu_parsley" name="Chop parsley" />
+		<text id="preparestep_brazilianpastel_basil" name="Chop basil" />
+		<text id="preparestep_lechonkawali_rosemary" name="Chop rosemary" />
+		<text id="preparestep_sweetpizza_cinnamon" name="Sprinkle cinnamon" />
+		<text id="preparestep_shakshuka_parsley" name="Chop parsley" />
 		<text id="preparestep_cottagepotatoes_parsley" name="Siekanie pietruszki" />
 		<text id="preparestep_bananasplit_vanilla" name="Skrobanie wanilii" />
 		<text id="preparestep_blackforestcherrycake_vanilla" name="Skrobanie wanilii" />
@@ -1708,6 +1744,11 @@
 		<text id="recipe_neapolitancake" name="Ciasto neopolitańskie" />
 		<text id="recipe_strawberrycheesecake" name="Sernik truskawkowy" />
 		<text id="recipe_combomeal" name="Posiłek dwudaniowy" />
+		<text id="recipe_zcordonbleu" name="Zagreb Cordon Bleu" />
+		<text id="recipe_brazilianpastel" name="Brazilian Pastel w/ Drink" />
+		<text id="recipe_lechonkawali" name="Lechon Kawali" />
+		<text id="recipe_sweetpizza" name="Sweet Pizza" />
+		<text id="recipe_shakshuka" name="Shakshuka" />
 		<text id="recipe_blackforestcherrycake" name="Wiśniowy tort ze Schwarzwaldu" />
 		<text id="recipe_cheeseburger" name="Cheeseburger" />
 		<text id="recipe_cheesedish" name="Talerz serów" />
