@@ -252,17 +252,17 @@ Se você estocá-la, as porções existentes serão perdidas!" />
 		<text id="cookstep_strawberrycheesecake1" name="Misturando ingredientes" />
 		<text id="cookstep_strawberrycheesecake2" name="Formando bolo" />
 		<text id="cookstep_combomeal1" name="Fritando carne" />
-		<text id="cookstep_combomeal2" name="Fritando as batatas de alguma forma" />
-		<text id="cookstep_zcordonbleu1" name="Preparing chicken" />
-		<text id="cookstep_zcordonbleu2" name="Adding lemon slices" />
-		<text id="cookstep_brazilianpastel1" name="Frying pastels" />
-		<text id="cookstep_brazilianpastel2" name="Almost there" />
-		<text id="cookstep_lechonkawali1" name="Preparing pork belly" />
-		<text id="cookstep_lechonkawali2" name="Frying until crispy" />
-		<text id="cookstep_sweetpizza1" name="Spreading chocolate" />
-		<text id="cookstep_sweetpizza2" name="Baking sweet pizza" />
-		<text id="cookstep_shakshuka1" name="Melting tomatoes" />
-		<text id="cookstep_shakshuka2" name="Simmering sauce" />
+		<text id="cookstep_combomeal2" name="Fritando as batatas junto" />
+		<text id="cookstep_zcordonbleu1" name="Preparando frango" />
+		<text id="cookstep_zcordonbleu2" name="Colocando limão" />
+		<text id="cookstep_brazilianpastel1" name="Fritando pastéis" />
+		<text id="cookstep_brazilianpastel2" name="Quase lá" />
+		<text id="cookstep_lechonkawali1" name="Fritando barriga de porco" />
+		<text id="cookstep_lechonkawali2" name="Dourando" />
+		<text id="cookstep_sweetpizza1" name="Espalhando chocolate" />
+		<text id="cookstep_sweetpizza2" name="Assando" />
+		<text id="cookstep_shakshuka1" name="Derrentendo tomates" />
+		<text id="cookstep_shakshuka2" name="Arrumando molho" />
 		<text id="cookstep_blackforestcherrycake1" name="Misturando ingredientes" />
 		<text id="cookstep_blackforestcherrycake2" name="Assando bolo" />
 		<text id="cookstep_cheeseburger1" name="Fritando carne moída" />
@@ -1308,27 +1308,27 @@ Apenas disponível por tempo limitado!" />
 		<text id="preparestep_combomeal_cheese" name="Fatiar queijo" />
 		<text id="preparestep_combomeal_potato" name="Cortar batata" />
 		<text id="preparestep_combomeal_oil" name="Adicionar muito óleo" />
-		<text id="preparestep_zcordonbleu_chicken" name="Flatten chicken" />
-		<text id="preparestep_zcordonbleu_flour" name="Sift flour" />
-		<text id="preparestep_zcordonbleu_cheese" name="Slice cheese" />
-		<text id="preparestep_zcordonbleu_oil" name="Heat oil" />
-		<text id="preparestep_zcordonbleu_eggs" name="Beat eggs" />
-		<text id="preparestep_brazilianpastel_flour" name="Make pastel dough" />
-		<text id="preparestep_brazilianpastel_cheese" name="Grate cheese" />
-		<text id="preparestep_brazilianpastel_oil" name="Heat oil" />
-		<text id="preparestep_brazilianpastel_sugar" name="Make sugarcane drink" />
-		<text id="preparestep_lechonkawali_bacon" name="Slice bacon" />
-		<text id="preparestep_lechonkawali_cucumber" name="Slice cucumber" />
-		<text id="preparestep_lechonkawali_garlic" name="Crush garlic" />
-		<text id="preparestep_lechonkawali_oil" name="Heat oil" />
-		<text id="preparestep_sweetpizza_flour" name="Prepare pizza dough" />
-		<text id="preparestep_sweetpizza_chocolate" name="Melt chocolate" />
-		<text id="preparestep_sweetpizza_strawberry" name="Slice strawberries" />
-		<text id="preparestep_sweetpizza_cookfest" name="Find fruits" />
-		<text id="preparestep_shakshuka_onion" name="Chop onions" />
-		<text id="preparestep_shakshuka_garlic" name="Crush garlic" />
-		<text id="preparestep_shakshuka_tomato" name="Chop tomatoes" />
-		<text id="preparestep_shakshuka_eggs" name="Crack eggs" />
+		<text id="preparestep_zcordonbleu_chicken" name="Amassar frango" />
+		<text id="preparestep_zcordonbleu_flour" name="Empanar" />
+		<text id="preparestep_zcordonbleu_cheese" name="Cortar queijo" />
+		<text id="preparestep_zcordonbleu_oil" name="Aquecer óleo" />
+		<text id="preparestep_zcordonbleu_eggs" name="Bater ovos" />
+		<text id="preparestep_brazilianpastel_flour" name="Fazer massa" />
+		<text id="preparestep_brazilianpastel_cheese" name="Rechear com queijo" />
+		<text id="preparestep_brazilianpastel_oil" name="Aquecer óleo" />
+		<text id="preparestep_brazilianpastel_sugar" name="Fazer caldo de cana" />
+		<text id="preparestep_lechonkawali_bacon" name="Cortar bacon em cubos" />
+		<text id="preparestep_lechonkawali_cucumber" name="Fatiar pepino" />
+		<text id="preparestep_lechonkawali_garlic" name="Espremer alho" />
+		<text id="preparestep_lechonkawali_oil" name="Aquecer óleo" />
+		<text id="preparestep_sweetpizza_flour" name="Fazer massa" />
+		<text id="preparestep_sweetpizza_chocolate" name="Derreter chocolate" />
+		<text id="preparestep_sweetpizza_strawberry" name="Cortar morangos" />
+		<text id="preparestep_sweetpizza_cookfest" name="Achar frutas" />
+		<text id="preparestep_shakshuka_onion" name="Cortar cebolas" />
+		<text id="preparestep_shakshuka_garlic" name="Espremer alho" />
+		<text id="preparestep_shakshuka_tomato" name="Posicionar tomates" />
+		<text id="preparestep_shakshuka_eggs" name="Quebrar ovos" />
 		<text id="preparestep_corncake_cinnamon" name="Moer canela" />
 		<text id="preparestep_feijoada_beans" name="Cozinhar feijões" />
 		<text id="preparestep_feijoada_bacon" name="Cortar pedaços de bacon" />
@@ -1633,11 +1633,11 @@ Apenas disponível por tempo limitado!" />
 		<text id="preparestep_neapolitancake_vanilla" name="Fazer extrato de baunilha" />
 		<text id="preparestep_strawberrycheesecake_vanilla" name="Adicionar baunilha" />
 		<text id="preparestep_combomeal_chili" name="Fazer pacotes de molho picante" />
-		<text id="preparestep_zcordonbleu_parsley" name="Chop parsley" />
-		<text id="preparestep_brazilianpastel_basil" name="Chop basil" />
-		<text id="preparestep_lechonkawali_rosemary" name="Chop rosemary" />
-		<text id="preparestep_sweetpizza_cinnamon" name="Sprinkle cinnamon" />
-		<text id="preparestep_shakshuka_parsley" name="Chop parsley" />
+		<text id="preparestep_zcordonbleu_parsley" name="Picar salsinha" />
+		<text id="preparestep_brazilianpastel_basil" name="Picar manjericão" />
+		<text id="preparestep_lechonkawali_rosemary" name="Picar alecrim" />
+		<text id="preparestep_sweetpizza_cinnamon" name="Espalhar canela" />
+		<text id="preparestep_shakshuka_parsley" name="Picar salsinha" />
 		<text id="preparestep_cottagepotatoes_parsley" name="Picar salsinha" />
 		<text id="preparestep_bananasplit_vanilla" name="raspar baunilha" />
 		<text id="preparestep_blackforestcherrycake_vanilla" name="Raspar baunilha" />
@@ -1766,10 +1766,10 @@ Apenas disponível por tempo limitado!" />
 		<text id="recipe_strawberrycheesecake" name="Cheesecake de Morango" />
 		<text id="recipe_combomeal" name="Combo de Fast Food" />
 		<text id="recipe_zcordonbleu" name="Zagreb Cordon Bleu" />
-		<text id="recipe_brazilianpastel" name="Brazilian Pastel w/ Drink" />
-		<text id="recipe_lechonkawali" name="Lechon Kawali" />
-		<text id="recipe_sweetpizza" name="Sweet Pizza" />
-		<text id="recipe_shakshuka" name="Shakshuka" />
+		<text id="recipe_brazilianpastel" name="Pastel com Caldo de Cana" />
+		<text id="recipe_lechonkawali" name="Barriga de Porco Pururuca" />
+		<text id="recipe_sweetpizza" name="Pizza Doce" />
+		<text id="recipe_shakshuka" name="Ovos no Purgatório" />
 		<text id="recipe_beefstew" name="Carne Ensopada" />
 		<text id="recipe_blackforestcherrycake" name="Bolo Floresta Negra" />
 		<text id="recipe_cheeseburger" name="X-Burger" />
