@@ -1096,7 +1096,7 @@
 		<text id="panelwin_social_writeable" name="Nur registrierte Spieler ab Level 1 dürfen den Chat benutzen." />
 	</panels>
 	<preparestep>
-<text id="preparestep_bananasplit_banana" name="Banane schälen" />
+		<text id="preparestep_bananasplit_banana" name="Banane schälen" />
 		<text id="preparestep_bananasplit_chocolate" name="Schokolade hacken" />
 		<text id="preparestep_brigadeiro_chocolate" name="Schokolade hacken" />
 		<text id="preparestep_brigadeiro_cream" name="Sahne unterrühren" />
@@ -1171,7 +1171,7 @@
 		<text id="preparestep_strawberryjuice_strawberry" name="Erdbeeren waschen" />
 		<text id="preparestep_strawberryjuice_sugar" name="Zucker hinzufügen" />
 		<text id="preparestep_strawberryjuice_vanilla" name="Vanille hinzufügen" />
-<text id="preparestep_cappuccino_cookfest" name="Über das nächste Cookfest nachdenken" />
+		<text id="preparestep_cappuccino_cookfest" name="Über das nächste Cookfest nachdenken" />
 		<text id="preparestep_cappuccino_cinnamon" name="Zimt aufstreuen" />
 		<text id="preparestep_duckalcitrus_duck" name="Ente vorbereiten" />
 		<text id="preparestep_duckalcitrus_butter" name="Butter schmelzen" />
@@ -1244,7 +1244,7 @@
 		<text id="preparestep_bakedalaska_cream" name="Sahne schlagen" />
 		<text id="preparestep_bakedalaska_eggs" name="Eier trennen" />
 		<text id="preparestep_bakedalaska_sugar" name="Zucker abmessen" />
-<text id="preparestep_butterchicken_tomato" name="Tomaten pürieren" />
+		<text id="preparestep_butterchicken_tomato" name="Tomaten pürieren" />
 		<text id="preparestep_butterchicken_chicken" name="Hähnchen schneiden" />
 		<text id="preparestep_butterchicken_cream" name="Sahne abmessen" />
 		<text id="preparestep_butterchicken_butter" name="Butter schmelzen" />
@@ -1586,41 +1586,41 @@
 		<text id="preparestep_coxinha_coriander" name="Koriander hacken" />
 	</preparestep>
 	<preparestep_fancy>
-		<text id="preparestep_duckalcitrus_cinnamon" name="Sprinkle cinnamon" />
-		<text id="preparestep_ducktatters_parsley" name="Chop parsley" />
-		<text id="preparestep_langos_parsley" name="Chop parsley" />
-		<text id="preparestep_nasilemak_chili" name="Chop chili" />
-		<text id="preparestep_citrusjuice_vanilla" name="Scrape out vanilla" />
-		<text id="preparestep_carrotcake_vanilla" name="Scrape out vanilla" />
-		<text id="preparestep_carrotjuice_vanilla" name="Scrape out vanilla" />
-		<text id="preparestep_francesinha_chili" name="Chop chili" />
-		<text id="preparestep_dorayaki_vanilla" name="Scrape out vanilla" />
-		<text id="preparestep_tiramisu_vanilla" name="Scrape out vanilla" />
-		<text id="preparestep_pridecupcakes_vanilla" name="Scrape out vanilla" />
-		<text id="preparestep_ratatouille_rosemary" name="Chop rosemary" />
-		<text id="preparestep_hotcherryricepudding_cinnamon" name="Sprinkle cinnamon" />
-		<text id="preparestep_coconutcake_vanilla" name="Scrape out vanilla" />
-		<text id="preparestep_fancy_coconutcake_vanilla" name="Scrape out vanilla" />
-		<text id="preparestep_paodequeijo_rosemary" name="Add rosemary" />
-		<text id="preparestep_baiaodedois_coriander" name="Chop coriander" />
-		<text id="preparestep_bakedalaska_vanilla" name="Add vanilla" />
-		<text id="preparestep_butterchicken_coriander" name="Chop coriander" />
-		<text id="preparestep_chickenbiryani_coriander" name="Add coriander" />
-		<text id="preparestep_cuzcuzcomovo_parsley" name="Chop parsley" />
-		<text id="preparestep_malaichickennaan_coriander" name="Chop coriander" />
-		<text id="preparestep_veganplate_parsley" name="Chop parsley" />
-		<text id="preparestep_neapolitancake_vanilla" name="Scrape out vanilla" />
-		<text id="preparestep_strawberrycheesecake_vanilla" name="Add Vanilla" />
-		<text id="preparestep_combomeal_chili" name="Make spicy sauce packets" />
-		<text id="preparestep_zcordonbleu_parsley" name="Chop parsley" />
-		<text id="preparestep_brazilianpastel_basil" name="Chop basil" />
-		<text id="preparestep_lechonkawali_rosemary" name="Chop rosemary" />
-		<text id="preparestep_sweetpizza_cinnamon" name="Sprinkle cinnamon" />
-		<text id="preparestep_shakshuka_parsley" name="Chop parsley" />
-		<text id="preparestep_cottagepotatoes_parsley" name="Chop parsley" />
+		<text id="preparestep_duckalcitrus_cinnamon" name="Zimt aufstreuen" />
+		<text id="preparestep_ducktatters_parsley" name="Petersilie hacken" />
+		<text id="preparestep_langos_parsley" name="Petersilie hacken" />
+		<text id="preparestep_nasilemak_chili" name="Chili hacken" />
+		<text id="preparestep_citrusjuice_vanilla" name="Vanille ausschaben" />
+		<text id="preparestep_carrotcake_vanilla" name="Vanille ausschaben" />
+		<text id="preparestep_carrotjuice_vanilla" name="Vanille ausschaben" />
+		<text id="preparestep_francesinha_chili" name="Chili hacken" />
+		<text id="preparestep_dorayaki_vanilla" name="Vanille ausschaben" />
+		<text id="preparestep_tiramisu_vanilla" name="Vanille ausschaben" />
+		<text id="preparestep_pridecupcakes_vanilla" name="Vanille ausschaben" />
+		<text id="preparestep_ratatouille_rosemary" name="Rosmarin hacken" />
+		<text id="preparestep_hotcherryricepudding_cinnamon" name="Zimt aufstreuen" />
+		<text id="preparestep_coconutcake_vanilla" name="Vanille ausschaben" />
+		<text id="preparestep_fancy_coconutcake_vanilla" name="Vanille ausschaben" />
+		<text id="preparestep_paodequeijo_rosemary" name="Rosmarin hinzufügen" />
+		<text id="preparestep_baiaodedois_coriander" name="Koriander hacken" />
+		<text id="preparestep_bakedalaska_vanilla" name="Vanille hinzufügen" />
+		<text id="preparestep_butterchicken_coriander" name="Koriander hacken" />
+		<text id="preparestep_chickenbiryani_coriander" name="Koriander hinzufügen" />
+		<text id="preparestep_cuzcuzcomovo_parsley" name="Petersilie hacken" />
+		<text id="preparestep_malaichickennaan_coriander" name="Koriander hacken" />
+		<text id="preparestep_veganplate_parsley" name="Petersilie hacken" />
+		<text id="preparestep_neapolitancake_vanilla" name="Vanille ausschaben" />
+		<text id="preparestep_strawberrycheesecake_vanilla" name="Vanille hinzufügen" />
+		<text id="preparestep_combomeal_chili" name="Scharfe Saucenpäckchen machen" />
+		<text id="preparestep_zcordonbleu_parsley" name="Petersilie hacken" />
+		<text id="preparestep_brazilianpastel_basil" name="Basilikum hacken" />
+		<text id="preparestep_lechonkawali_rosemary" name="Rosmarin hacken" />
+		<text id="preparestep_sweetpizza_cinnamon" name="Zimt aufstreuen" />
+		<text id="preparestep_shakshuka_parsley" name="Petersilie hacken" />
+		<text id="preparestep_cottagepotatoes_parsley" name="Petersilie hacken" />
 		<text id="preparestep_bananasplit_vanilla" name="Vanille ausschaben" />
 		<text id="preparestep_blackforestcherrycake_vanilla" name="Vanille ausschaben" />
-		<text id="preparestep_pizzasalad_chili" name="Chop chili" />
+		<text id="preparestep_pizzasalad_chili" name="Chili hacken" />
 		<text id="preparestep_cheeseburger_chili" name="Chili schneiden" />
 		<text id="preparestep_cheesedish_parsley" name="Petersilie hacken" />
 		<text id="preparestep_cheesefondue_chili" name="Chili schneiden" />
