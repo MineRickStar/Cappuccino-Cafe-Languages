@@ -170,11 +170,11 @@
 		<text id="cookstep_cheesefondue1" name="Bakar bröd" />
 		<text id="cookstep_cheesefondue2" name="Smälter ost" />
 		<text id="cookstep_cherriecake1" name="Blandar ingredienser" />
-		<text id="cookstep_cherriecake2" name="Bakar" />
+		<text id="cookstep_cherriecake2" name="Bakar bröd" />
 		<text id="cookstep_spanishomelette1" name="Skalar potatis" />
 		<text id="cookstep_spanishomelette2" name="Vänder plättar" />
 		<text id="cookstep_cherrycompote1" name="Kokar körsbär" />
-		<text id="cookstep_cherrycompote2" name="Låter den kallna" />
+		<text id="cookstep_cherrycompote2" name="Kyler kompott" />
 		<text id="cookstep_chickenburger1" name="Steker kyckling" />
 		<text id="cookstep_chickenburger2" name="Ordnar burgare" />
 		<text id="cookstep_chickensalad1" name="Steker kyckling" />
@@ -199,68 +199,68 @@
 		<text id="cookstep_strawberryjuice2" name="Skakar juice" />
 		<text id="cookstep_cappuccino1" name="Brygger espresso" />
 		<text id="cookstep_cappuccino2" name="Skumma mjölk" />
-		<text id="cookstep_duckalcitrus1" name="Roasting duck" />
-		<text id="cookstep_duckalcitrus2" name="Adding citrus glaze" />
-		<text id="cookstep_ducktatters1" name="Frying ingredients" />
-		<text id="cookstep_ducktatters2" name="Mixing dish" />
-		<text id="cookstep_langos1" name="Making sauce" />
-		<text id="cookstep_langos2" name="Cooling sauce" />
-		<text id="cookstep_nasilemak1" name="Cooking rice" />
-		<text id="cookstep_nasilemak2" name="Plating dish" />
-		<text id="cookstep_citrusjuice1" name="Squeezing citrus" />
-		<text id="cookstep_citrusjuice2" name="Blending juice" />
-		<text id="cookstep_carrotcake1" name="Mixing batter" />
-		<text id="cookstep_carrotcake2" name="Baking cake" />
-		<text id="cookstep_carrotjuice1" name="Blending carrots" />
-		<text id="cookstep_carrotjuice2" name="Pouring juice" />
-		<text id="cookstep_francesinha1" name="Building sandwich" />
-		<text id="cookstep_francesinha2" name="Melting cheese" />
-		<text id="cookstep_dorayaki1" name="Prepping filling" />
-		<text id="cookstep_dorayaki2" name="Letting it cool" />
-		<text id="cookstep_tiramisu1" name="Layering dessert" />
-		<text id="cookstep_tiramisu2" name="Chilling tiramisu" />
-		<text id="cookstep_pridecupcakes1" name="Mixing batter" />
-		<text id="cookstep_pridecupcakes2" name="Decorating" />
-		<text id="cookstep_ratatouille1" name="Prepping vegetables" />
-		<text id="cookstep_ratatouille2" name="Stacking" />
-		<text id="cookstep_hotcherryricepudding1" name="Cooking rice" />
-		<text id="cookstep_hotcherryricepudding2" name="Adding cherries" />
-		<text id="cookstep_coconutcake1" name="Mixing ingredients" />
-		<text id="cookstep_coconutcake2" name="Baking cake" />
-		<text id="cookstep_paodequeijo1" name="Shaping dough" />
-		<text id="cookstep_paodequeijo2" name="Baking bread" />
-		<text id="cookstep_baiaodedois1" name="Mixing rice and beans" />
-		<text id="cookstep_baiaodedois2" name="Adding crispy bacon" />
-		<text id="cookstep_bakedalaska1" name="Cooling cream" />
-		<text id="cookstep_bakedalaska2" name="Browning meringue" />
-		<text id="cookstep_butterchicken1" name="Boiling sauce" />
-		<text id="cookstep_butterchicken2" name="Simmering curry sauce" />
-		<text id="cookstep_chickenbiryani1" name="Mixing spices" />
-		<text id="cookstep_chickenbiryani2" name="Spicing rice" />
-		<text id="cookstep_cottagepotatoes1" name="Preparing potatoes" />
-		<text id="cookstep_cottagepotatoes2" name="Spreading cottage" />
-		<text id="cookstep_cuzcuzcomovo1" name="Steaming cornmeal" />
-		<text id="cookstep_cuzcuzcomovo2" name="Frying eggs" />
-		<text id="cookstep_malaichickennaan1" name="Prepping batter" />
-		<text id="cookstep_malaichickennaan2" name="Folding naan" />
-		<text id="cookstep_veganplate1" name="Cooking rice" />
-		<text id="cookstep_veganplate2" name="Spreading rice" />
-		<text id="cookstep_neapolitancake1" name="Melting ingredients" />
-		<text id="cookstep_neapolitancake2" name="Baking cake" />
-		<text id="cookstep_strawberrycheesecake1" name="Mixing ingredients" />
-		<text id="cookstep_strawberrycheesecake2" name="Baking cake" />
-		<text id="cookstep_combomeal1" name="Frying burger meat" />
-		<text id="cookstep_combomeal2" name="Frying fries somehow" />
-		<text id="cookstep_zcordonbleu1" name="Preparing chicken" />
-		<text id="cookstep_zcordonbleu2" name="Adding lemon slices" />
-		<text id="cookstep_brazilianpastel1" name="Frying pastels" />
-		<text id="cookstep_brazilianpastel2" name="Almost there" />
-		<text id="cookstep_lechonkawali1" name="Preparing pork belly" />
-		<text id="cookstep_lechonkawali2" name="Frying until crispy" />
-		<text id="cookstep_sweetpizza1" name="Spreading chocolate" />
-		<text id="cookstep_sweetpizza2" name="Baking sweet pizza" />
-		<text id="cookstep_shakshuka1" name="Melting tomatoes" />
-		<text id="cookstep_shakshuka2" name="Simmering sauce" />
+		<text id="cookstep_duckalcitrus1" name="Steker anka" />
+		<text id="cookstep_duckalcitrus2" name="Tillsätter citrusglasyr" />
+		<text id="cookstep_ducktatters1" name="Friterar ingredienser" />
+		<text id="cookstep_ducktatters2" name="Blandar ingredienser" />
+		<text id="cookstep_langos1" name="Lagar sås" />
+		<text id="cookstep_langos2" name="Kyler sås" />
+		<text id="cookstep_nasilemak1" name="Kokar ris" />
+		<text id="cookstep_nasilemak2" name="Dekorerar tallrik" />
+		<text id="cookstep_citrusjuice1" name="Pressar citrus" />
+		<text id="cookstep_citrusjuice2" name="Skakar juice" />
+		<text id="cookstep_carrotcake1" name="Blandar smet" />
+		<text id="cookstep_carrotcake2" name="Bakar" />
+		<text id="cookstep_carrotjuice1" name="Blandar morötter" />
+		<text id="cookstep_carrotjuice2" name="Häller juice" />
+		<text id="cookstep_francesinha1" name="Förbereder lager" />
+		<text id="cookstep_francesinha2" name="Smälter ost" />
+		<text id="cookstep_dorayaki1" name="Förbereder fyllning" />
+		<text id="cookstep_dorayaki2" name="Låter den svalna" />
+		<text id="cookstep_tiramisu1" name="Förbereder lager" />
+		<text id="cookstep_tiramisu2" name="Kyler tiramisu" />
+		<text id="cookstep_pridecupcakes1" name="Blandar smet" />
+		<text id="cookstep_pridecupcakes2" name="Dekorerar muffins" />
+		<text id="cookstep_ratatouille1" name="Förbereder grönsaker" />
+		<text id="cookstep_ratatouille2" name="Dekorerar tallrik" />
+		<text id="cookstep_hotcherryricepudding1" name="Kokar ris" />
+		<text id="cookstep_hotcherryricepudding2" name="Tillsätter körsbär" />
+		<text id="cookstep_coconutcake1" name="Blandar ingredienser" />
+		<text id="cookstep_coconutcake2" name="Bakar" />
+		<text id="cookstep_paodequeijo1" name="Knådar deg" />
+		<text id="cookstep_paodequeijo2" name="Bakar" />
+		<text id="cookstep_baiaodedois1" name="Blandar ris och bönor" />
+		<text id="cookstep_baiaodedois2" name="Tillsätter krispig bacon" />
+		<text id="cookstep_bakedalaska1" name="Kyler glass" />
+		<text id="cookstep_bakedalaska2" name="Bränner av maräng" />
+		<text id="cookstep_butterchicken1" name="Kokar sås" />
+		<text id="cookstep_butterchicken2" name="Sjuder currysås" />
+		<text id="cookstep_chickenbiryani1" name="Blandar kryddor" />
+		<text id="cookstep_chickenbiryani2" name="Kryddar ris" />
+		<text id="cookstep_cottagepotatoes1" name="Förbereder potatis" />
+		<text id="cookstep_cottagepotatoes2" name="Sprider ut keso" />
+		<text id="cookstep_cuzcuzcomovo1" name="Ångkokar gryn" />
+		<text id="cookstep_cuzcuzcomovo2" name="Steker ägg" />
+		<text id="cookstep_malaichickennaan1" name="Blandar smet" />
+		<text id="cookstep_malaichickennaan2" name="Viker naan" />
+		<text id="cookstep_veganplate1" name="Kokar ris" />
+		<text id="cookstep_veganplate2" name="Sprider ut ris" />
+		<text id="cookstep_neapolitancake1" name="Smälter ingredienser" />
+		<text id="cookstep_neapolitancake2" name="Bakar" />
+		<text id="cookstep_strawberrycheesecake1" name="Blandar ingredienser" />
+		<text id="cookstep_strawberrycheesecake2" name="Bakar" />
+		<text id="cookstep_combomeal1" name="Steker hamburgarekött" />
+		<text id="cookstep_combomeal2" name="Steker pommes frites också" />
+		<text id="cookstep_zcordonbleu1" name="Förbereder kyckling" />
+		<text id="cookstep_zcordonbleu2" name="Tillsätter citronskivor" />
+		<text id="cookstep_brazilianpastel1" name="Friterar pastel" />
+		<text id="cookstep_brazilianpastel2" name="Nästan där" />
+		<text id="cookstep_lechonkawali1" name="Förbereder grismage" />
+		<text id="cookstep_lechonkawali2" name="Steker tills den är krispig" />
+		<text id="cookstep_sweetpizza1" name="Smetar choklad" />
+		<text id="cookstep_sweetpizza2" name="Bakar" />
+		<text id="cookstep_shakshuka1" name="Kokar tomat" />
+		<text id="cookstep_shakshuka2" name="Sjuder sås" />
 		<text id="cookstep_chocmousse1" name="Blandar ingredienser" />
 		<text id="cookstep_chocmousse2" name="Kyler mousse" />
 		<text id="cookstep_chocolatecake1" name="Blandar ingredienser" />
@@ -289,7 +289,7 @@
 		<text id="cookstep_fishandchips2" name="Steker fisk" />
 		<text id="cookstep_friedpotatoes1" name="Kokar potatis" />
 		<text id="cookstep_friedpotatoes2" name="Steker potatis" />
-		<text id="cookstep_fruitpudding1" name="Låter deg vila" />
+		<text id="cookstep_fruitpudding1" name="Låter degen vila" />
 		<text id="cookstep_fruitpudding2" name="Bakar" />
 		<text id="cookstep_fruitsalad1" name="Skär upp frukt" />
 		<text id="cookstep_fruitsalad2" name="Häller dressing" />
@@ -329,11 +329,11 @@
 		<text id="cookstep_onionsoup2" name="Gratinerar" />
 		<text id="cookstep_peasoup1" name="Fräser lök" />
 		<text id="cookstep_peasoup2" name="Kokar soppa" />
-		<text id="cookstep_pizza1" name="Pyntar pizza" />
+		<text id="cookstep_pizza1" name="Dekorerar pizza" />
 		<text id="cookstep_pizza2" name="Bakar" />
-		<text id="cookstep_pizzahawaii1" name="Pyntar pizza" />
+		<text id="cookstep_pizzahawaii1" name="Dekorerar pizza" />
 		<text id="cookstep_pizzahawaii2" name="Bakar" />
-		<text id="cookstep_pizzatonno1" name="Pyntar pizza" />
+		<text id="cookstep_pizzatonno1" name="Dekorerar pizza" />
 		<text id="cookstep_pizzatonno2" name="Bakar" />
 		<text id="cookstep_porkroastwithcrackling1" name="Kryddar kött" />
 		<text id="cookstep_porkroastwithcrackling2" name="Steker kött" />
@@ -397,7 +397,7 @@
 		<text id="cookstep_coxinha2" name="Friterar coxinha" />
 		<text id="cookstep_brigadeiro1" name="Smälter choklad" />
 		<text id="cookstep_brigadeiro2" name="Ordnar brigadeiro" />
-		<text id="cookstep_pizzasalad1" name="Pyntar pizza" />
+		<text id="cookstep_pizzasalad1" name="Dekorerar pizza" />
 		<text id="cookstep_pizzasalad2" name="Blandar sallad" />
 		<text id="cookstep_tripleomelette1" name="Blandar ägg" />
 		<text id="cookstep_tripleomelette2" name="Vänder plättar" />
