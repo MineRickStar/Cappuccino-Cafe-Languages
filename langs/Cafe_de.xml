@@ -161,106 +161,106 @@
 	<cookstep>
 		<text id="cookstep_bananasplit1" name="Eiskrem kühlen" />
 		<text id="cookstep_bananasplit2" name="Banane schneiden" />
-		<text id="cookstep_brigadeiro1" name="Melting chocolate" />
-		<text id="cookstep_brigadeiro2" name="Shaping brigadeiros" />
+		<text id="cookstep_brigadeiro1" name="Schokolade schmelzen" />
+		<text id="cookstep_brigadeiro2" name="Brigadeiros formen" />
 		<text id="cookstep_blackforestcherrycake1" name="Zutaten mischen" />
 		<text id="cookstep_blackforestcherrycake2" name="Kuchen backen" />
-		<text id="cookstep_pizzasalad1" name="Making pizzas" />
-		<text id="cookstep_pizzasalad2" name="Making salads" />
-		<text id="cookstep_tripleomelette1" name="Mixing eggs strongly" />
-		<text id="cookstep_tripleomelette2" name="Folding everything" />
-		<text id="cookstep_chocolatewaffles1" name="Melting chocolate" />
-		<text id="cookstep_chocolatewaffles2" name="Covering waffles" />
-		<text id="cookstep_spanishomelette1" name="Mixing huevos" />
-		<text id="cookstep_spanishomelette2" name="Making the omelette bonito" />
-		<text id="cookstep_sausagepasta1" name="Boiling pasta" />
-		<text id="cookstep_sausagepasta2" name="Frying sausages" />
-		<text id="cookstep_applepie1" name="Building pies" />
-		<text id="cookstep_applepie2" name="Baking pies" />
-		<text id="cookstep_ramen1" name="Boiling pasta" />
-		<text id="cookstep_ramen2" name="Adding spices" />
-		<text id="cookstep_corncake1" name="Mixing ingredients" />
-		<text id="cookstep_corncake2" name="Baking cakes" />
-		<text id="cookstep_feijoada1" name="Prepping pork cuts" />
-		<text id="cookstep_feijoada2" name="Manifesting orange slices" />
-		<text id="cookstep_pinapjuice1" name="Squeezing pineapples" />
-		<text id="cookstep_pinapjuice2" name="Blending juice" />
-		<text id="cookstep_orangejuice1" name="Squeezing oranges" />
-		<text id="cookstep_orangejuice2" name="Blending juice" />
-		<text id="cookstep_discodrinks1" name="Mixing fruits" />
-		<text id="cookstep_discodrinks2" name="Pouring drinks" />
-		<text id="cookstep_applejuice1" name="Squeezing apples" />
-		<text id="cookstep_applejuice2" name="Blending juice" />
-		<text id="cookstep_rjuice1" name="Squeezing rhubarb" />
-		<text id="cookstep_rjuice2" name="Blending juice" />
-		<text id="cookstep_cherryjuice1" name="Pitting cherries" />
-		<text id="cookstep_cherryjuice2" name="Blending juice" />
-		<text id="cookstep_strawberryjuice1" name="Mashing strawberries" />
-		<text id="cookstep_strawberryjuice2" name="Blending juice" />
-		<text id="cookstep_cappuccino1" name="Brewing espresso" />
-		<text id="cookstep_cappuccino2" name="Frothing milk" />
-		<text id="cookstep_duckalcitrus1" name="Roasting duck" />
-		<text id="cookstep_duckalcitrus2" name="Adding citrus glaze" />
-		<text id="cookstep_ducktatters1" name="Frying ingredients" />
-		<text id="cookstep_ducktatters2" name="Mixing dish" />
-		<text id="cookstep_langos1" name="Making sauce" />
-		<text id="cookstep_langos2" name="Cooling sauce" />
-		<text id="cookstep_nasilemak1" name="Cooking rice" />
-		<text id="cookstep_nasilemak2" name="Plating dish" />
-		<text id="cookstep_citrusjuice1" name="Squeezing citrus" />
-		<text id="cookstep_citrusjuice2" name="Blending juice" />
-		<text id="cookstep_carrotcake1" name="Mixing batter" />
-		<text id="cookstep_carrotcake2" name="Baking cake" />
-		<text id="cookstep_carrotjuice1" name="Blending carrots" />
-		<text id="cookstep_carrotjuice2" name="Pouring juice" />
-		<text id="cookstep_francesinha1" name="Building sandwich" />
-		<text id="cookstep_francesinha2" name="Melting cheese" />
-		<text id="cookstep_dorayaki1" name="Prepping filling" />
-		<text id="cookstep_dorayaki2" name="Letting it cool" />
-		<text id="cookstep_tiramisu1" name="Layering dessert" />
-		<text id="cookstep_tiramisu2" name="Chilling tiramisu" />
-		<text id="cookstep_pridecupcakes1" name="Mixing batter" />
-		<text id="cookstep_pridecupcakes2" name="Decorating" />
-		<text id="cookstep_ratatouille1" name="Prepping vegetables" />
-		<text id="cookstep_ratatouille2" name="Stacking" />
-		<text id="cookstep_hotcherryricepudding1" name="Cooking rice" />
-		<text id="cookstep_hotcherryricepudding2" name="Adding cherries" />
-		<text id="cookstep_coconutcake1" name="Mixing ingredients" />
-		<text id="cookstep_coconutcake2" name="Baking cake" />
-		<text id="cookstep_paodequeijo1" name="Shaping dough" />
-		<text id="cookstep_paodequeijo2" name="Baking bread" />
-		<text id="cookstep_baiaodedois1" name="Mixing rice and beans" />
-		<text id="cookstep_baiaodedois2" name="Adding crispy bacon" />
-		<text id="cookstep_bakedalaska1" name="Cooling cream" />
-		<text id="cookstep_bakedalaska2" name="Browning meringue" />
-		<text id="cookstep_butterchicken1" name="Boiling sauce" />
-		<text id="cookstep_butterchicken2" name="Simmering curry sauce" />
-		<text id="cookstep_chickenbiryani1" name="Mixing spices" />
-		<text id="cookstep_chickenbiryani2" name="Spicing rice" />
-		<text id="cookstep_cottagepotatoes1" name="Preparing potatoes" />
-		<text id="cookstep_cottagepotatoes2" name="Spreading cottage" />
-		<text id="cookstep_cuzcuzcomovo1" name="Steaming cornmeal" />
-		<text id="cookstep_cuzcuzcomovo2" name="Frying eggs" />
-		<text id="cookstep_malaichickennaan1" name="Prepping batter" />
-		<text id="cookstep_malaichickennaan2" name="Folding naan" />
-		<text id="cookstep_veganplate1" name="Cooking rice" />
-		<text id="cookstep_veganplate2" name="Spreading rice" />
-		<text id="cookstep_neapolitancake1" name="Melting ingredients" />
-		<text id="cookstep_neapolitancake2" name="Baking cake" />
-		<text id="cookstep_strawberrycheesecake1" name="Mixing ingredients" />
-		<text id="cookstep_strawberrycheesecake2" name="Baking cake" />
-		<text id="cookstep_combomeal1" name="Frying burger meat" />
-		<text id="cookstep_combomeal2" name="Frying fries somehow" />
-		<text id="cookstep_zcordonbleu1" name="Preparing chicken" />
-		<text id="cookstep_zcordonbleu2" name="Adding lemon slices" />
-		<text id="cookstep_brazilianpastel1" name="Frying pastels" />
-		<text id="cookstep_brazilianpastel2" name="Almost there" />
-		<text id="cookstep_lechonkawali1" name="Preparing pork belly" />
-		<text id="cookstep_lechonkawali2" name="Frying until crispy" />
-		<text id="cookstep_sweetpizza1" name="Spreading chocolate" />
-		<text id="cookstep_sweetpizza2" name="Baking sweet pizza" />
-		<text id="cookstep_shakshuka1" name="Melting tomatoes" />
-		<text id="cookstep_shakshuka2" name="Simmering sauce" />
+		<text id="cookstep_pizzasalad1" name="Pizza machen" />
+		<text id="cookstep_pizzasalad2" name="Salat mischen" />
+		<text id="cookstep_tripleomelette1" name="Eier stark rühren" />
+		<text id="cookstep_tripleomelette2" name="Alles falten" />
+		<text id="cookstep_chocolatewaffles1" name="Schokolade schmelzen" />
+		<text id="cookstep_chocolatewaffles2" name="Waffeln bedecken" />
+		<text id="cookstep_spanishomelette1" name="Eier rühren" />
+		<text id="cookstep_spanishomelette2" name="Das Omelette hübsch machen" />
+		<text id="cookstep_sausagepasta1" name="Nudeln kochen" />
+		<text id="cookstep_sausagepasta2" name="Würstchen anbraten" />
+		<text id="cookstep_applepie1" name="Kuchen bauen" />
+		<text id="cookstep_applepie2" name="Kuchen backen" />
+		<text id="cookstep_ramen1" name="Nudeln kochen" />
+		<text id="cookstep_ramen2" name="Gewürze hinzufügen" />
+		<text id="cookstep_corncake1" name="Zutaten mischen" />
+		<text id="cookstep_corncake2" name="Kuchen backen" />
+		<text id="cookstep_feijoada1" name="Schweinefleisch vorbereiten" />
+		<text id="cookstep_feijoada2" name="Orangenscheiben offenbaren" />
+		<text id="cookstep_pinapjuice1" name="Ananas ausdrücken" />
+		<text id="cookstep_pinapjuice2" name="Saft vermischen" />
+		<text id="cookstep_orangejuice1" name="Orangen ausdrücken" />
+		<text id="cookstep_orangejuice2" name="Saft vermischen" />
+		<text id="cookstep_discodrinks1" name="Früchte mischen" />
+		<text id="cookstep_discodrinks2" name="Säfte einschänken" />
+		<text id="cookstep_applejuice1" name="Äpfel ausdrücken" />
+		<text id="cookstep_applejuice2" name="Saft vermischen" />
+		<text id="cookstep_rjuice1" name="Rhabarbar ausdrücken" />
+		<text id="cookstep_rjuice2" name="Saft vermischen" />
+		<text id="cookstep_cherryjuice1" name="Kirschen entkernen" />
+		<text id="cookstep_cherryjuice2" name="Saft vermischen" />
+		<text id="cookstep_strawberryjuice1" name="Erdbeeren stampfen" />
+		<text id="cookstep_strawberryjuice2" name="Saft vermischen" />
+		<text id="cookstep_cappuccino1" name="Espresso brauen" />
+		<text id="cookstep_cappuccino2" name="Milch aufschäumen" />
+		<text id="cookstep_duckalcitrus1" name="Ente rösten" />
+		<text id="cookstep_duckalcitrus2" name="Zitronenglasur hinzufügen" />
+		<text id="cookstep_ducktatters1" name="Zutaten frittieren" />
+		<text id="cookstep_ducktatters2" name="Teller anrichten" />
+		<text id="cookstep_langos1" name="Soße machen" />
+		<text id="cookstep_langos2" name="Soße kühlen" />
+		<text id="cookstep_nasilemak1" name="Reis kochen" />
+		<text id="cookstep_nasilemak2" name="Teller anrichten" />
+		<text id="cookstep_citrusjuice1" name="Zitrone ausdrücken" />
+		<text id="cookstep_citrusjuice2" name="Saft vermischen" />
+		<text id="cookstep_carrotcake1" name="Backteig mischen" />
+		<text id="cookstep_carrotcake2" name="Kuchen backen" />
+		<text id="cookstep_carrotjuice1" name="Karotten vermengen" />
+		<text id="cookstep_carrotjuice2" name="Saft gießen" />
+		<text id="cookstep_francesinha1" name="Sandwiches bauen" />
+		<text id="cookstep_francesinha2" name="Käse schmelzen" />
+		<text id="cookstep_dorayaki1" name="Füllung vorbereiten" />
+		<text id="cookstep_dorayaki2" name="Auskühlen lassen" />
+		<text id="cookstep_tiramisu1" name="Nachtisch stapeln" />
+		<text id="cookstep_tiramisu2" name="Tiramisu abkühlen" />
+		<text id="cookstep_pridecupcakes1" name="Backteig mischen" />
+		<text id="cookstep_pridecupcakes2" name="Dekorieren" />
+		<text id="cookstep_ratatouille1" name="Gemüse vorbereiten" />
+		<text id="cookstep_ratatouille2" name="Gemüse stapeln" />
+		<text id="cookstep_hotcherryricepudding1" name="Reis kochen" />
+		<text id="cookstep_hotcherryricepudding2" name="Kirschen hinzufügen" />
+		<text id="cookstep_coconutcake1" name="Zutaten mischen" />
+		<text id="cookstep_coconutcake2" name="Kuchen backen" />
+		<text id="cookstep_paodequeijo1" name="Teig formen" />
+		<text id="cookstep_paodequeijo2" name="Brot backen" />
+		<text id="cookstep_baiaodedois1" name="Reis und Bohnen vermischen" />
+		<text id="cookstep_baiaodedois2" name="Knusprigen Speck hinzufügen" />
+		<text id="cookstep_bakedalaska1" name="Sahne kühlen" />
+		<text id="cookstep_bakedalaska2" name="Meringue anbräunen" />
+		<text id="cookstep_butterchicken1" name="Soße kochen" />
+		<text id="cookstep_butterchicken2" name="Curry Soße ziehen lassen" />
+		<text id="cookstep_chickenbiryani1" name="Gewürze vermischen" />
+		<text id="cookstep_chickenbiryani2" name="Reis würzen" />
+		<text id="cookstep_cottagepotatoes1" name="Kartoffeln vorbereiten" />
+		<text id="cookstep_cottagepotatoes2" name="Käse verstreichen" />
+		<text id="cookstep_cuzcuzcomovo1" name="Maismehl dämpfen" />
+		<text id="cookstep_cuzcuzcomovo2" name="Eier anbraten" />
+		<text id="cookstep_malaichickennaan1" name="Teig vorbereiten" />
+		<text id="cookstep_malaichickennaan2" name="Naan falten" />
+		<text id="cookstep_veganplate1" name="Reis kochen" />
+		<text id="cookstep_veganplate2" name="Reis verteilen" />
+		<text id="cookstep_neapolitancake1" name="Zutaten schmelzen" />
+		<text id="cookstep_neapolitancake2" name="Kuchen backen" />
+		<text id="cookstep_strawberrycheesecake1" name="Zutaten mischen" />
+		<text id="cookstep_strawberrycheesecake2" name="Kuchen backen" />
+		<text id="cookstep_combomeal1" name="Burgerfleisch anbraten" />
+		<text id="cookstep_combomeal2" name="Pommes frittieren" />
+		<text id="cookstep_zcordonbleu1" name="Huhn vorbereiten" />
+		<text id="cookstep_zcordonbleu2" name="Zitronenstücke hinzufügen" />
+		<text id="cookstep_brazilianpastel1" name="Teigtasche frittieren" />
+		<text id="cookstep_brazilianpastel2" name="Fast fertig" />
+		<text id="cookstep_lechonkawali1" name="Schweinebauch vorbereiten" />
+		<text id="cookstep_lechonkawali2" name="Frittieren bis es knusprig ist" />
+		<text id="cookstep_sweetpizza1" name="Schokolade ausbreiten" />
+		<text id="cookstep_sweetpizza2" name="Süße Pizza backen" />
+		<text id="cookstep_shakshuka1" name="Tomaten schmelzen" />
+		<text id="cookstep_shakshuka2" name="Soße ziehen lassen" />
 		<text id="cookstep_cheeseburger1" name="Hackfleisch anbraten" />
 		<text id="cookstep_cheeseburger2" name="Burger belegen" />
 		<text id="cookstep_cheesedish1" name="Käse anrichten" />
@@ -409,25 +409,25 @@
 		<text id="cookstep_whitechoccheesecake2" name="Kuchen backen" />
 		<text id="cookstep_whitechocmousse1" name="Schokolade schmelzen" />
 		<text id="cookstep_whitechocmousse2" name="Mousse abkühlen" />
-		<text id="cookstep_coxinha1" name="Mixing ingredients" />
-		<text id="cookstep_coxinha2" name="Frying coxinhas" />
+		<text id="cookstep_coxinha1" name="Zutaten mischen" />
+		<text id="cookstep_coxinha2" name="Coxinhas frittieren" />
 	</cookstep>
 	<coopmission>
-		<text id="coop_desc_long_1" name="Wir veranstalten einen Kochkurs, um einige Gerichte zu perfektionieren. Möchtest Du mitmachen?" />
-		<text id="coop_desc_long_10" name="Deine Familie kommt zu Besuch und Du hast die ehrenvolle Aufgabe, als Meisterkoch, das Weihnachtsessen zu kochen.  Lasst es euch schmecken!" />
-		<text id="coop_desc_long_11" name="Eine Kuchenschlacht ist geplant und wir brauchen Kuchen ohne Ende! Backe uns bitte soviele Kuchen wie möglich…" />
-		<text id="coop_desc_long_12" name="Für die Suppenküche der Stadt brauchen wir eine Auswahl an Suppen. Könntest Du vielleicht ein paar kochen die wirkliche jedem schmecken?" />
-		<text id="coop_desc_long_13" name="Für einen asiatischen Themenabend brauchen wir noch ein paar typisch asiatische Gerichte. Hast Du ein paar Rezepte auf Lager?" />
-		<text id="coop_desc_long_14" name="Für die nationale Bauarbeitertagung brauchen wir noch ein paar richtig schön deftige Gerichte. Hättest Du was für richtige Kerle parat?" />
+		<text id="coop_desc_long_1" name="Wir veranstalten einen Kochkurs, um einige Gerichte zu perfektionieren. Möchtest du mitmachen?" />
+		<text id="coop_desc_long_10" name="Deine Familie kommt zu Besuch und du hast die ehrenvolle Aufgabe, als Meisterkoch, das Weihnachtsessen zu kochen.  Lasst es euch schmecken!" />
+		<text id="coop_desc_long_11" name="Eine Kuchenschlacht ist geplant und wir brauchen Kuchen ohne Ende! Backe uns bitte so viele Kuchen wie möglich…" />
+		<text id="coop_desc_long_12" name="Für die Suppenküche der Stadt brauchen wir eine Auswahl an Suppen. Könntest Du vielleicht ein paar kochen, die wirkliche jedem schmecken?" />
+		<text id="coop_desc_long_13" name="Für einen asiatischen Themenabend brauchen wir noch ein paar typisch asiatische Gerichte. Hast du ein paar Rezepte auf Lager?" />
+		<text id="coop_desc_long_14" name="Für die nationale Bauarbeitertagung brauchen wir noch ein paar richtig schön deftige Gerichte. Hättest du was für richtige Kerle parat?" />
 		<text id="coop_desc_long_15" name="Es kommt Besuch aus London vorbei und wünscht sich ein paar schöne bodenständige Gerichte aus der Heimat. Kannst Du da was zaubern?" />
-		<text id="coop_desc_long_2" name="Ich plane eine Feier im Tex Mex Stil und brauche dafür noch das entsprechende Essen. Kannst Du mir da weiterhelfen?" />
-		<text id="coop_desc_long_3" name="Ich bekomme Besuch von einem Sportverein aus Hamburg und möchte, dass sie sich richtig heimisch fühlen. Dafür brauche ich jemanden der echt hamburgerisch kochen kann. Hast Du Lust?" />
-		<text id="coop_desc_long_4" name="Ich veranstalte eine riesige Garten Party und brauche dafür noch eine Menge zu Essen, um meine Gäste auch zufrieden zu stellen. Ich habe gehört, Du bist ein Meister im Catering. Kannst Du mir helfen?" />
-		<text id="coop_desc_long_5" name="Der Skipark in der Stadt veranstaltet eine Aprés Ski Party und braucht dafür noch jede Menge Leckereien. Könntest Du da aushelfen?" />
-		<text id="coop_desc_long_6" name="Mein Chef kommt heute Abend zum Essen vorbei und ich möchte ihn mit einem Vier-Gänge-Menü beeindrucken… Kannst Du die Sache in die Hand nehmen?" />
-		<text id="coop_desc_long_7" name="In der Schulküche hat es ein Feuer gegeben und die Kinder haben nichts zu essen! Kannst Du uns aushelfen und leckere Sachen kochen?" />
-		<text id="coop_desc_long_8" name="Mein bester Freund feiert seinen Geburtstag und hat nicht daran gedacht, sich um das Essen zu kümmern. Es kommen eine Menge Leute, die viel Hunger mitbringen… Könntest Du uns helfen?" />
-		<text id="coop_desc_long_9" name="Ein Dorffest mit Italien-Motto steht an. Das Einzige was noch fehlt ist das Essen. Wie sieht es mit Deinen Kochkünsten aus?" />
+		<text id="coop_desc_long_2" name="Ich plane eine Feier im Tex-Mex Stil und brauche dafür noch das entsprechende Essen. Kannst du mir da weiterhelfen?" />
+		<text id="coop_desc_long_3" name="Ich bekomme Besuch von einem Sportverein aus Hamburg und möchte, dass sie sich richtig heimisch fühlen. Dafür brauche ich jemanden der echt hamburgerisch kochen kann. Hast du Lust?" />
+		<text id="coop_desc_long_4" name="Ich veranstalte eine riesige Garten Party und brauche dafür noch eine Menge zu Essen, um meine Gäste auch zufrieden zu stellen. Ich habe gehört, du bist ein Meister im Catering. Kannst du mir helfen?" />
+		<text id="coop_desc_long_5" name="Der Skipark in der Stadt veranstaltet eine Aprés Ski Party und braucht dafür noch jede Menge Leckereien. Könntest du da aushelfen?" />
+		<text id="coop_desc_long_6" name="Mein Chef kommt heute Abend zum Essen vorbei und ich möchte ihn mit einem Vier-Gänge-Menü beeindrucken… Kannst du die Sache in die Hand nehmen?" />
+		<text id="coop_desc_long_7" name="In der Schulküche hat es ein Feuer gegeben und die Kinder haben nichts zu essen! Kannst du uns aushelfen und leckere Sachen kochen?" />
+		<text id="coop_desc_long_8" name="Mein bester Freund feiert seinen Geburtstag und hat nicht daran gedacht, sich um das Essen zu kümmern. Es kommen eine Menge Leute, die viel Hunger mitbringen… Könntest du uns helfen?" />
+		<text id="coop_desc_long_9" name="Ein Dorffest mit Italien-Motto steht an. Das Einzige was noch fehlt ist das Essen. Wie sieht es mit deinen Kochkünsten aus?" />
 		<text id="coop_desc_short_1" name="Werde Meister der Spaghetti Bolognese!" />
 		<text id="coop_desc_short_10" name="Essen bis die Hose platzt!" />
 		<text id="coop_desc_short_11" name="Jeder Treffer zählt!" />
@@ -459,77 +459,77 @@
 		<text id="coop_title_8" name="GEBURTSTAGS PARTY" />
 		<text id="coop_title_9" name="ITALIENISCHES BUFFET" />
 		<text id="coop_title_16" name="MORNING RUSH!" />
-		<text id="coop_desc_short_16" name="Start the day right!" />
-		<text id="coop_desc_long_16" name="Chef cupcakekittycat8 will host a big breakfast at the Marketplace. Can you provide some of what will be served?" />
-		<text id="coop_title_17" name="POST-LUNCH DESSERTS" />
-		<text id="coop_desc_short_17" name="Craving sweets are we?" />
-		<text id="coop_desc_long_17" name="Chef Gabriel served a salty lunch and the costumers are craving many sweets! Help out and sweeten the day!" />
-		<text id="coop_title_18" name="FOOD CRITIC VISIT!" />
-		<text id="coop_desc_short_18" name="Cook to impress!" />
-		<text id="coop_desc_long_18" name="Chef cupcakekittycat8 invited a food critic to visit your Café and he has a refined taste! It is time to cook!" />
-		<text id="coop_title_19" name="LAN PARTY!" />
-		<text id="coop_desc_short_19" name="Fast food for fast games!" />
-		<text id="coop_desc_long_19" name="Chef Surfguiger5 decided to join a LAN party and was tasked with bringing the food. The attendees want a lot, though! Help out!" />
-		<text id="coop_title_20" name="LATE NIGHT DRIVE THRU" />
-		<text id="coop_desc_short_20" name="A quick dinner for a long day!" />
-		<text id="coop_desc_long_20" name="Chef Patawka opened a drive-thru and is willing to share profits with anyone that helps provide food for it. Participate!" />
-		<text id="coop_title_21" name="FIT FOOD ONLY!" />
-		<text id="coop_desc_short_21" name="It&apos;s time to eat well!" />
-		<text id="coop_desc_long_21" name="Chef Surfguiger5 learned about the craze of Triple Omelettes and is concerned about weight gain. Cook healthy food to prove that your Café is healthy too!" />
-		<text id="coop_title_22" name="HOTEL BRUNCH" />
-		<text id="coop_desc_short_22" name="Want a quick bite?" />
-		<text id="coop_desc_long_22" name="Chef Surfguiger5 was asked by the local hotel to provide food for a brunch. However, the stoves broke and it&apos;s up to you to help! Profits will be shared." />
-		<text id="coop_title_23" name="BRAZILIAN WAY" />
-		<text id="coop_desc_short_23" name="Enjoy what Brazil has to offer!" />
-		<text id="coop_desc_long_23" name="Chef Surfguiger5 wants everyone to taste Brazilian food. Cook it!" />
-		<text id="coop_title_24" name="THE CARB COUNTER" />
-		<text id="coop_desc_short_24" name="An energy refill!" />
-		<text id="coop_desc_long_24" name="The local gym asked chef Artemis to supply dishes rich in carbs to keep the clients energized. Help out to earn your share too!" />
-		<text id="coop_title_25" name="WEDDING TASTING" />
-		<text id="coop_desc_short_25" name="A marriage is coming!" />
-		<text id="coop_desc_long_25" name="Chef Kvmxl said that the Café Lady and the Muffin Man are getting married! It was said that they will pay nicely for any Café that has their favorite food. Are the rumors true?" />
-		<text id="coop_title_26" name="DINNER BUFFET" />
-		<text id="coop_desc_short_26" name="Eat up!" />
-		<text id="coop_desc_long_26" name="Chef Cupcakekittycat8 wants a dinner with plenty of food. Help out!" />
+		<text id="coop_desc_short_16" name="Starte den Tag richtig!" />
+		<text id="coop_desc_long_16" name="Koch cupcakekittycat8 veranstaltet ein großes Frühstück auf dem Marktplatz. Kannst du etwas bereitstellen, das serviert werden kann?" />
+		<text id="coop_title_17" name="MITTAGSDESSERTS" />
+		<text id="coop_desc_short_17" name="Hunger auf etwas Süßes?" />
+		<text id="coop_desc_long_17" name="Koch Gabriel servierte ein sehr salziges Mittagessen, die Gäste verlangen nun nach viel Süßem! Hilf aus, den Tag zu versüßen!" />
+		<text id="coop_title_18" name="GOURMET ZU BESUCH" />
+		<text id="coop_desc_short_18" name="Koche, um zu beeindrucken!" />
+		<text id="coop_desc_long_18" name="Koch cupcakekittycat8 hat einen Gourmet eingeladen, dein Café zu besuchen und er hat einen sehr anspruchsvollen Geschmack! Zeit zum Kochen!" />
+		<text id="coop_title_19" name="LAN-PARTY!" />
+		<text id="coop_desc_short_19" name="Schnelles Essen für schnelle Spiele!" />
+		<text id="coop_desc_long_19" name="Koch Surfguiger5 beschloss zu einer LAN-Party zu gehen und wurde beauftragt, das Essen mitzubringen. Die Spieler sind extrem hungrig! Hilf ihm!" />
+		<text id="coop_title_20" name="MITTERNACHTSSNACK AM DRIVE-IN" />
+		<text id="coop_desc_short_20" name="Ein schnelles Essen nach einem langen Tag!" />
+		<text id="coop_desc_long_20" name="Koch Patawka hat einen Drive-In eröffnet und ist bereit, seinen Gewinn mit allen zu teilen, die bereit sind zu helfen. Mach mit!" />
+		<text id="coop_title_21" name="NUR GESUNDES ESSEN" />
+		<text id="coop_desc_short_21" name="Es ist Zeit, gesund zu essen!" />
+		<text id="coop_desc_long_21" name="Koch Surfguiger5 hat vom Hype um das Dreifach-Omelettes erfahren und ist jetzt über Gewichtszunahme besorgt. Koche gesundes Essen um zu beweisen, dass dein Café auch gesund ist!" />
+		<text id="coop_title_22" name="HOTEL-BRUNCH" />
+		<text id="coop_desc_short_22" name="Willst du einen schnellen Happen?" />
+		<text id="coop_desc_long_22" name="Koch Surfguiger5 wurde vom lokalen Hotel gefragt, ob er das Essen für einen Brunch bereitstellen kann. Allerdings sind die Herde kaputt und es liegt an dir, zu helfen! Die Gewinne werden aufgeteilt." />
+		<text id="coop_title_23" name="DER BRASILIANISCHE WEG" />
+		<text id="coop_desc_short_23" name="Genieße, was Brasilien zu bieten hat!" />
+		<text id="coop_desc_long_23" name="Koch Surfguiger5 will, dass jeder brasilianisches Essen probiert. Koche es!" />
+		<text id="coop_title_24" name="DER KOHLENHYDRATZÄHLER" />
+		<text id="coop_desc_short_24" name="Ein Energieauffüller!" />
+		<text id="coop_desc_long_24" name="Das lokale Fitnessstudio hat Koch Artemis gefragt, ob er Gerichte zubereiten kann, die reich an Kohlenhydraten sind, um den Sportlern genug Energie zuzuführen. Hilf mit, um deinen Teil zu verdienen!" />
+		<text id="coop_title_25" name="HOCHZEITSVERKOSTUNG" />
+		<text id="coop_desc_short_25" name="Eine Hochzeit steht an!" />
+		<text id="coop_desc_long_25" name="Koch Kvmxl sagte, dass die Café-Lady und der Muffin-Mann heiraten werden. Es spricht sich herum, dass sie gut bezahlen, wenn ein Café ihre Lieblingsgerichte hat. Sind die Gerüchte wahr?" />
+		<text id="coop_title_26" name="ABENDBUFFET" />
+		<text id="coop_desc_short_26" name="Alles aufessen!" />
+		<text id="coop_desc_long_26" name="Koch Cupcakekittycat8 möchte ein Abendmahl mit reichlich Essen veranstalten. Hilf mit!" />
 		<text id="coop_title_27" name="OISH-SOME" />
-		<text id="coop_desc_short_27" name="So great!" />
-		<text id="coop_desc_long_27" name="Chef Nao wants to serve food for an anime convention happening at the Café next door. Give a hand!" />
-		<text id="coop_title_28" name="COCOANFESSION" />
-		<text id="coop_desc_short_28" name="The true love is Chocolate!" />
-		<text id="coop_desc_long_28" name="Chef Nao wants to popularize chocolate dishes around the neighborhood and will pay for it. Why not participate?" />
-		<text id="coop_title_31" name="CURRY FESTIVAL" />
-		<text id="coop_desc_short_31" name="There&apos;s an option for everyone!" />
-		<text id="coop_desc_long_31" name="A local Indian festival wants to hand out as much curry as possible to guests. Can you help?" />
-		<text id="coop_title_29" name="CURRY FESTIVAL" />
-		<text id="coop_desc_short_29" name="There&apos;s an option for everyone!" />
-		<text id="coop_desc_long_29" name="A local Indian festival wants to hand out as much curry as possible to guests. Can you help?" />
-		<text id="coop_title_32" name="BRAZIL AND PORTUGAL" />
-		<text id="coop_desc_short_32" name="Shorten the distance with food!" />
-		<text id="coop_desc_long_32" name="An international event is happening but Brazilian and Portugese visitors are homesick. Make traditional food to make them happy!" />
-		<text id="coop_title_33" name="DEV&apos;S CHOICE!" />
-		<text id="coop_desc_short_33" name="Fuel for more development!" />
-		<text id="coop_desc_long_33" name="Chef Gab needs very large amounts of his favorite food to be cooked to stress test the servers! Help out!" />
-		<text id="coop_title_34" name="MOUSSE BATTLE!" />
-		<text id="coop_desc_short_34" name="Which one is the best?" />
-		<text id="coop_desc_long_34" name="Chefs all around the world are battling to see which mousse is the best. Play for all teams and see what&apos;s up!" />
-		<text id="coop_title_35" name="FAMILY FEAST" />
-		<text id="coop_desc_short_35" name="So many guests!" />
-		<text id="coop_desc_long_35" name="Your whole family, their friends, your friends and their families are ALL coming to your Café to celebrate your business. Do them proud!" />
-		<text id="coop_title_36" name="WE NEED LOTS OF EGGS!" />
-		<text id="coop_desc_short_36" name="Did they actually come first?" />
-		<text id="coop_desc_long_36" name="Chef Myleeek is conducting research on who came first: the chicken or the egg? Cook dishes with eggs to provide data!" />
-		<text id="coop_title_37" name="A GRATE MISTAKE!" />
-		<text id="coop_desc_short_37" name="The cheese rules all!" />
-		<text id="coop_desc_long_37" name="Chef Cupcakekittycat8 was hired to provide dishes for the birthday of a famous Mouse. Sadly, she used tofu instead of cheese and the mice are furious! Can you make food with cheese to help?" />
-		<text id="coop_title_38" name="BURGER FESTIVAL" />
-		<text id="coop_desc_short_38" name="A classic taste for a gathering!" />
-		<text id="coop_desc_long_38" name="Chef Franskmayn is going to serve burgers at the Marketplace. Provide some portions to get a share of the revenue!" />
-		<text id="coop_title_39" name="SWEET LIKE A STRAWBERRY!" />
-		<text id="coop_desc_short_39" name="A bountiful harvest!" />
-		<text id="coop_desc_long_39" name="The strawberry harvest was excellent and chef Gabriel wants to share the sweetness with everyone. Let&apos;s make some berry-licious dishes!" />
-		<text id="coop_title_30" name="A MOUSE IN THE KITCHEN!" />
-		<text id="coop_desc_short_30" name="Don&apos;t let anyone see it!" />
-		<text id="coop_desc_long_30" name="A mouse was spotted in your Café and it wants fancy food to be served or it will ruin your business! Why does this feel familiar?" />
+		<text id="coop_desc_short_27" name="So Gut!" />
+		<text id="coop_desc_long_27" name="Koch Nao möchte Essen für eine Anime-Messe servieren, die im Café eine Tür weiter stattfindet. Geh ihm zur Hand!" />
+		<text id="coop_title_28" name="SCHOKOSÜNDE" />
+		<text id="coop_desc_short_28" name="Die wahre Liebe ist Schokolade!" />
+		<text id="coop_desc_long_28" name="Koch Nao möchte Schokoladengerichte an die Leute in der Nachbarschaft bringen und will dafür bezahlen. Warum machst du nicht mit?" />
+		<text id="coop_title_31" name="CURRY-FEST" />
+		<text id="coop_desc_short_31" name="Es gibt eine Option für jeden!" />
+		<text id="coop_desc_long_31" name="Ein lokales indisches Festival möchte so viel Curry wie möglich an seine Gäste verteilen. Kannst du helfen?" />
+		<text id="coop_title_29" name="CURRY-FEST" />
+		<text id="coop_desc_short_29" name="Es gibt eine Option für jeden!" />
+		<text id="coop_desc_long_29" name="Ein lokales indisches Festival möchte so viel Curry wie möglich an seine Gäste verteilen. Kannst du helfen?" />
+		<text id="coop_title_32" name="BRASILIEN UND PORTUGAL" />
+		<text id="coop_desc_short_32" name="Verkürze die Entfernung mit Essen!" />
+		<text id="coop_desc_long_32" name="Eine internationale Veranstaltung findet statt, aber die brasilianische nund portugiesischen Besucher haben Heimweh. Koche ihnen traditionelles Essen, um sie glücklich zu machen!" />
+		<text id="coop_title_33" name="ENTWICKLER-AUSWAHL!" />
+		<text id="coop_desc_short_33" name="Treibstoff für mehr Entwicklung!" />
+		<text id="coop_desc_long_33" name="Koch Geb will, dass große Mengen seines Lieblingsessens gekocht werden, um die Server zu testen! Hilf mit!" />
+		<text id="coop_title_34" name="MOUSSE-SCHLACHT!" />
+		<text id="coop_desc_short_34" name="Welches ist das Beste?" />
+		<text id="coop_desc_long_34" name="Köche aus der ganzen Welt kämpfen darum, welches Mousse das beste ist. Spiele für alle Seiten und schau, wie es läuft!" />
+		<text id="coop_title_35" name="FAMILIENFEIER" />
+		<text id="coop_desc_short_35" name="So viele Gäste!" />
+		<text id="coop_desc_long_35" name="Deine gesamte Familie, deren Freunde, deine Freunde und deren Familien kommen ALLE in dein Café, um dein Geschäft zu feiern. Mach sie stolz!" />
+		<text id="coop_title_36" name="WIR BRAUCHEN JEDE MENGE EIER!" />
+		<text id="coop_desc_short_36" name="Waren sie wirklich zuerst da?" />
+		<text id="coop_desc_long_36" name="Koch Myleeek erforscht, was zuerst da war: Das Huhn oder das Ei? Koche Gerichte mit Eiern um Daten zu liefern!" />
+		<text id="coop_title_37" name="ALLES KÄSE!" />
+		<text id="coop_desc_short_37" name="Der Käse über alles!" />
+		<text id="coop_desc_long_37" name="Koch Cupcakekittycat8 wurde engagiert, um die Gerichte für den Geburtstag einer berühmten Maus herzustellen. Unglücklicherweise hat sie Tofu statt Käse benutzt und nun sind die Mäuse wütend! Kannst du Essen mit Käse zubereiten, um zu helfen?" />
+		<text id="coop_title_38" name="BURGER-FEST" />
+		<text id="coop_desc_short_38" name="Ein Klassiker fürs Beisammensein!" />
+		<text id="coop_desc_long_38" name="Koch Franskmayn wird Burger auf dem Marktplatz servieren. Bring ein paar vorbei, um dir einen Teil des Gewinns zu sichern!" />
+		<text id="coop_title_39" name="SÜß WIE EINE ERDBEERE!" />
+		<text id="coop_desc_short_39" name="Eine großzügige Ernte!" />
+		<text id="coop_desc_long_39" name="Die Erdbeerernte war wunderbar und Koch Gabriel möchte die Süße mit allen teilen. Lass uns ein paar beer-tastische Gerichte zaubern!" />
+		<text id="coop_title_30" name="EINE MAUS IN DER KÜCHE!" />
+		<text id="coop_desc_short_30" name="Lass sie von niemanden sehen!" />
+		<text id="coop_desc_long_30" name="Eine Maus wurde in deinem Café gesehen und sie verlangt, dass ausgefallenes Essen serviert wird, oder sie wird dein Geschäft ruinieren! Wieso fühlt sich das so bekannt an?" />
 	</coopmission>
 	<dialogs>
 		<text id="dialogwin_achievement_title" name="Auszeichnungen" />
