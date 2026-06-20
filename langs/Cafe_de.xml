@@ -1231,7 +1231,7 @@
 		<text id="preparestep_coconutcake_eggs" name="Eier aufschlagen" />
 		<text id="preparestep_coconutcake_milk" name="Milch dazugießen" />
 		<text id="preparestep_coconutcake_coconut" name="Kokosnuss raspeln" />
-		<text id="coconutcake_sugar" name="Zucker abmessen" />
+		<text id="preparestep_coconutcake_sugar" name="Zucker abmessen" />
 		<text id="preparestep_paodequeijo_eggs" name="Eier aufschlagen" />
 		<text id="preparestep_paodequeijo_cheese" name="Käse reiben" />
 		<text id="preparestep_paodequeijo_flour" name="Mehl sieben" />
