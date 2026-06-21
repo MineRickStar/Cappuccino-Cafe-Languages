@@ -77,6 +77,29 @@ body {
   min-height: 160px;
 }
 
+.title-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.compact-title-row {
+  gap: 12px;
+}
+
+.title-logo {
+  width: 88px;
+  height: 88px;
+  object-fit: contain;
+  flex: 0 0 auto;
+  filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.22));
+}
+
+.small-logo {
+  width: 64px;
+  height: 64px;
+}
+
 .eyebrow {
   margin: 0 0 4px;
   color: var(--brown);
@@ -175,7 +198,7 @@ h1 {
   color: var(--text);
   border-radius: 22px;
   padding: 22px;
-  min-height: 240px;
+  min-height: 260px;
   display: grid;
   justify-items: center;
   align-content: center;
@@ -193,9 +216,11 @@ h1 {
 }
 
 .mode-icon {
-  width: 96px;
-  height: 96px;
+  width: 104px;
+  height: 104px;
   object-fit: contain;
+  margin-bottom: 4px;
+  filter: drop-shadow(0 5px 8px rgba(0, 0, 0, 0.18));
 }
 
 .mode-title {
@@ -316,6 +341,7 @@ th {
 
 td {
   background: var(--plain-cell);
+  color: var(--text);
   font-weight: 700;
 }
 
@@ -327,7 +353,6 @@ td.note-cell,
 td.requirements-cell {
   max-width: 320px;
   text-align: left;
-  color: var(--muted);
   font-weight: 700;
 }
 
@@ -345,7 +370,7 @@ td.requirements-cell {
   place-items: center;
   border-radius: 12px;
   background: #f2e2ce;
-  color: #9a755a;
+  color: #3b2618;
   font-size: 0.75rem;
   font-weight: 900;
 }
@@ -491,6 +516,44 @@ td.requirements-cell {
   background: #f4cccc;
 }
 
+/* Force dark readable text on colored rows, including dark theme */
+.best-xp-1 td:not(:first-child),
+.best-xp-2 td:not(:first-child),
+.best-xp-3 td:not(:first-child),
+.best-xp-4 td:not(:first-child),
+.best-xp-5 td:not(:first-child),
+.best-xp-6 td:not(:first-child),
+.best-xp-7 td:not(:first-child),
+.best-profit-1 td:not(:first-child),
+.best-profit-2 td:not(:first-child),
+.best-profit-3 td:not(:first-child),
+.best-profit-4 td:not(:first-child),
+.best-profit-5 td:not(:first-child),
+.best-profit-6 td:not(:first-child),
+.best-profit-7 td:not(:first-child),
+.best-portions-1 td:not(:first-child),
+.best-portions-2 td:not(:first-child),
+.best-portions-3 td:not(:first-child),
+.best-portions-4 td:not(:first-child),
+.best-portions-5 td:not(:first-child),
+.best-portions-6 td:not(:first-child),
+.best-portions-7 td:not(:first-child),
+.row-active td:not(:first-child),
+.row-fast td:not(:first-child),
+.row-short td:not(:first-child),
+.row-medium td:not(:first-child),
+.row-long td:not(:first-child),
+.row-veryLong td:not(:first-child),
+.row-dayOff td:not(:first-child),
+.category-dessert td:not(:first-child),
+.category-main td:not(:first-child),
+.category-soup td:not(:first-child),
+.category-salad td:not(:first-child),
+.category-vegetarian td:not(:first-child),
+.category-snack td:not(:first-child) {
+  color: #3b2618;
+}
+
 .split-panels {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -534,11 +597,11 @@ td.requirements-cell {
 }
 
 .ok {
-  color: #267a2f;
+  color: #1fb145;
 }
 
 .bad {
-  color: #b3261e;
+  color: #ff7676;
 }
 
 @media (max-width: 900px) {
@@ -574,5 +637,19 @@ td.requirements-cell {
 
   .panel {
     padding: 14px;
+  }
+
+  .title-logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .small-logo {
+    width: 54px;
+    height: 54px;
+  }
+
+  .title-row {
+    align-items: flex-start;
   }
 }
