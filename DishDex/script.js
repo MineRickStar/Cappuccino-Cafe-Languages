@@ -23,6 +23,8 @@ const PATHS = {
 };
 
 const STORAGE_KEY = 'dishDexUserDataV1';
+const MASTERY_VIEW_STORAGE_KEY = 'dishDexMasteryViewMode';
+const MASTERY_PAGE_SIZE = 4;
 const MASTERY_SERVING_BONUS = 1.05;
 const MASTERY_XP_BONUS = 1.05;
 const MASTERY_TIME_BONUS = 0.70;
@@ -174,7 +176,7 @@ const I18N = {
     longNote: 'Best XP/min between 6 h 1 min and 12 h.',
     veryLongNote: 'Best XP/min between 12 h 1 min and 23 h.',
     dayOffNote: 'Best XP/min for 23 h 1 min or more.',
-    sortStandard: 'Standard (level lowest to highest)',
+    sortStandard: 'Cookbook order',
     sortLevelAsc: 'Level: low to high',
     sortLevelDesc: 'Level: high to low',
     sortNameAsc: 'Alphabetical A-Z',
@@ -216,7 +218,14 @@ const I18N = {
     dataLoadedMessage: 'Data loaded successfully.',
     dataLoadError: 'Could not load this data file.',
     dataDownloaded: 'Data file downloaded.',
-    noMasteryRows: 'No dishes match this search.'
+    noMasteryRows: 'No dishes match this search.',
+    masteryView: 'View',
+    masteryListVertical: 'List (vertical reader)',
+    masteryListHorizontal: 'List (horizontal reader)',
+    masteryCookbook: 'Cook book',
+    previousPage: '← Previous',
+    nextPage: 'Next →',
+    masteryBookPage: 'Page'
   },
 
   pt: {
@@ -333,7 +342,7 @@ const I18N = {
     longNote: 'Melhor XP/min entre 6 h 1 min e 12 h.',
     veryLongNote: 'Melhor XP/min entre 12 h 1 min e 23 h.',
     dayOffNote: 'Melhor XP/min para 23 h 1 min ou mais.',
-    sortStandard: 'Padrão (nível menor para maior)',
+    sortStandard: 'Ordem do livro',
     sortLevelAsc: 'Nível: menor para maior',
     sortLevelDesc: 'Nível: maior para menor',
     sortNameAsc: 'Alfabética A-Z',
@@ -375,7 +384,14 @@ const I18N = {
     dataLoadedMessage: 'Dados carregados com sucesso.',
     dataLoadError: 'Não foi possível carregar este arquivo de dados.',
     dataDownloaded: 'Arquivo de dados baixado.',
-    noMasteryRows: 'Nenhum prato combina com esta busca.'
+    noMasteryRows: 'Nenhum prato combina com esta busca.',
+    masteryView: 'Visualização',
+    masteryListVertical: 'Lista (leitura vertical)',
+    masteryListHorizontal: 'Lista (leitura horizontal)',
+    masteryCookbook: 'Livro de receitas',
+    previousPage: '← Anterior',
+    nextPage: 'Próxima →',
+    masteryBookPage: 'Página'
   }
 };
 
@@ -406,6 +422,7 @@ let allDishRecords = [];
 let levelLimitsByLevel = new Map();
 let currentLanguage = 'en';
 let userData = loadUserData();
+let masteryCookbookPage = 0;
 
 document.addEventListener('DOMContentLoaded', main);
 
@@ -433,6 +450,10 @@ async function main() {
     renderMyDex();
     renderFullDishDex();
     renderMasteries();
+    if (!window.location.hash) {
+      history.replaceState(null, '', '#home');
+    }
+    handleHashNavigation();
   } catch (error) {
     console.error(error);
     setStatus(t('couldNotLoadData'), 'bad');
@@ -495,15 +516,15 @@ function detectBrowserLanguage() {
 }
 
 const SCREEN_HASHES = {
-  welcomeScreen: '#home',
-  myDexScreen: '#mydex',
-  fullDishDexScreen: '#fulldishdex',
-  profileScreen: '#profile',
-  masteriesScreen: '#masteries'
+  welcomeScreen: 'home',
+  myDexScreen: 'mydex',
+  fullDishDexScreen: 'fulldishdex',
+  profileScreen: 'profile',
+  masteriesScreen: 'masteries'
 };
 
-const HASH_TO_SCREEN = Object.fromEntries(
-  Object.entries(SCREEN_HASHES).map(([screenId, hash]) => [hash.toLowerCase(), screenId])
+const HASH_SCREENS = Object.fromEntries(
+  Object.entries(SCREEN_HASHES).map(([screenId, hash]) => [hash, screenId])
 );
 
 function setupNavigation() {
@@ -524,20 +545,26 @@ function setupNavigation() {
   });
 
   document.querySelectorAll('[data-back]').forEach(button => {
-    button.addEventListener('click', () => {
-      navigateToScreen('welcomeScreen', { replace: true });
-    });
+    button.addEventListener('click', () => navigateToScreen('welcomeScreen'));
   });
 
-  window.addEventListener('popstate', () => {
-    showScreen(getScreenFromLocation(), { scroll: false });
-  });
-
-  const initialScreen = getScreenFromLocation();
-  history.replaceState({ dishDexScreen: initialScreen }, '', SCREEN_HASHES[initialScreen]);
-  showScreen(initialScreen, { scroll: false });
-
+  window.addEventListener('hashchange', handleHashNavigation);
   document.getElementById('fullSortSelect').addEventListener('change', renderFullDishDex);
+}
+
+function navigateToScreen(screenId) {
+  const hash = SCREEN_HASHES[screenId] || 'home';
+  if (window.location.hash === `#${hash}`) {
+    showScreen(screenId);
+    return;
+  }
+  window.location.hash = hash;
+}
+
+function handleHashNavigation() {
+  const rawHash = String(window.location.hash || '#home').replace(/^#/, '') || 'home';
+  const screenId = HASH_SCREENS[rawHash] || 'welcomeScreen';
+  showScreen(screenId);
 }
 
 function setupDataActions() {
@@ -553,9 +580,37 @@ function setupDataActions() {
 
   document.getElementById('downloadDataButton').addEventListener('click', exportUserData);
   document.getElementById('deleteDataButton').addEventListener('click', deleteUserData);
-  document.getElementById('masterySearch').addEventListener('input', renderMasteries);
+  document.getElementById('masterySearch').addEventListener('input', () => {
+    masteryCookbookPage = 0;
+    renderMasteries();
+  });
 
-  document.getElementById('masteriesBody').addEventListener('click', event => {
+  const masteryViewMode = document.getElementById('masteryViewMode');
+  if (masteryViewMode) {
+    masteryViewMode.value = localStorage.getItem(MASTERY_VIEW_STORAGE_KEY) || 'vertical';
+    masteryViewMode.addEventListener('change', () => {
+      masteryCookbookPage = 0;
+      localStorage.setItem(MASTERY_VIEW_STORAGE_KEY, masteryViewMode.value);
+      renderMasteries();
+    });
+  }
+
+  const prevButton = document.getElementById('masteryBookPrev');
+  const nextButton = document.getElementById('masteryBookNext');
+  if (prevButton) {
+    prevButton.addEventListener('click', () => {
+      masteryCookbookPage = Math.max(0, masteryCookbookPage - 1);
+      renderMasteries();
+    });
+  }
+  if (nextButton) {
+    nextButton.addEventListener('click', () => {
+      masteryCookbookPage += 1;
+      renderMasteries();
+    });
+  }
+
+  const handleMasteryClick = event => {
     const button = event.target.closest('[data-mastery-level]');
     if (!button) return;
 
@@ -565,7 +620,10 @@ function setupDataActions() {
     const nextLevel = currentLevel === clickedLevel ? clickedLevel - 1 : clickedLevel;
 
     setMasteryLevel(dishId, nextLevel);
-  });
+  };
+
+  document.getElementById('masteriesBody').addEventListener('click', handleMasteryClick);
+  document.getElementById('masteriesCookbook').addEventListener('click', handleMasteryClick);
 }
 
 function applyUiLanguage() {
@@ -602,41 +660,10 @@ function updateDataSummary() {
   document.getElementById('dataSummary').textContent = `${allDishRecords.length} ${t('dishesReady')}`;
 }
 
-function getScreenFromLocation() {
-  return HASH_TO_SCREEN[String(window.location.hash || '#home').toLowerCase()] || 'welcomeScreen';
-}
-
-function navigateToScreen(screenId, options = {}) {
-  const targetHash = SCREEN_HASHES[screenId] || SCREEN_HASHES.welcomeScreen;
-  const state = { dishDexScreen: screenId };
-
-  if (options.replace) {
-    history.replaceState(state, '', targetHash);
-  } else {
-    history.pushState(state, '', targetHash);
-  }
-
-  showScreen(screenId);
-}
-
-function showScreen(screenId, options = {}) {
+function showScreen(screenId) {
   document.querySelectorAll('.screen').forEach(screen => screen.classList.add('hidden'));
-
-  const targetScreen = document.getElementById(screenId) ? screenId : 'welcomeScreen';
-  document.getElementById(targetScreen).classList.remove('hidden');
-
-  afterScreenShown(targetScreen);
-
-  if (options.scroll !== false) {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
-}
-
-function afterScreenShown(screenId) {
-  if (screenId === 'myDexScreen') renderMyDex();
-  if (screenId === 'fullDishDexScreen') renderFullDishDex();
-  if (screenId === 'profileScreen') syncProfileInputs();
-  if (screenId === 'masteriesScreen') renderMasteries();
+  document.getElementById(screenId).classList.remove('hidden');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function getTimeBuckets() {
@@ -696,7 +723,7 @@ async function loadDishRecords(languageCode) {
     ingredientNameById[id] = ingredientNameByKey[ingredientKey.toLowerCase()] || prettyName(ingredientKey);
   });
 
-  const records = dishNodes.map(node => {
+  const records = dishNodes.map((node, sourceIndex) => {
     const dishId = getAttr(node, 'id');
     const dishKey = getAttr(node, 't');
     const level = Number(getAttr(node, 'level') || 0);
@@ -713,6 +740,7 @@ async function loadDishRecords(languageCode) {
     return {
       dishId,
       dishKey,
+      sourceIndex,
       dishName: recipeNameByDishKey[dishKey.toLowerCase()] || prettyName(dishKey),
       level,
       xp,
@@ -732,6 +760,11 @@ async function loadDishRecords(languageCode) {
       dishType: getDishType(dishKey),
       imageUrl: PATHS.imageBase + dishKey + '.png'
     };
+  });
+
+  records.forEach(record => {
+    const holidayOffset = record.dishType === 'Holiday' ? 100000 : 0;
+    record.cookbookSortIndex = holidayOffset + Number(record.sourceIndex || 0);
   });
 
   records.sort(standardDishSort);
@@ -1040,11 +1073,32 @@ function renderMasteries() {
   const body = document.getElementById('masteriesBody');
   if (!body || !allDishRecords.length) return;
 
+  const viewMode = getMasteryViewMode();
   const search = normalizeSearch(document.getElementById('masterySearch').value);
-  const records = allDishRecords.filter(record => {
+  const filteredRecords = getCookbookOrderedRecords(allDishRecords).filter(record => {
     if (!search) return true;
     return normalizeSearch(record.dishName).includes(search) || normalizeSearch(record.dishKey).includes(search);
   });
+
+  const tableWrap = document.getElementById('masteryTableWrap');
+  const cookbookWrap = document.getElementById('masteriesCookbook');
+  const cookbookControls = document.getElementById('masteryBookControls');
+
+  if (viewMode === 'cookbook') {
+    if (tableWrap) tableWrap.classList.add('hidden');
+    if (cookbookWrap) cookbookWrap.classList.remove('hidden');
+    if (cookbookControls) cookbookControls.classList.remove('hidden');
+    renderMasteriesCookbook(filteredRecords);
+    return;
+  }
+
+  if (tableWrap) tableWrap.classList.remove('hidden');
+  if (cookbookWrap) cookbookWrap.classList.add('hidden');
+  if (cookbookControls) cookbookControls.classList.add('hidden');
+
+  const records = viewMode === 'horizontal'
+    ? getHorizontalReaderRecords(filteredRecords)
+    : filteredRecords;
 
   if (records.length === 0) {
     body.innerHTML = emptyRow(5, t('noMasteryRows'));
@@ -1062,6 +1116,80 @@ function renderMasteries() {
       </tr>
     `;
   }).join('');
+}
+
+function renderMasteriesCookbook(records) {
+  const container = document.getElementById('masteriesCookbook');
+  const pageStatus = document.getElementById('masteryBookPageStatus');
+  const prevButton = document.getElementById('masteryBookPrev');
+  const nextButton = document.getElementById('masteryBookNext');
+
+  if (!container) return;
+
+  if (records.length === 0) {
+    container.innerHTML = `<div class="empty">${escapeHtml(t('noMasteryRows'))}</div>`;
+    if (pageStatus) pageStatus.textContent = '';
+    if (prevButton) prevButton.disabled = true;
+    if (nextButton) nextButton.disabled = true;
+    return;
+  }
+
+  const totalPages = Math.max(1, Math.ceil(records.length / MASTERY_PAGE_SIZE));
+  masteryCookbookPage = Math.min(Math.max(0, masteryCookbookPage), totalPages - 1);
+
+  const start = masteryCookbookPage * MASTERY_PAGE_SIZE;
+  const pageRecords = records.slice(start, start + MASTERY_PAGE_SIZE);
+
+  container.innerHTML = `
+    <div class="cookbook-spread">
+      ${pageRecords.map((record, index) => masteryCookbookCardHtml(record, index)).join('')}
+    </div>
+  `;
+
+  if (pageStatus) {
+    pageStatus.textContent = `${t('masteryBookPage')} ${number(masteryCookbookPage + 1)} / ${number(totalPages)}`;
+  }
+  if (prevButton) prevButton.disabled = masteryCookbookPage <= 0;
+  if (nextButton) nextButton.disabled = masteryCookbookPage >= totalPages - 1;
+}
+
+function masteryCookbookCardHtml(record, index) {
+  const positionClass = ['book-slot-left-top', 'book-slot-left-bottom', 'book-slot-right-top', 'book-slot-right-bottom'][index] || '';
+
+  return `
+    <article class="cookbook-dish-card ${positionClass}">
+      <div class="cookbook-dish-main">
+        <div>${imageHtml(record)}</div>
+        <div>
+          <h3>${escapeHtml(record.dishName)}</h3>
+          <p>${t('level')} ${number(record.level)}</p>
+        </div>
+      </div>
+      <div class="cookbook-stars">${masteryStarsHtml(record)}</div>
+      <div class="cookbook-effects">${masteryEffectsHtml(record)}</div>
+    </article>
+  `;
+}
+
+function getMasteryViewMode() {
+  const select = document.getElementById('masteryViewMode');
+  const value = select ? select.value : 'vertical';
+  return ['vertical', 'horizontal', 'cookbook'].includes(value) ? value : 'vertical';
+}
+
+function getCookbookOrderedRecords(records) {
+  return [...records].sort(standardDishSort);
+}
+
+function getHorizontalReaderRecords(records) {
+  const out = [];
+  for (let index = 0; index < records.length; index += MASTERY_PAGE_SIZE) {
+    const chunk = records.slice(index, index + MASTERY_PAGE_SIZE);
+    [0, 2, 1, 3].forEach(chunkIndex => {
+      if (chunk[chunkIndex]) out.push(chunk[chunkIndex]);
+    });
+  }
+  return out;
 }
 
 function masteryStarsHtml(record) {
@@ -1095,16 +1223,21 @@ function starTitle(level) {
 }
 
 function masteryEffectsHtml(record) {
+  const masteryLevel = getMasteryLevel(record.dishId);
   const bronzeBonus = Math.ceil(record.servings * MASTERY_SERVING_BONUS) - record.servings;
   const silverBonus = Math.ceil(record.xp * MASTERY_XP_BONUS) - record.xp;
   const finalTime = getMasteredDuration(record.duration, 3);
   const savedTime = Math.max(0, record.duration - finalTime);
 
   return `
-    <span class="effect-line effect-bronze">★ ${escapeHtml(t('bronze'))}: +${number(bronzeBonus)} ${escapeHtml(t('portionsLower'))}</span>
-    <span class="effect-line effect-silver">★ ${escapeHtml(t('silver'))}: +${number(silverBonus)} ${escapeHtml(t('xpUpper'))}</span>
-    <span class="effect-line effect-gold">★ ${escapeHtml(t('gold'))}: -${escapeHtml(formatDuration(savedTime))}: ${escapeHtml(formatDuration(finalTime))}</span>
+    <span class="effect-line effect-bronze">★ <span class="effect-name">${escapeHtml(t('bronze'))}${effectCheckHtml(masteryLevel, 1)}</span>: +${number(bronzeBonus)} ${escapeHtml(t('portionsLower'))}</span>
+    <span class="effect-line effect-silver">★ <span class="effect-name">${escapeHtml(t('silver'))}${effectCheckHtml(masteryLevel, 2)}</span>: +${number(silverBonus)} ${escapeHtml(t('xpUpper'))}</span>
+    <span class="effect-line effect-gold">★ <span class="effect-name">${escapeHtml(t('gold'))}${effectCheckHtml(masteryLevel, 3)}</span>: -${escapeHtml(formatDuration(savedTime))}: ${escapeHtml(formatDuration(finalTime))}</span>
   `;
+}
+
+function effectCheckHtml(currentLevel, requiredLevel) {
+  return currentLevel >= requiredLevel ? ' <span class="effect-check">✓</span>' : '';
 }
 
 function getSortedFullDishDex(sortMode) {
@@ -1149,7 +1282,11 @@ function getSortedFullDishDex(sortMode) {
 }
 
 function standardDishSort(a, b) {
-  if (a.level !== b.level) return a.level - b.level;
+  const orderA = Number.isFinite(Number(a.cookbookSortIndex)) ? Number(a.cookbookSortIndex) : Number(a.sourceIndex || 0);
+  const orderB = Number.isFinite(Number(b.cookbookSortIndex)) ? Number(b.cookbookSortIndex) : Number(b.sourceIndex || 0);
+
+  if (orderA !== orderB) return orderA - orderB;
+  if (Number(a.dishId || 0) !== Number(b.dishId || 0)) return Number(a.dishId || 0) - Number(b.dishId || 0);
   return a.dishName.localeCompare(b.dishName);
 }
 

@@ -307,7 +307,7 @@
       </header>
       <section class="panel profile-panel">
         <h2 data-i18n="profileSettingsTitle">Chef Profile</h2>
-        <p class="section-note" data-i18n="profileSettingsNote">Your level sets the default stove count from CafeLevelXp.xml. You can still change stoves in MyDex.</p>
+        <p class="section-note" data-i18n="profileSettingsNote">Your level helps the tool set your current available number of stoves. You can change this in MyDex later.</p>
         <div class="input-grid profile-grid">
           <label>
             <span data-i18n="chefName">Chef name</span>
@@ -345,11 +345,32 @@
           <input id="dataFileInput" type="file" accept="application/json,.json" hidden>
         </div>
         <p id="masteryDataStatus" class="hint"></p>
-        <label class="search-label">
-          <span data-i18n="searchDish">Search dish</span>
-          <input id="masterySearch" type="search" autocomplete="off" placeholder="Search dish...">
-        </label>
-        <div class="table-wrap mastery-table-wrap">
+
+        <div class="mastery-toolbar">
+          <label class="search-label">
+            <span data-i18n="searchDish">Search dish</span>
+            <input id="masterySearch" type="search" autocomplete="off" placeholder="Search dish...">
+          </label>
+
+          <label class="mastery-view-label">
+            <span data-i18n="masteryView">View</span>
+            <select id="masteryViewMode">
+              <option value="vertical" data-i18n="masteryListVertical">List (vertical reader)</option>
+              <option value="horizontal" data-i18n="masteryListHorizontal">List (horizontal reader)</option>
+              <option value="cookbook" data-i18n="masteryCookbook">Cook book</option>
+            </select>
+          </label>
+        </div>
+
+        <div id="masteryBookControls" class="cookbook-controls hidden">
+          <button id="masteryBookPrev" type="button" class="action-button" data-i18n="previousPage">← Previous</button>
+          <span id="masteryBookPageStatus" class="cookbook-page-status"></span>
+          <button id="masteryBookNext" type="button" class="action-button" data-i18n="nextPage">Next →</button>
+        </div>
+
+        <div id="masteriesCookbook" class="masteries-cookbook hidden"></div>
+
+        <div id="masteryTableWrap" class="table-wrap mastery-table-wrap">
           <table class="mastery-table">
             <thead>
               <tr>
