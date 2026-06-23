@@ -159,7 +159,7 @@
 		<text id="xp" name="XP" />
 	</commons>
 	<cookstep>
-		<text id="cookstep_bananasplit1" name="Lasciando raffreddare il gelato" />
+		<text id="cookstep_bananasplit1" name="Raffreddando il gelato" />
 		<text id="cookstep_bananasplit2" name="Tagliando le banane" />
 		<text id="cookstep_brigadeiro1" name="Sciogliendo il cioccolato" />
 		<text id="cookstep_brigadeiro2" name="Dando forma ai brigadeiro" />
@@ -167,12 +167,12 @@
 		<text id="cookstep_blackforestcherrycake2" name="Cuocendo la torta" />
 		<text id="cookstep_pizzasalad1" name="Preparando le pizza" />
 		<text id="cookstep_pizzasalad2" name="Preparando le insalate" />
-		<text id="cookstep_tripleomelette1" name="Mescolando le uova con forza" />
+		<text id="cookstep_tripleomelette1" name="Mescol. le uova con forza" />
 		<text id="cookstep_tripleomelette2" name="Piegando il tutto" />
 		<text id="cookstep_chocolatewaffles1" name="Sciogliendo il cioccolato" />
 		<text id="cookstep_chocolatewaffles2" name="Ricoprendo i waffle" />
 		<text id="cookstep_spanishomelette1" name="Mescolandos les huevos" />
-		<text id="cookstep_spanishomelette2" name="Rendendo l&apos;omelette muy bonita" />
+		<text id="cookstep_spanishomelette2" name="Rendendola muy bonita" />
 		<text id="cookstep_sausagepasta1" name="Bollendo la pasta" />
 		<text id="cookstep_sausagepasta2" name="Friggendo le salsiccie" />
 		<text id="cookstep_applepie1" name="Preparando le torte" />
@@ -181,9 +181,9 @@
 		<text id="cookstep_ramen2" name="Aggiugendo le spezie" />
 		<text id="cookstep_corncake1" name="Mescolando gli ingredienti" />
 		<text id="cookstep_corncake2" name="Infornando le torte" />
-		<text id="cookstep_feijoada1" name="Organizzando i tagli di carne" />
-		<text id="cookstep_feijoada2" name="Manifestando le fette d&apos;arancia" />
-		<text id="cookstep_pinapjuice1" name="Spremendo le ananas" />
+		<text id="cookstep_feijoada1" name="Organizzando la carne" />
+		<text id="cookstep_feijoada2" name="Palesando fette d&apos;arancia" />
+		<text id="cookstep_pinapjuice1" name="Spremendo gli ananas" />
 		<text id="cookstep_pinapjuice2" name="Miscelando il succo" />
 		<text id="cookstep_orangejuice1" name="Spremendo le arance" />
 		<text id="cookstep_orangejuice2" name="Miscelando il succo" />
@@ -200,13 +200,13 @@
 		<text id="cookstep_cappuccino1" name="Preparando l&apos;espresso" />
 		<text id="cookstep_cappuccino2" name="Schiumando il latte" />
 		<text id="cookstep_duckalcitrus1" name="Arrostendo l&apos;anatra" />
-		<text id="cookstep_duckalcitrus2" name="Aggiungendo la glassa di agrumi" />
+		<text id="cookstep_duckalcitrus2" name="Glassando l&apos;anatra" />
 		<text id="cookstep_ducktatters1" name="Friggendo gli ingredienti" />
-		<text id="cookstep_ducktatters2" name="Mescolando il piatto" />
+		<text id="cookstep_ducktatters2" name="Mescolando il tutto" />
 		<text id="cookstep_langos1" name="Preparando la salsa" />
-		<text id="cookstep_langos2" name="Lasciando raffreddare la salsa" />
+		<text id="cookstep_langos2" name="Raffreddando la salsa" />
 		<text id="cookstep_nasilemak1" name="Cuocendo il riso" />
-		<text id="cookstep_nasilemak2" name="Impiattando ...il piatto" />
+		<text id="cookstep_nasilemak2" name="Impiattando il tutto" />
 		<text id="cookstep_citrusjuice1" name="Spremendo gli agrumi" />
 		<text id="cookstep_citrusjuice2" name="Miscelando il succo" />
 		<text id="cookstep_carrotcake1" name="Mescolando la pastella" />
@@ -218,7 +218,7 @@
 		<text id="cookstep_dorayaki1" name="Preparando il ripieno" />
 		<text id="cookstep_dorayaki2" name="Lasciando raffreddare" />
 		<text id="cookstep_tiramisu1" name="Componendo il dessert" />
-		<text id="cookstep_tiramisu2" name="Lasciando riposare il tiramisù" />
+		<text id="cookstep_tiramisu2" name="Riposando il tiramisù" />
 		<text id="cookstep_pridecupcakes1" name="Mescolando la pastella" />
 		<text id="cookstep_pridecupcakes2" name="Decorando" />
 		<text id="cookstep_ratatouille1" name="Preparando le verdure" />
@@ -229,9 +229,9 @@
 		<text id="cookstep_coconutcake2" name="Infornando la torta" />
 		<text id="cookstep_paodequeijo1" name="Dando forma all&apos;impasto" />
 		<text id="cookstep_paodequeijo2" name="Infornando il pane" />
-		<text id="cookstep_baiaodedois1" name="Mescolando il riso coi fagioli" />
-		<text id="cookstep_baiaodedois2" name="Aggiungendo la pancetta croccante" />
-		<text id="cookstep_bakedalaska1" name="Lasciando raffreddare la crema" />
+		<text id="cookstep_baiaodedois1" name="Mescolando riso e fagioli" />
+		<text id="cookstep_baiaodedois2" name="Aggiungendo la pancetta" />
+		<text id="cookstep_bakedalaska1" name="Raffreddando la crema" />
 		<text id="cookstep_bakedalaska2" name="Rosolando le meringhe" />
 		<text id="cookstep_butterchicken1" name="Bollendo la salsa" />
 		<text id="cookstep_butterchicken2" name="Sobbollendo la salsa curry" />
@@ -239,24 +239,24 @@
 		<text id="cookstep_chickenbiryani2" name="Speziando il riso" />
 		<text id="cookstep_cottagepotatoes1" name="Preparando le patate" />
 		<text id="cookstep_cottagepotatoes2" name="Rusticando le patate" />
-		<text id="cookstep_cuzcuzcomovo1" name="Affumicando la farina di mais" />
+		<text id="cookstep_cuzcuzcomovo1" name="Affumicando la farina" />
 		<text id="cookstep_cuzcuzcomovo2" name="Friggendo le uova" />
 		<text id="cookstep_malaichickennaan1" name="Preparando la pastella" />
 		<text id="cookstep_malaichickennaan2" name="Piegando il naan" />
 		<text id="cookstep_veganplate1" name="Cuocendo il riso" />
 		<text id="cookstep_veganplate2" name="Spargendo il riso" />
-		<text id="cookstep_neapolitancake1" name="Sciogliendo gli ingredienti" />
+		<text id="cookstep_neapolitancake1" name="Sciogliendo il tutto" />
 		<text id="cookstep_neapolitancake2" name="Infornando la torta" />
 		<text id="cookstep_strawberrycheesecake1" name="Mescolando gli ingredienti" />
 		<text id="cookstep_strawberrycheesecake2" name="Infornando la torta" />
 		<text id="cookstep_combomeal1" name="Friggendo la carne" />
-		<text id="cookstep_combomeal2" name="Friggendo le patatine fritte...?" />
+		<text id="cookstep_combomeal2" name="Friggendo... la frittura?" />
 		<text id="cookstep_zcordonbleu1" name="Preparando il pollo" />
-		<text id="cookstep_zcordonbleu2" name="Aggiungendo le fette di limone" />
+		<text id="cookstep_zcordonbleu2" name="Aggiungendo il limone" />
 		<text id="cookstep_brazilianpastel1" name="Friggendo i pastel" />
 		<text id="cookstep_brazilianpastel2" name="Un altro pochino..." />
 		<text id="cookstep_lechonkawali1" name="Preparando la carne" />
-		<text id="cookstep_lechonkawali2" name="Friggendo finché non è croccante" />
+		<text id="cookstep_lechonkawali2" name="Friggendo fino a dorarlo" />
 		<text id="cookstep_sweetpizza1" name="Spargendo il cioccolato" />
 		<text id="cookstep_sweetpizza2" name="Infornando la pizza dolce" />
 		<text id="cookstep_shakshuka1" name="Sciogliendo i pomodori" />
@@ -280,7 +280,7 @@
 		<text id="cookstep_chiliconcarne1" name="Cuocendo il macinato" />
 		<text id="cookstep_chiliconcarne2" name="Cuocendo il peperoncino" />
 		<text id="cookstep_chocmousse1" name="Mischiando gli ingredienti" />
-		<text id="cookstep_chocmousse2" name="Lasciando raffreddare la mousse" />
+		<text id="cookstep_chocmousse2" name="Raffreddando la mousse" />
 		<text id="cookstep_chocolatecake1" name="Mischiando gli ingredienti" />
 		<text id="cookstep_chocolatecake2" name="Infornando il tutto" />
 		<text id="cookstep_chocolatecheesecake1" name="Sciogliendo il cioccolato" />
@@ -305,12 +305,12 @@
 		<text id="cookstep_fishandchips2" name="Schiacciando i piselli" />
 		<text id="cookstep_friedpotatoes1" name="Cuocendo le patate" />
 		<text id="cookstep_friedpotatoes2" name="Arrostendo le patate" />
-		<text id="cookstep_fruitpudding1" name="Lasciando riposare l&apos;impasto" />
+		<text id="cookstep_fruitpudding1" name="Riposando l&apos;impasto" />
 		<text id="cookstep_fruitpudding2" name="Infornando" />
 		<text id="cookstep_fruitsalad1" name="Tagliando la frutta" />
 		<text id="cookstep_fruitsalad2" name="Incorporando il condimento" />
 		<text id="cookstep_greensalad1" name="Mescolando il condimento" />
-		<text id="cookstep_greensalad2" name="Lasciando l&apos;insalata in infusione" />
+		<text id="cookstep_greensalad2" name="Riposando l&apos;insalata" />
 		<text id="cookstep_gumbo1" name="Stufando gli ingredienti" />
 		<text id="cookstep_gumbo2" name="Incorporando il riso" />
 		<text id="cookstep_hamburger1" name="Cuocendo l&apos;hamburger" />
@@ -332,7 +332,7 @@
 		<text id="cookstep_minestrone1" name="Stufando le verdure" />
 		<text id="cookstep_minestrone2" name="Aggiungendo la pasta" />
 		<text id="cookstep_mixedsalad1" name="Mescolando il condimento" />
-		<text id="cookstep_mixedsalad2" name="Lasciando l&apos;insalata in infusione" />
+		<text id="cookstep_mixedsalad2" name="Riposando l&apos;insalata" />
 		<text id="cookstep_nasigoreng1" name="Cuocendo il pollo" />
 		<text id="cookstep_nasigoreng2" name="Stufando le verdure" />
 		<text id="cookstep_newyorkcheesecake1" name="Mescolando la farcitura" />
@@ -342,7 +342,7 @@
 		<text id="cookstep_omelette1" name="Salando le uova" />
 		<text id="cookstep_omelette2" name="Sbattendo le uova" />
 		<text id="cookstep_onionsoup1" name="Stufando le cipolle" />
-		<text id="cookstep_onionsoup2" name="Infornando con il formaggio" />
+		<text id="cookstep_onionsoup2" name="Infornando col formaggio" />
 		<text id="cookstep_peasoup1" name="Cuocendo le cipolle" />
 		<text id="cookstep_peasoup2" name="Cuocendo la zuppa" />
 		<text id="cookstep_pizza1" name="Farcendo la pizza" />
@@ -352,19 +352,19 @@
 		<text id="cookstep_pizzatonno1" name="Farcendo la pizza" />
 		<text id="cookstep_pizzatonno2" name="Cuocendo la pizza" />
 		<text id="cookstep_porkroastwithcrackling1" name="Insaporendo la carne" />
-		<text id="cookstep_porkroastwithcrackling2" name="Arrostendo" />
+		<text id="cookstep_porkroastwithcrackling2" name="Arrostendo il tutto" />
 		<text id="cookstep_potatosalad1" name="Cuocendo le patate" />
 		<text id="cookstep_potatosalad2" name="Mescolando la maionese" />
 		<text id="cookstep_redberrycompote1" name="Cuocendo la frutta" />
-		<text id="cookstep_redberrycompote2" name="Addolcendo" />
+		<text id="cookstep_redberrycompote2" name="Addolcendo il tutto" />
 		<text id="cookstep_ricepudding1" name="Cuocendo il budino di riso" />
 		<text id="cookstep_ricepudding2" name="Cuocendo la salsa di mele" />
 		<text id="cookstep_roastchicken1" name="Farcendo il pollo" />
-		<text id="cookstep_roastchicken2" name="Arrostendo" />
+		<text id="cookstep_roastchicken2" name="Arrostendo il tutto" />
 		<text id="cookstep_sandwich1" name="Imburrando il pane" />
 		<text id="cookstep_sandwich2" name="Farcendo i toast" />
 		<text id="cookstep_scouse1" name="Cuocendo la carne" />
-		<text id="cookstep_scouse2" name="Aggiungendo la barbabietola" />
+		<text id="cookstep_scouse2" name="Aggiung. la barbabietola" />
 		<text id="cookstep_spagetti1" name="Rosolando il macinato" />
 		<text id="cookstep_spagetti2" name="Cuocendo la salsa" />
 		<text id="cookstep_spareribs1" name="Preparando la carne" />
@@ -385,7 +385,7 @@
 		<text id="cookstep_stuffedpeppers2" name="Infornando i peperoni" />
 		<text id="cookstep_sundayfeast1" name="Preparando la carne" />
 		<text id="cookstep_sundayfeast2" name="Arrostendo la carne" />
-		<text id="cookstep_sushi1" name="Distribuendo gli ingredienti" />
+		<text id="cookstep_sushi1" name="Disponendo gli ingredienti" />
 		<text id="cookstep_sushi2" name="Arrotolando il tutto" />
 		<text id="cookstep_toadinhole1" name="Lavorando l&apos;impasto" />
 		<text id="cookstep_toadinhole2" name="Infornando il tutto" />
@@ -402,13 +402,13 @@
 		<text id="cookstep_vegetablesoup1" name="Rosolando le cipolle" />
 		<text id="cookstep_vegetablesoup2" name="Cuocendo la zuppa" />
 		<text id="cookstep_veggiecurry1" name="Cuocendo il riso" />
-		<text id="cookstep_veggiecurry2" name="Cuocendo il curry a fuoco lento" />
+		<text id="cookstep_veggiecurry2" name="Sobbollendo il curry" />
 		<text id="cookstep_veggielasagne1" name="Disponendo le lasagne" />
 		<text id="cookstep_veggielasagne2" name="Infornando le lasagne" />
 		<text id="cookstep_whitechoccheesecake1" name="Mescolando gli ingredienti" />
 		<text id="cookstep_whitechoccheesecake2" name="Cuocendo la torta" />
 		<text id="cookstep_whitechocmousse1" name="Sciogliendo il cioccolato" />
-		<text id="cookstep_whitechocmousse2" name="Lasciando raffreddare la mousse" />
+		<text id="cookstep_whitechocmousse2" name="Raffreddando la mousse" />
 		<text id="cookstep_coxinha1" name="Mescolando gli ingredienti" />
 		<text id="cookstep_coxinha2" name="Friggendo le coxinha" />
 	</cookstep>
