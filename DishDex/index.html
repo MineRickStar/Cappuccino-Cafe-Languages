@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20260622-mytime-v3">
+  <link rel="stylesheet" href="style.css?v=20260624-mytime-v6">
 </head>
 <body class="dark-theme">
   <main class="page">
@@ -42,6 +42,7 @@
               <select id="languageSelect">
                 <option value="en">🇺🇸 English</option>
                 <option value="pt">🇧🇷 Português</option>
+                <option value="it">🇮🇹 Italiano</option>
               </select>
             </label>
             <label class="theme-toggle">
@@ -290,64 +291,59 @@
       <section class="panel inputs-panel my-time-panel">
         <h2 data-i18n="myTimeSettings">My Time Settings</h2>
         <p class="section-note" data-i18n="myTimeQuestion">How long do you want to cook for?</p>
-        <div class="my-time-grid">
-          <div class="time-input-card player-level-card">
-            <span class="time-input-title" data-i18n="playerLevel">Player Level</span>
-            <label>
-              <span data-i18n="level">Level</span>
+        <div class="my-time-grid my-time-compact-grid">
+          <div class="time-input-card compact-time-card player-level-card">
+            <div class="compact-control-row single-input-row">
+              <span class="time-input-title"><span data-i18n="playerLevelShort">Player level</span>:</span>
               <input id="myTimePlayerLevel" type="number" min="0" max="999" value="1">
-            </label>
+            </div>
           </div>
 
-          <div class="time-input-card">
-            <span class="time-input-title" data-i18n="targetTime">Target time</span>
-            <div class="compact-number-grid">
-              <label>
+          <div class="time-input-card compact-time-card target-card">
+            <div class="compact-control-row">
+              <span class="time-input-title"><span data-i18n="targetShort">Target</span>:</span>
+              <label class="mini-number-field">
                 <span data-i18n="hoursShort">h</span>
                 <input id="myTimeHours" type="number" min="0" max="999" value="0">
               </label>
-              <label>
+              <label class="mini-number-field">
                 <span data-i18n="minutesShort">min</span>
                 <input id="myTimeMinutes" type="number" min="0" max="59" value="0">
               </label>
+              <button id="clearMyTimeTarget" class="secondary-button compact-clear-button" type="button" data-i18n="clearCookTime">Clear cook time</button>
             </div>
-            <button id="clearMyTimeTarget" class="secondary-button compact-clear-button" type="button" data-i18n="clearCookTime">Clear cook time</button>
           </div>
 
-          <div class="time-input-card margin-card">
-            <span class="time-input-title" data-i18n="myTimeMargin">Margin</span>
-            <div class="margin-groups">
-              <div class="margin-group">
+          <div class="time-input-card compact-time-card margin-card">
+            <span class="time-input-title"><span data-i18n="marginShort">Margin</span>:</span>
+            <div class="compact-margin-rows">
+              <div class="compact-margin-row">
                 <strong>+</strong>
-                <div class="compact-number-grid">
-                  <label>
-                    <span data-i18n="hoursShort">h</span>
-                    <input id="myTimeMarginPlusHours" type="number" min="0" max="999" value="0">
-                  </label>
-                  <label>
-                    <span data-i18n="minutesShort">min</span>
-                    <input id="myTimeMarginPlusMinutes" type="number" min="0" max="59" value="0">
-                  </label>
-                </div>
+                <label class="mini-number-field">
+                  <span data-i18n="hoursShort">h</span>
+                  <input id="myTimeMarginPlusHours" type="number" min="0" max="999" value="0">
+                </label>
+                <label class="mini-number-field">
+                  <span data-i18n="minutesShort">min</span>
+                  <input id="myTimeMarginPlusMinutes" type="number" min="0" max="59" value="0">
+                </label>
               </div>
-              <div class="margin-group">
-                <strong>/ -</strong>
-                <div class="compact-number-grid">
-                  <label>
-                    <span data-i18n="hoursShort">h</span>
-                    <input id="myTimeMarginMinusHours" type="number" min="0" max="999" value="0">
-                  </label>
-                  <label>
-                    <span data-i18n="minutesShort">min</span>
-                    <input id="myTimeMarginMinusMinutes" type="number" min="0" max="59" value="0">
-                  </label>
-                </div>
+              <div class="compact-margin-row">
+                <strong>-</strong>
+                <label class="mini-number-field">
+                  <span data-i18n="hoursShort">h</span>
+                  <input id="myTimeMarginMinusHours" type="number" min="0" max="999" value="0">
+                </label>
+                <label class="mini-number-field">
+                  <span data-i18n="minutesShort">min</span>
+                  <input id="myTimeMarginMinusMinutes" type="number" min="0" max="59" value="0">
+                </label>
+                <button id="clearMyTimeMargin" class="secondary-button compact-clear-button" type="button" data-i18n="clearMargin">Clear margin</button>
               </div>
             </div>
-            <button id="clearMyTimeMargin" class="secondary-button compact-clear-button" type="button" data-i18n="clearMargin">Clear margin</button>
           </div>
 
-          <label class="inline-toggle setting-toggle my-time-toggle">
+          <label class="inline-toggle setting-toggle my-time-toggle compact-masteries-toggle">
             <input id="myTimeUseMasteriesToggle" type="checkbox" checked>
             <span data-i18n="useRegisteredMasteries">Use my registered masteries</span>
           </label>

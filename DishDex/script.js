@@ -20,7 +20,12 @@ const PATHS = {
     ]
   },
   imageBase: '../dishimages/',
-  coopIconBase: './coopicons/'
+  coopIconBase: './coopicons/',
+  uiLanguageFiles: {
+    en: ['./dishdexlangs/dishdex_en.xml'],
+    pt: ['./dishdexlangs/dishdex_pt.xml'],
+    it: ['./dishdexlangs/dishdex_it.xml']
+  }
 };
 
 const STORAGE_KEY = 'dishDexUserDataV1';
@@ -99,6 +104,9 @@ const I18N = {
     hoursShort: 'h',
     minutesShort: 'min',
     myTimeMargin: 'Margin',
+    myTimePlayerLevelLabel: 'Player level:',
+    myTimeTargetLabel: 'Target:',
+    myTimeMarginLabel: 'Margin:',
     myTimeBestMatches: 'Best matches',
     myTimeBestMatchesNote: 'Best dishes inside your chosen time window.',
     myTimeAllMatches: 'All matching dishes',
@@ -107,6 +115,9 @@ const I18N = {
     myTimeNoWindow: 'Set a target time above 0.',
     clearCookTime: 'Clear cook time',
     clearMargin: 'Clear margin',
+    playerLevelShort: 'Player level',
+    targetShort: 'Target',
+    marginShort: 'Margin',
     noTimeMatches: 'No dishes match this time window. Try increasing the margin.',
     myProfileTitle: 'My Profile',
     myProfileDescription: 'Save your chef name, level and default stove count.',
@@ -389,6 +400,9 @@ const I18N = {
     hoursShort: 'h',
     minutesShort: 'min',
     myTimeMargin: 'Margem',
+    myTimePlayerLevelLabel: 'Nível:',
+    myTimeTargetLabel: 'Tempo:',
+    myTimeMarginLabel: 'Margem:',
     myTimeBestMatches: 'Melhores resultados',
     myTimeBestMatchesNote: 'Melhores pratos dentro do tempo escolhido.',
     myTimeAllMatches: 'Todos os pratos encontrados',
@@ -397,6 +411,9 @@ const I18N = {
     myTimeNoWindow: 'Defina um tempo alvo acima de 0.',
     clearCookTime: 'Limpar tempo',
     clearMargin: 'Limpar margem',
+    playerLevelShort: 'Nível do jogador',
+    targetShort: 'Alvo',
+    marginShort: 'Margem',
     noTimeMatches: 'Nenhum prato combina com esse intervalo. Tente aumentar a margem.',
     myProfileTitle: 'Meu Perfil',
     myProfileDescription: 'Salve o nome do chef, nível e quantidade padrão de fogões.',
@@ -689,6 +706,7 @@ let allDishRecords = [];
 let allCoopRecords = [];
 let levelLimitsByLevel = new Map();
 let currentLanguage = 'en';
+let uiTranslations = {};
 let userData = loadUserData();
 let masteryCookbookPage = 0;
 
@@ -699,6 +717,7 @@ async function main() {
     setupTimeBackground();
     setupTheme();
     setupLanguage();
+    await loadDishDexUiLanguage(currentLanguage);
     setupNavigation();
     setupDataActions();
     applyUiLanguage();
@@ -713,8 +732,8 @@ async function main() {
     syncMyTimeInputs();
     renderCoopTeamEditor();
 
-    allDishRecords = await loadDishRecords(currentLanguage);
-    allCoopRecords = await loadCoopRecords(currentLanguage);
+    allDishRecords = await loadDishRecords(getCafeLanguageCode(currentLanguage));
+    allCoopRecords = await loadCoopRecords(getCafeLanguageCode(currentLanguage));
 
     setStatus(t('dataLoaded'), 'ok');
     updateDataSummary();
@@ -800,22 +819,23 @@ function setupLanguage() {
   const select = document.getElementById('languageSelect');
   const savedLanguage = localStorage.getItem('dishDexLanguage');
 
-  currentLanguage = savedLanguage || detectBrowserLanguage();
+  currentLanguage = normalizeUiLanguage(savedLanguage || detectBrowserLanguage());
   select.value = currentLanguage;
-  document.documentElement.lang = currentLanguage === 'pt' ? 'pt-BR' : 'en';
+  document.documentElement.lang = getHtmlLanguageCode(currentLanguage);
 
   select.addEventListener('change', async () => {
-    currentLanguage = select.value;
+    currentLanguage = normalizeUiLanguage(select.value);
     localStorage.setItem('dishDexLanguage', currentLanguage);
-    document.documentElement.lang = currentLanguage === 'pt' ? 'pt-BR' : 'en';
+    document.documentElement.lang = getHtmlLanguageCode(currentLanguage);
+    await loadDishDexUiLanguage(currentLanguage);
     applyUiLanguage();
     syncSearchPlaceholder();
 
     try {
       setStatus(t('loadingXml'), 'ok');
       document.getElementById('dataSummary').textContent = '';
-      allDishRecords = await loadDishRecords(currentLanguage);
-      allCoopRecords = await loadCoopRecords(currentLanguage);
+      allDishRecords = await loadDishRecords(getCafeLanguageCode(currentLanguage));
+      allCoopRecords = await loadCoopRecords(getCafeLanguageCode(currentLanguage));
       setStatus(t('dataLoaded'), 'ok');
       updateDataSummary();
       syncProfileInputs();
@@ -838,7 +858,23 @@ function setupLanguage() {
 
 function detectBrowserLanguage() {
   const language = String(navigator.language || navigator.userLanguage || '').toLowerCase();
-  return language.startsWith('pt') ? 'pt' : 'en';
+  if (language.startsWith('pt')) return 'pt';
+  if (language.startsWith('it')) return 'it';
+  return 'en';
+}
+
+function normalizeUiLanguage(languageCode) {
+  return ['en', 'pt', 'it'].includes(languageCode) ? languageCode : 'en';
+}
+
+function getCafeLanguageCode(languageCode = currentLanguage) {
+  return languageCode === 'pt' ? 'pt' : 'en';
+}
+
+function getHtmlLanguageCode(languageCode = currentLanguage) {
+  if (languageCode === 'pt') return 'pt-BR';
+  if (languageCode === 'it') return 'it';
+  return 'en';
 }
 
 const SCREEN_HASHES = {
@@ -1038,6 +1074,27 @@ function setupDataActions() {
   document.getElementById('masteriesCookbook').addEventListener('click', handleMasteryClick);
 }
 
+
+async function loadDishDexUiLanguage(languageCode = currentLanguage) {
+  const normalizedLanguage = normalizeUiLanguage(languageCode);
+  const paths = PATHS.uiLanguageFiles?.[normalizedLanguage] || PATHS.uiLanguageFiles.en;
+
+  try {
+    const text = await fetchFirstWorkingText(paths);
+    const xml = parseNormalOrLooseXml(text, `DishDex ${normalizedLanguage} language XML`);
+    const translations = {};
+    Array.from(xml.getElementsByTagName('text')).forEach(node => {
+      const id = getAttr(node, 'id');
+      const name = getAttr(node, 'name');
+      if (id) translations[id] = name;
+    });
+    uiTranslations[normalizedLanguage] = translations;
+  } catch (error) {
+    console.warn(`Could not load DishDex UI language file for ${normalizedLanguage}. Using embedded fallback.`, error);
+    uiTranslations[normalizedLanguage] = I18N[normalizedLanguage] || I18N.en || {};
+  }
+}
+
 function applyUiLanguage() {
   document.querySelectorAll('[data-i18n]').forEach(element => {
     const key = element.getAttribute('data-i18n');
@@ -1067,7 +1124,11 @@ function populateSortSelect() {
 }
 
 function t(key) {
-  return I18N[currentLanguage]?.[key] || I18N.en[key] || key;
+  return uiTranslations[currentLanguage]?.[key]
+    || I18N[currentLanguage]?.[key]
+    || uiTranslations.en?.[key]
+    || I18N.en[key]
+    || key;
 }
 
 function updateDataSummary() {
@@ -3648,9 +3709,21 @@ function readMyTimeSettingsFromInputs() {
 
 function handleMyTimeInputChange() {
   userData.myTime = readMyTimeSettingsFromInputs();
+
+  const myTimeLevel = clampNumber(Number(userData.myTime.playerLevel || 1), 0, 999);
+  if (myTimeLevel !== Number(userData.level || 1)) {
+    userData.level = myTimeLevel;
+    userData.availableStoves = getDefaultStovesForLevel(myTimeLevel);
+    syncProfileInputs(false);
+    syncMyDexInputs(false);
+    renderCoopTeamEditor();
+    renderCoopPlanner();
+  }
+
   saveUserData();
   updateMyTimeWindowSummary();
   renderMyTime();
+  renderMyDex();
 }
 
 function clearMyTimeTarget() {

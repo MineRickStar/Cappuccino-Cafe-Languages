@@ -2586,9 +2586,11 @@ body:not(.dark-theme) .compact-clear-button {
 
 .my-time-grid {
   display: grid;
-  grid-template-columns: minmax(170px, 0.65fr) minmax(220px, 0.85fr) minmax(340px, 1.45fr) minmax(220px, 0.9fr);
-  gap: 14px;
+  grid-template-columns: minmax(160px, 190px) minmax(220px, 250px) minmax(300px, 360px) minmax(220px, 280px);
+  gap: 12px;
   align-items: stretch;
+  justify-content: start;
+  max-width: 1100px;
 }
 
 .time-input-card {
@@ -2614,14 +2616,14 @@ body:not(.dark-theme) .compact-clear-button {
 
 .margin-groups {
   display: grid;
-  grid-template-columns: repeat(2, minmax(150px, 1fr));
+  grid-template-columns: 1fr;
   gap: 12px;
   align-items: stretch;
 }
 
 .margin-group {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 42px 1fr;
   gap: 8px;
   align-items: end;
 }
@@ -2636,6 +2638,15 @@ body:not(.dark-theme) .compact-clear-button {
 .my-time-toggle {
   align-self: stretch;
   justify-content: center;
+  max-width: 280px;
+}
+
+.player-level-card {
+  max-width: 190px;
+}
+
+.margin-card {
+  max-width: 360px;
 }
 
 .my-time-window-summary {
@@ -2647,6 +2658,7 @@ body:not(.dark-theme) .compact-clear-button {
   color: var(--text);
   padding: 10px 12px;
   font-weight: 900;
+  max-width: 1100px;
 }
 
 body.dark-theme .time-input-card,
@@ -2678,7 +2690,7 @@ body:not(.dark-theme) .my-time-toggle span {
 
 @media (max-width: 1180px) {
   .six-mode-grid { grid-template-columns: repeat(3, minmax(190px, 1fr)); }
-  .my-time-grid { grid-template-columns: repeat(2, minmax(220px, 1fr)); }
+  .my-time-grid { grid-template-columns: repeat(2, minmax(220px, 1fr)); max-width: none; }
   .margin-groups { grid-template-columns: 1fr; }
 }
 
@@ -2687,7 +2699,7 @@ body:not(.dark-theme) .my-time-toggle span {
   .my-time-grid { grid-template-columns: 1fr; }
   .compact-number-grid { grid-template-columns: 1fr 1fr; }
   .margin-groups { grid-template-columns: 1fr; }
-  .margin-group { grid-template-columns: 36px 1fr; }
+  .margin-group { grid-template-columns: 42px 1fr; }
   .margin-group strong { padding-bottom: 11px; }
 }
 
@@ -2729,5 +2741,506 @@ body.dark-theme .full-table .dish-type-tag {
   .compact-clear-button {
     width: 100%;
     justify-self: stretch;
+  }
+}
+
+
+/* My Time compact layout v6 */
+.my-time-compact-grid {
+  grid-template-columns: minmax(160px, 0.75fr) minmax(330px, 1.25fr) minmax(430px, 1.65fr) minmax(240px, 1fr);
+  align-items: start;
+  max-width: none;
+}
+
+.my-time-compact-grid .time-input-card,
+.my-time-compact-grid .my-time-toggle {
+  min-height: 0;
+  height: auto;
+}
+
+.compact-time-card {
+  padding: 10px 12px;
+  gap: 8px;
+  align-content: start;
+}
+
+.compact-control-row {
+  display: flex;
+  align-items: end;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.single-input-row {
+  align-items: center;
+}
+
+.compact-control-row > .time-input-title,
+.margin-card > .time-input-title {
+  min-width: max-content;
+  align-self: center;
+  line-height: 1.2;
+}
+
+.mini-number-field {
+  display: grid;
+  gap: 4px;
+  min-width: 86px;
+}
+
+.mini-number-field input,
+.single-input-row input {
+  min-height: 42px;
+  padding: 8px 10px;
+}
+
+.single-input-row input {
+  width: min(120px, 100%);
+}
+
+.compact-margin-rows {
+  display: grid;
+  gap: 8px;
+}
+
+.compact-margin-row {
+  display: flex;
+  align-items: end;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.compact-margin-row strong {
+  color: var(--brown-dark);
+  font-weight: 900;
+  min-width: 14px;
+  padding-bottom: 10px;
+}
+
+.compact-clear-button {
+  min-height: 42px;
+  align-self: end;
+  margin-top: 0;
+}
+
+.compact-masteries-toggle {
+  min-height: 64px;
+  padding: 10px 12px;
+  justify-content: flex-start;
+  max-width: none;
+}
+
+.my-time-window-summary {
+  max-width: none;
+}
+
+body.dark-theme .compact-margin-row strong {
+  color: #ffd5a2;
+}
+
+body:not(.dark-theme) .compact-margin-row strong {
+  color: #5f351d;
+}
+
+@media (max-width: 1180px) {
+  .my-time-compact-grid {
+    grid-template-columns: repeat(2, minmax(260px, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .my-time-compact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .compact-control-row,
+  .compact-margin-row {
+    align-items: end;
+  }
+
+  .mini-number-field {
+    min-width: min(120px, calc(50% - 22px));
+    flex: 1 1 110px;
+  }
+
+  .compact-clear-button {
+    width: fit-content;
+  }
+}
+
+
+/* My Time compact layout v7 */
+@media (min-width: 981px) {
+  .my-time-panel .my-time-grid {
+    grid-template-columns: minmax(260px, 320px) minmax(340px, 420px) minmax(220px, 280px);
+    grid-template-rows: auto auto;
+    align-items: start;
+    justify-content: start;
+    gap: 12px 14px;
+    max-width: none;
+  }
+
+  .my-time-panel .player-level-card {
+    grid-column: 1;
+    grid-row: 1;
+    max-width: none;
+    min-height: 0;
+    display: grid;
+    grid-template-columns: auto minmax(92px, 1fr);
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+  }
+
+  .my-time-panel .player-level-card > label {
+    margin: 0;
+  }
+
+  .my-time-panel .player-level-card > label > span {
+    display: none;
+  }
+
+  .my-time-panel .player-level-card input {
+    min-height: 42px;
+    padding: 8px 10px;
+  }
+
+  .my-time-panel .my-time-grid > .time-input-card:nth-child(2) {
+    grid-column: 1;
+    grid-row: 2;
+    max-width: none;
+    min-height: 0;
+    display: grid;
+    grid-template-columns: auto minmax(170px, 1fr) auto;
+    align-items: end;
+    gap: 10px;
+    padding: 10px 12px;
+  }
+
+  .my-time-panel .my-time-grid > .time-input-card:nth-child(2) .time-input-title {
+    align-self: center;
+    padding-bottom: 8px;
+  }
+
+  .my-time-panel .my-time-grid > .time-input-card:nth-child(2) .compact-number-grid {
+    grid-template-columns: repeat(2, minmax(76px, 1fr));
+    gap: 8px;
+  }
+
+  .my-time-panel .my-time-grid > .time-input-card:nth-child(2) input {
+    min-height: 42px;
+    padding: 8px 10px;
+  }
+
+  .my-time-panel .my-time-grid > .time-input-card:nth-child(2) .compact-clear-button {
+    align-self: end;
+    white-space: nowrap;
+  }
+
+  .my-time-panel .margin-card {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    max-width: none;
+    min-height: 0;
+    padding: 10px 12px;
+    align-self: stretch;
+  }
+
+  .my-time-panel .margin-card .compact-number-grid {
+    grid-template-columns: repeat(2, minmax(90px, 1fr));
+  }
+
+  .my-time-panel .my-time-toggle {
+    grid-column: 3;
+    grid-row: 1;
+    align-self: start;
+    justify-self: start;
+    max-width: 280px;
+    width: auto;
+    min-height: 0;
+    padding: 10px 12px;
+    border-radius: 14px;
+  }
+
+  .my-time-panel .my-time-toggle input {
+    flex: 0 0 auto;
+  }
+
+  .my-time-panel .my-time-toggle span {
+    line-height: 1.25;
+  }
+}
+
+@media (max-width: 980px) {
+  .my-time-panel .my-time-grid {
+    grid-template-columns: 1fr;
+    max-width: none;
+  }
+
+  .my-time-panel .player-level-card,
+  .my-time-panel .margin-card,
+  .my-time-panel .my-time-toggle {
+    max-width: none;
+  }
+}
+
+
+/* My Time layout v8 - locked compact desktop layout */
+@media (min-width: 981px) {
+  #myTimeScreen .my-time-panel .my-time-grid,
+  #myTimeScreen .my-time-panel .my-time-compact-grid {
+    display: grid;
+    grid-template-columns: minmax(300px, 340px) minmax(390px, 450px);
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "level margin"
+      "target margin"
+      "toggle toggle";
+    align-items: start;
+    justify-content: start;
+    gap: 10px 14px;
+    max-width: 840px;
+  }
+
+  #myTimeScreen .player-level-card {
+    grid-area: level !important;
+    max-width: none !important;
+    min-height: 0 !important;
+    align-self: start !important;
+    padding: 10px 12px !important;
+  }
+
+  #myTimeScreen .target-card,
+  #myTimeScreen .my-time-grid > .time-input-card:nth-child(2) {
+    grid-area: target !important;
+    max-width: none !important;
+    min-height: 0 !important;
+    align-self: start !important;
+    padding: 10px 12px !important;
+  }
+
+  #myTimeScreen .margin-card {
+    grid-area: margin !important;
+    max-width: none !important;
+    min-height: 0 !important;
+    align-self: start !important;
+    padding: 10px 12px !important;
+  }
+
+  #myTimeScreen .compact-masteries-toggle,
+  #myTimeScreen .my-time-toggle {
+    grid-area: toggle !important;
+    width: fit-content !important;
+    max-width: 100% !important;
+    min-height: 0 !important;
+    align-self: start !important;
+    justify-self: start !important;
+    justify-content: flex-start !important;
+    padding: 8px 12px !important;
+    border-radius: 14px !important;
+  }
+
+  #myTimeScreen .compact-control-row {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: end !important;
+    gap: 10px !important;
+  }
+
+  #myTimeScreen .single-input-row {
+    align-items: center !important;
+  }
+
+  #myTimeScreen .compact-control-row > .time-input-title,
+  #myTimeScreen .margin-card > .time-input-title {
+    min-width: max-content !important;
+    align-self: center !important;
+    padding: 0 !important;
+  }
+
+  #myTimeScreen .mini-number-field {
+    min-width: 82px !important;
+    max-width: 90px !important;
+    flex: 0 0 88px !important;
+    display: grid !important;
+    gap: 4px !important;
+  }
+
+  #myTimeScreen .mini-number-field input,
+  #myTimeScreen .single-input-row input {
+    min-height: 40px !important;
+    height: 40px !important;
+    padding: 7px 10px !important;
+  }
+
+  #myTimeScreen .single-input-row input {
+    width: 120px !important;
+  }
+
+  #myTimeScreen .target-card .compact-clear-button,
+  #myTimeScreen .my-time-grid > .time-input-card:nth-child(2) .compact-clear-button {
+    align-self: end !important;
+    white-space: nowrap !important;
+    min-height: 40px !important;
+    padding: 7px 13px !important;
+  }
+
+  #myTimeScreen .compact-margin-rows {
+    display: grid !important;
+    gap: 8px !important;
+  }
+
+  #myTimeScreen .compact-margin-row {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: end !important;
+    gap: 10px !important;
+  }
+
+  #myTimeScreen .compact-margin-row strong {
+    min-width: 14px !important;
+    padding-bottom: 10px !important;
+  }
+
+  #myTimeScreen .margin-card .compact-clear-button {
+    align-self: end !important;
+    white-space: nowrap !important;
+    min-height: 40px !important;
+    padding: 7px 13px !important;
+  }
+
+  #myTimeScreen .my-time-window-summary {
+    max-width: 840px !important;
+  }
+}
+
+@media (max-width: 980px) {
+  #myTimeScreen .my-time-panel .my-time-grid,
+  #myTimeScreen .my-time-panel .my-time-compact-grid {
+    grid-template-columns: 1fr;
+    max-width: none;
+  }
+
+  #myTimeScreen .compact-control-row,
+  #myTimeScreen .compact-margin-row {
+    flex-wrap: wrap;
+  }
+}
+
+
+/* My Time target card final fix: keep the clear button inside the card. */
+#myTimeScreen .target-card .compact-control-row,
+#myTimeScreen .my-time-grid > .time-input-card:nth-child(2) .compact-control-row {
+  display: grid !important;
+  grid-template-columns: max-content 88px 88px !important;
+  grid-template-areas:
+    "target-title target-hours target-mins"
+    "target-clear target-clear target-clear" !important;
+  align-items: end !important;
+  justify-content: start !important;
+  gap: 8px 10px !important;
+  max-width: 100% !important;
+  overflow: visible !important;
+}
+
+#myTimeScreen .target-card .compact-control-row > .time-input-title,
+#myTimeScreen .my-time-grid > .time-input-card:nth-child(2) .compact-control-row > .time-input-title {
+  grid-area: target-title !important;
+  align-self: center !important;
+  min-width: max-content !important;
+}
+
+#myTimeScreen .target-card .compact-control-row .mini-number-field:nth-of-type(1),
+#myTimeScreen .my-time-grid > .time-input-card:nth-child(2) .compact-control-row .mini-number-field:nth-of-type(1) {
+  grid-area: target-hours !important;
+}
+
+#myTimeScreen .target-card .compact-control-row .mini-number-field:nth-of-type(2),
+#myTimeScreen .my-time-grid > .time-input-card:nth-child(2) .compact-control-row .mini-number-field:nth-of-type(2) {
+  grid-area: target-mins !important;
+}
+
+#myTimeScreen .target-card .compact-clear-button,
+#myTimeScreen .my-time-grid > .time-input-card:nth-child(2) .compact-clear-button {
+  grid-area: target-clear !important;
+  width: fit-content !important;
+  max-width: 100% !important;
+  justify-self: start !important;
+  white-space: nowrap !important;
+}
+
+@media (max-width: 420px) {
+  #myTimeScreen .target-card .compact-control-row,
+  #myTimeScreen .my-time-grid > .time-input-card:nth-child(2) .compact-control-row {
+    grid-template-columns: max-content 1fr 1fr !important;
+  }
+}
+
+
+/* My Time v10: put time units beside the value fields: [  ] h [  ] min. */
+#myTimeScreen .mini-number-field {
+  display: inline-flex !important;
+  flex-direction: row-reverse !important;
+  align-items: center !important;
+  gap: 6px !important;
+  min-width: 112px !important;
+  max-width: 120px !important;
+  flex: 0 0 112px !important;
+}
+
+#myTimeScreen .mini-number-field span {
+  align-self: center !important;
+  line-height: 1 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  color: var(--brown-dark) !important;
+  font-weight: 900 !important;
+  white-space: nowrap !important;
+}
+
+body.dark-theme #myTimeScreen .mini-number-field span {
+  color: #ffd5a2 !important;
+}
+
+body:not(.dark-theme) #myTimeScreen .mini-number-field span {
+  color: #5f351d !important;
+}
+
+#myTimeScreen .mini-number-field input {
+  width: 84px !important;
+  min-width: 84px !important;
+  flex: 0 0 84px !important;
+}
+
+#myTimeScreen .target-card .compact-control-row,
+#myTimeScreen .my-time-grid > .time-input-card:nth-child(2) .compact-control-row {
+  grid-template-columns: max-content 112px 112px !important;
+}
+
+#myTimeScreen .compact-margin-row {
+  align-items: center !important;
+}
+
+#myTimeScreen .compact-margin-row strong {
+  padding-bottom: 0 !important;
+  align-self: center !important;
+}
+
+@media (max-width: 420px) {
+  #myTimeScreen .target-card .compact-control-row,
+  #myTimeScreen .my-time-grid > .time-input-card:nth-child(2) .compact-control-row {
+    grid-template-columns: max-content minmax(98px, 1fr) minmax(98px, 1fr) !important;
+  }
+
+  #myTimeScreen .mini-number-field {
+    min-width: 98px !important;
+    max-width: none !important;
+    flex: 1 1 98px !important;
+  }
+
+  #myTimeScreen .mini-number-field input {
+    width: 100% !important;
+    min-width: 0 !important;
+    flex: 1 1 auto !important;
   }
 }
