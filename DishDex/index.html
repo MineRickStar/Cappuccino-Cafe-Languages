@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20260622-coop-final-v14">
+  <link rel="stylesheet" href="style.css?v=20260622-mytime-v3">
 </head>
 <body class="dark-theme">
   <main class="page">
@@ -51,7 +51,7 @@
           </div>
         </div>
 
-        <div class="mode-grid five-mode-grid">
+        <div class="mode-grid six-mode-grid">
           <button id="openMyDex" class="mode-card" type="button">
             <img src="MyDex.png" alt="" class="mode-icon" onerror="this.style.display='none'">
             <span class="mode-title">MyDex</span>
@@ -62,6 +62,12 @@
             <img src="DishDex.png" alt="" class="mode-icon" onerror="this.style.display='none'">
             <span class="mode-title" data-i18n="fullDishDexTitle">Full DishDex</span>
             <span class="mode-description" data-i18n="fullDishDexDescription">Access the complete DishDex with all information.</span>
+          </button>
+
+          <button id="openMyTime" class="mode-card" type="button">
+            <img src="Mytime.png" alt="" class="mode-icon" onerror="this.style.display='none'">
+            <span class="mode-title" data-i18n="myTimeTitle">My Time</span>
+            <span class="mode-description" data-i18n="myTimeDescription">Plan dishes according to your time.</span>
           </button>
 
           <button id="openCoopPlanner" class="mode-card" type="button">
@@ -266,6 +272,132 @@
           <p class="section-note" data-i18n="holidayDishesNote">Holiday dishes are shown separately. Auto mode uses Christmas and Easter seasons.</p>
           <div id="holidayDishesBody" class="dish-card-grid"></div>
         </section>
+      </section>
+    </section>
+
+    <section id="myTimeScreen" class="screen hidden">
+      <header class="sub-hero">
+        <button class="back-button" type="button" data-back data-i18n="backButton">← Back</button>
+        <div class="title-row compact-title-row">
+          <img src="Mytime.png" alt="" class="title-logo small-logo" onerror="this.style.display='none'">
+          <div>
+            <p class="eyebrow" data-i18n="myTimeEyebrow">Time planning</p>
+            <h1 data-i18n="myTimeTitle">My Time</h1>
+          </div>
+        </div>
+      </header>
+
+      <section class="panel inputs-panel my-time-panel">
+        <h2 data-i18n="myTimeSettings">My Time Settings</h2>
+        <p class="section-note" data-i18n="myTimeQuestion">How long do you want to cook for?</p>
+        <div class="my-time-grid">
+          <div class="time-input-card player-level-card">
+            <span class="time-input-title" data-i18n="playerLevel">Player Level</span>
+            <label>
+              <span data-i18n="level">Level</span>
+              <input id="myTimePlayerLevel" type="number" min="0" max="999" value="1">
+            </label>
+          </div>
+
+          <div class="time-input-card">
+            <span class="time-input-title" data-i18n="targetTime">Target time</span>
+            <div class="compact-number-grid">
+              <label>
+                <span data-i18n="hoursShort">h</span>
+                <input id="myTimeHours" type="number" min="0" max="999" value="0">
+              </label>
+              <label>
+                <span data-i18n="minutesShort">min</span>
+                <input id="myTimeMinutes" type="number" min="0" max="59" value="0">
+              </label>
+            </div>
+            <button id="clearMyTimeTarget" class="secondary-button compact-clear-button" type="button" data-i18n="clearCookTime">Clear cook time</button>
+          </div>
+
+          <div class="time-input-card margin-card">
+            <span class="time-input-title" data-i18n="myTimeMargin">Margin</span>
+            <div class="margin-groups">
+              <div class="margin-group">
+                <strong>+</strong>
+                <div class="compact-number-grid">
+                  <label>
+                    <span data-i18n="hoursShort">h</span>
+                    <input id="myTimeMarginPlusHours" type="number" min="0" max="999" value="0">
+                  </label>
+                  <label>
+                    <span data-i18n="minutesShort">min</span>
+                    <input id="myTimeMarginPlusMinutes" type="number" min="0" max="59" value="0">
+                  </label>
+                </div>
+              </div>
+              <div class="margin-group">
+                <strong>/ -</strong>
+                <div class="compact-number-grid">
+                  <label>
+                    <span data-i18n="hoursShort">h</span>
+                    <input id="myTimeMarginMinusHours" type="number" min="0" max="999" value="0">
+                  </label>
+                  <label>
+                    <span data-i18n="minutesShort">min</span>
+                    <input id="myTimeMarginMinusMinutes" type="number" min="0" max="59" value="0">
+                  </label>
+                </div>
+              </div>
+            </div>
+            <button id="clearMyTimeMargin" class="secondary-button compact-clear-button" type="button" data-i18n="clearMargin">Clear margin</button>
+          </div>
+
+          <label class="inline-toggle setting-toggle my-time-toggle">
+            <input id="myTimeUseMasteriesToggle" type="checkbox" checked>
+            <span data-i18n="useRegisteredMasteries">Use my registered masteries</span>
+          </label>
+        </div>
+        <p id="myTimeWindowSummary" class="hint my-time-window-summary"></p>
+      </section>
+
+      <section class="panel">
+        <h2 data-i18n="myTimeBestMatches">Best matches</h2>
+        <p class="section-note" data-i18n="myTimeBestMatchesNote">Best dishes inside your chosen time window.</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th data-i18n="image">Image</th>
+                <th data-i18n="recommendation">Recommendation</th>
+                <th data-i18n="dish">Dish</th>
+                <th data-i18n="level">Level</th>
+                <th><span class="icon-heading"><img src="xp.png" alt="XP" class="header-icon"><small>/min</small></span></th>
+                <th><span class="icon-heading"><img src="cash.png" alt="Cash" class="header-icon"><small>/min</small></span></th>
+                <th data-i18n="portions">Portions</th>
+                <th data-i18n="duration">Duration</th>
+                <th data-i18n="category">Category</th>
+              </tr>
+            </thead>
+            <tbody id="myTimeBestBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2 data-i18n="myTimeAllMatches">All matching dishes</h2>
+        <p class="section-note" data-i18n="myTimeAllMatchesNote">All available dishes in this time window, sorted by level.</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th data-i18n="image">Image</th>
+                <th data-i18n="dish">Dish</th>
+                <th data-i18n="level">Level</th>
+                <th><span class="icon-heading"><img src="xp.png" alt="XP" class="header-icon"><small>/min</small></span></th>
+                <th><span class="icon-heading"><img src="cash.png" alt="Cash" class="header-icon"><small>/min</small></span></th>
+                <th data-i18n="portions">Portions</th>
+                <th data-i18n="duration">Duration</th>
+                <th data-i18n="category">Category</th>
+              </tr>
+            </thead>
+            <tbody id="myTimeAllBody"></tbody>
+          </table>
+        </div>
       </section>
     </section>
 
@@ -509,6 +641,6 @@
     </section>
   </main>
 
-  <script src="script.js?v=20260622-coop-final-v14" defer></script>
+  <script src="script.js?v=20260622-mytime-v3" defer></script>
 </body>
 </html>

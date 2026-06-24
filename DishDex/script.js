@@ -90,6 +90,24 @@ const I18N = {
     myDexDescription: 'Access your personal DishDex based on your level, XP and available time.',
     fullDishDexTitle: 'Full DishDex',
     fullDishDexDescription: 'Access the complete DishDex with all information.',
+    myTimeTitle: 'My Time',
+    myTimeDescription: 'Plan dishes according to your time.',
+    myTimeEyebrow: 'Time planning',
+    myTimeSettings: 'My Time Settings',
+    myTimeQuestion: 'How long do you want to cook for?',
+    targetTime: 'Target time',
+    hoursShort: 'h',
+    minutesShort: 'min',
+    myTimeMargin: 'Margin',
+    myTimeBestMatches: 'Best matches',
+    myTimeBestMatchesNote: 'Best dishes inside your chosen time window.',
+    myTimeAllMatches: 'All matching dishes',
+    myTimeAllMatchesNote: 'All available dishes in this time window, sorted by level.',
+    myTimeWindowLabel: 'Showing dishes from {0} to {1}.',
+    myTimeNoWindow: 'Set a target time above 0.',
+    clearCookTime: 'Clear cook time',
+    clearMargin: 'Clear margin',
+    noTimeMatches: 'No dishes match this time window. Try increasing the margin.',
     myProfileTitle: 'My Profile',
     myProfileDescription: 'Save your chef name, level and default stove count.',
     myMasteriesTitle: 'My Masteries',
@@ -307,8 +325,8 @@ const I18N = {
     sortNameAsc: 'Alphabetical A-Z',
     sortNameDesc: 'Alphabetical Z-A',
     sortCategory: 'Category',
-    sortDurationAsc: 'Time: low to high',
-    sortDurationDesc: 'Time: high to low',
+    sortDurationAsc: 'Time: Short to Long',
+    sortDurationDesc: 'Time: Long to Short',
     sortProfitAsc: 'Raw Profit: low to high',
     sortProfitDesc: 'Raw Profit: high to low',
     sortXpAsc: 'Raw XP: low to high',
@@ -362,6 +380,24 @@ const I18N = {
     myDexDescription: 'Acesse seu DishDex pessoal com base no seu nível, XP e tempo disponível.',
     fullDishDexTitle: 'DishDex completo',
     fullDishDexDescription: 'Acesse o DishDex completo com todas as informações.',
+    myTimeTitle: 'Meu Tempo',
+    myTimeDescription: 'Planeje pratos de acordo com seu tempo.',
+    myTimeEyebrow: 'Planejamento de tempo',
+    myTimeSettings: 'Configurações do Meu Tempo',
+    myTimeQuestion: 'Por quanto tempo você quer cozinhar?',
+    targetTime: 'Tempo alvo',
+    hoursShort: 'h',
+    minutesShort: 'min',
+    myTimeMargin: 'Margem',
+    myTimeBestMatches: 'Melhores resultados',
+    myTimeBestMatchesNote: 'Melhores pratos dentro do tempo escolhido.',
+    myTimeAllMatches: 'Todos os pratos encontrados',
+    myTimeAllMatchesNote: 'Todos os pratos disponíveis nesse intervalo, ordenados por nível.',
+    myTimeWindowLabel: 'Mostrando pratos de {0} até {1}.',
+    myTimeNoWindow: 'Defina um tempo alvo acima de 0.',
+    clearCookTime: 'Limpar tempo',
+    clearMargin: 'Limpar margem',
+    noTimeMatches: 'Nenhum prato combina com esse intervalo. Tente aumentar a margem.',
     myProfileTitle: 'Meu Perfil',
     myProfileDescription: 'Salve o nome do chef, nível e quantidade padrão de fogões.',
     myMasteriesTitle: 'Minhas Estrelas',
@@ -579,8 +615,8 @@ const I18N = {
     sortNameAsc: 'Alfabética A-Z',
     sortNameDesc: 'Alfabética Z-A',
     sortCategory: 'Categoria',
-    sortDurationAsc: 'Tempo: menor para maior',
-    sortDurationDesc: 'Tempo: maior para menor',
+    sortDurationAsc: 'Tempo: curto para longo',
+    sortDurationDesc: 'Tempo: longo para curto',
     sortProfitAsc: 'Lucro bruto: menor para maior',
     sortProfitDesc: 'Lucro bruto: maior para menor',
     sortXpAsc: 'XP bruto: menor para maior',
@@ -674,6 +710,7 @@ async function main() {
     ensureCoopTeamDefaults();
     syncProfileInputs();
     syncMyDexInputs();
+    syncMyTimeInputs();
     renderCoopTeamEditor();
 
     allDishRecords = await loadDishRecords(currentLanguage);
@@ -685,6 +722,7 @@ async function main() {
     bindInputs();
     renderMyDex();
     renderFullDishDex();
+    renderMyTime();
     renderCoopPlanner();
     restoreLastCoopPlanPreview();
     renderMasteries();
@@ -782,9 +820,11 @@ function setupLanguage() {
       updateDataSummary();
       syncProfileInputs();
       syncMyDexInputs(false);
+      syncMyTimeInputs(false);
       renderCoopTeamEditor();
       renderMyDex();
       renderFullDishDex();
+      renderMyTime();
       renderCoopPlanner();
       restoreLastCoopPlanPreview();
       renderMasteries();
@@ -805,6 +845,7 @@ const SCREEN_HASHES = {
   welcomeScreen: 'home',
   myDexScreen: 'mydex',
   fullDishDexScreen: 'fulldishdex',
+  myTimeScreen: 'mytime',
   coopPlannerScreen: 'coopplanner',
   profileScreen: 'profile',
   masteriesScreen: 'masteries'
@@ -821,6 +862,10 @@ function setupNavigation() {
 
   document.getElementById('openFullDishDex').addEventListener('click', () => {
     navigateToScreen('fullDishDexScreen');
+  });
+
+  document.getElementById('openMyTime').addEventListener('click', () => {
+    navigateToScreen('myTimeScreen');
   });
 
   document.getElementById('openCoopPlanner').addEventListener('click', () => {
@@ -1202,6 +1247,19 @@ function bindInputs() {
     element.addEventListener('change', handleMyDexInputChange);
   });
 
+  ['myTimePlayerLevel', 'myTimeHours', 'myTimeMinutes', 'myTimeMarginPlusHours', 'myTimeMarginPlusMinutes', 'myTimeMarginMinusHours', 'myTimeMarginMinusMinutes', 'myTimeUseMasteriesToggle'].forEach(id => {
+    const element = document.getElementById(id);
+    if (!element) return;
+    element.addEventListener('input', handleMyTimeInputChange);
+    element.addEventListener('change', handleMyTimeInputChange);
+  });
+
+  const clearMyTimeTargetButton = document.getElementById('clearMyTimeTarget');
+  if (clearMyTimeTargetButton) clearMyTimeTargetButton.addEventListener('click', clearMyTimeTarget);
+
+  const clearMyTimeMarginButton = document.getElementById('clearMyTimeMargin');
+  if (clearMyTimeMarginButton) clearMyTimeMarginButton.addEventListener('click', clearMyTimeMargin);
+
   document.getElementById('profileChefName').addEventListener('input', handleProfileInputChange);
   document.getElementById('profileLevel').addEventListener('input', handleProfileLevelChange);
   document.getElementById('profileStoves').addEventListener('input', handleProfileInputChange);
@@ -1215,6 +1273,7 @@ function handleMyDexInputChange() {
   saveUserData();
   syncProfileInputs(false);
   renderMyDex();
+  renderMyTime();
   renderCoopPlanner();
 }
 
@@ -1227,6 +1286,7 @@ function handleProfileLevelChange() {
   syncMyDexInputs(false);
   setProfileStatus(t('profileSaved'));
   renderMyDex();
+  renderMyTime();
   renderCoopTeamEditor();
   renderCoopPlanner();
 }
@@ -2661,6 +2721,84 @@ function coopRequirementListHtml(requirements) {
   `).join('');
 }
 
+
+function getMyTimeMatchingRecords() {
+  if (!allDishRecords.length) return { matches: [], bestCandidates: [], windowInfo: myTimeSettingsToWindow(userData.myTime) };
+  const settings = readMyTimeSettingsFromInputs();
+  userData.myTime = settings;
+  const windowInfo = myTimeSettingsToWindow(settings);
+  if (windowInfo.target <= 0 || windowInfo.max <= 0) return { matches: [], bestCandidates: [], windowInfo };
+
+  const playerLevel = clampNumber(Number(settings.playerLevel || userData.level || 1), 0, 999);
+  const records = settings.useMasteries
+    ? allDishRecords.map(applyMasteryToRecord)
+    : allDishRecords.map(record => ({ ...record }));
+
+  const matches = records
+    .filter(record => record.level <= playerLevel)
+    .filter(record => Number(record.duration || 0) >= windowInfo.min && Number(record.duration || 0) <= windowInfo.max);
+
+  const bestCandidates = matches.filter(record => {
+    if (record.dishType === 'Special') return false;
+    if (record.dishType === 'Holiday') return isHolidayDishActive(record.dishKey, new Date());
+    return true;
+  });
+
+  matches.sort((a, b) => {
+    if (Number(a.level || 0) !== Number(b.level || 0)) return Number(a.level || 0) - Number(b.level || 0);
+    if (Number(a.duration || 0) !== Number(b.duration || 0)) return Number(a.duration || 0) - Number(b.duration || 0);
+    return a.dishName.localeCompare(b.dishName);
+  });
+
+  return { matches, bestCandidates, windowInfo };
+}
+
+function renderMyTime() {
+  const bestBody = document.getElementById('myTimeBestBody');
+  const allBody = document.getElementById('myTimeAllBody');
+  if (!bestBody || !allBody) return;
+  updateMyTimeWindowSummary();
+
+  const { matches, bestCandidates, windowInfo } = getMyTimeMatchingRecords();
+  if (windowInfo.target <= 0) {
+    bestBody.innerHTML = emptyRow(9, t('myTimeNoWindow'));
+    allBody.innerHTML = emptyRow(8, t('myTimeNoWindow'));
+    return;
+  }
+
+  const bestItems = [
+    [t('bestSummaryXpMin'), findBestDish(bestCandidates, record => record.xpPerMin), 'best-xp-1'],
+    [t('bestSummaryRawXp'), findBestDish(bestCandidates, record => record.xp), 'best-xp-3'],
+    [t('bestSummaryProfitMin'), findBestDish(bestCandidates, record => record.profitPerMin), 'best-profit-1'],
+    [t('bestSummaryRawProfit'), findBestDish(bestCandidates, record => record.profit), 'best-profit-3'],
+    [t('bestSummaryPortionMin'), findBestDish(bestCandidates, record => record.servingsPerMin), 'best-portions-1'],
+    [t('bestSummaryRawPortion'), findBestDish(bestCandidates, record => record.servings), 'best-portions-3']
+  ].filter(item => item[1]);
+
+  bestBody.innerHTML = bestItems.length
+    ? bestItems.map(([label, record, rowClass]) => summaryRowHtml(label, record, rowClass)).join('')
+    : emptyRow(9, t('noTimeMatches'));
+
+  allBody.innerHTML = matches.length
+    ? matches.map(record => myTimeAllRowHtml(record)).join('')
+    : emptyRow(8, t('noTimeMatches'));
+}
+
+function myTimeAllRowHtml(record) {
+  return `
+    <tr class="${categoryClass(record.categoryId)}">
+      <td>${imageHtml(record)}</td>
+      <td class="dish-name">${fullDishNameHtml(record)}</td>
+      <td>${number(record.level)}</td>
+      <td>${metricStackHtml('xp', record.xp, record.xpPerMin)}</td>
+      <td>${metricStackHtml('cash', record.profit, record.profitPerMin)}</td>
+      <td>${portionMetricStackHtml(record.servings, record.servingsPerMin)}</td>
+      <td>${escapeHtml(record.durationText)}</td>
+      <td>${escapeHtml(record.categoryName)}</td>
+    </tr>
+  `;
+}
+
 function renderFullDishDex() {
   if (!allDishRecords.length) return;
   const body = document.getElementById('fullDishDexBody');
@@ -3016,6 +3154,7 @@ function setMasteryLevel(dishId, level) {
   renderMasteries();
   renderMyDex();
   renderFullDishDex();
+  renderMyTime();
 }
 
 function imageHtml(record) {
@@ -3065,10 +3204,26 @@ function normalizeUserData(raw) {
     xpNeeded: Math.max(0, Number(data.xpNeeded ?? 1000)),
     availableStoves: Number(data.availableStoves || 0),
     showIngredients: Boolean(data.showIngredients),
+    myTime: normalizeMyTimeSettings(data.myTime, clampNumber(Number(data.level || 1), 0, 999)),
     masteries: normalizeMasteries(data.masteries),
     coopTeams: normalizeCoopTeams(data.coopTeams),
     selectedCoopTeamId: typeof data.selectedCoopTeamId === 'string' ? data.selectedCoopTeamId : '',
     selectedCoopNumber: Math.max(0, Math.floor(Number(data.selectedCoopNumber || 0)))
+  };
+}
+
+
+function normalizeMyTimeSettings(rawSettings, fallbackLevel = 1) {
+  const data = rawSettings && typeof rawSettings === 'object' ? rawSettings : {};
+  return {
+    playerLevel: clampNumber(Number(data.playerLevel ?? fallbackLevel), 0, 999),
+    hours: clampNumber(Number(data.hours ?? 0), 0, 999),
+    minutes: clampNumber(Number(data.minutes ?? 0), 0, 59),
+    marginPlusHours: clampNumber(Number(data.marginPlusHours ?? 0), 0, 999),
+    marginPlusMinutes: clampNumber(Number(data.marginPlusMinutes ?? 0), 0, 59),
+    marginMinusHours: clampNumber(Number(data.marginMinusHours ?? 0), 0, 999),
+    marginMinusMinutes: clampNumber(Number(data.marginMinusMinutes ?? 0), 0, 59),
+    useMasteries: data.useMasteries === undefined ? true : Boolean(data.useMasteries)
   };
 }
 
@@ -3346,6 +3501,7 @@ function ensureUserDefaults() {
   if (!Number.isFinite(Number(userData.availableStoves)) || Number(userData.availableStoves) <= 0) {
     userData.availableStoves = getDefaultStovesForLevel(userData.level);
   }
+  userData.myTime = normalizeMyTimeSettings(userData.myTime);
   saveUserData();
 }
 
@@ -3454,6 +3610,90 @@ function syncMyDexInputs(updateStoves = true) {
   if (showIngredientsToggle) showIngredientsToggle.checked = Boolean(userData.showIngredients);
 }
 
+function syncMyTimeInputs(clearSummary = true) {
+  userData.myTime = normalizeMyTimeSettings(userData.myTime);
+  const settings = userData.myTime;
+  const pairs = {
+    myTimePlayerLevel: settings.playerLevel || userData.level || 1,
+    myTimeHours: settings.hours,
+    myTimeMinutes: settings.minutes,
+    myTimeMarginPlusHours: settings.marginPlusHours,
+    myTimeMarginPlusMinutes: settings.marginPlusMinutes,
+    myTimeMarginMinusHours: settings.marginMinusHours,
+    myTimeMarginMinusMinutes: settings.marginMinusMinutes
+  };
+
+  Object.entries(pairs).forEach(([id, value]) => {
+    const input = document.getElementById(id);
+    if (input) input.value = Number(value || 0);
+  });
+
+  const toggle = document.getElementById('myTimeUseMasteriesToggle');
+  if (toggle) toggle.checked = Boolean(settings.useMasteries);
+  if (clearSummary) updateMyTimeWindowSummary();
+}
+
+function readMyTimeSettingsFromInputs() {
+  return normalizeMyTimeSettings({
+    playerLevel: Number(document.getElementById('myTimePlayerLevel')?.value || userData.level || 1),
+    hours: Number(document.getElementById('myTimeHours')?.value || 0),
+    minutes: Number(document.getElementById('myTimeMinutes')?.value || 0),
+    marginPlusHours: Number(document.getElementById('myTimeMarginPlusHours')?.value || 0),
+    marginPlusMinutes: Number(document.getElementById('myTimeMarginPlusMinutes')?.value || 0),
+    marginMinusHours: Number(document.getElementById('myTimeMarginMinusHours')?.value || 0),
+    marginMinusMinutes: Number(document.getElementById('myTimeMarginMinusMinutes')?.value || 0),
+    useMasteries: Boolean(document.getElementById('myTimeUseMasteriesToggle')?.checked)
+  });
+}
+
+function handleMyTimeInputChange() {
+  userData.myTime = readMyTimeSettingsFromInputs();
+  saveUserData();
+  updateMyTimeWindowSummary();
+  renderMyTime();
+}
+
+function clearMyTimeTarget() {
+  ['myTimeHours', 'myTimeMinutes'].forEach(id => {
+    const input = document.getElementById(id);
+    if (input) input.value = 0;
+  });
+  handleMyTimeInputChange();
+}
+
+function clearMyTimeMargin() {
+  ['myTimeMarginPlusHours', 'myTimeMarginPlusMinutes', 'myTimeMarginMinusHours', 'myTimeMarginMinusMinutes'].forEach(id => {
+    const input = document.getElementById(id);
+    if (input) input.value = 0;
+  });
+  handleMyTimeInputChange();
+}
+
+function myTimeSettingsToWindow(settings = readMyTimeSettingsFromInputs()) {
+  const target = Number(settings.hours || 0) * 60 + Number(settings.minutes || 0);
+  const marginPlus = Number(settings.marginPlusHours || 0) * 60 + Number(settings.marginPlusMinutes || 0);
+  const marginMinus = Number(settings.marginMinusHours || 0) * 60 + Number(settings.marginMinusMinutes || 0);
+  return {
+    target,
+    min: Math.max(0, target - marginMinus),
+    max: Math.max(0, target + marginPlus),
+    useMasteries: Boolean(settings.useMasteries)
+  };
+}
+
+function updateMyTimeWindowSummary() {
+  const element = document.getElementById('myTimeWindowSummary');
+  if (!element) return;
+  const windowInfo = myTimeSettingsToWindow(userData.myTime || readMyTimeSettingsFromInputs());
+  if (windowInfo.target <= 0) {
+    element.textContent = t('myTimeNoWindow');
+    return;
+  }
+  element.textContent = t('myTimeWindowLabel')
+    .replace('{0}', formatDuration(windowInfo.min))
+    .replace('{1}', formatDuration(windowInfo.max));
+}
+
 function setProfileStatus(message) {
   const status = document.getElementById('profileSaveStatus');
   if (status) status.textContent = message;
@@ -3479,6 +3719,7 @@ function exportUserData() {
         xpNeeded: Math.max(0, Number(userData.xpNeeded ?? 1000)),
         availableStoves: Number(userData.availableStoves || getDefaultStovesForLevel(userData.level)),
         showIngredients: Boolean(userData.showIngredients),
+        myTime: normalizeMyTimeSettings(userData.myTime),
         masteries: userData.masteries || {},
         coopTeams: normalizeCoopTeams(userData.coopTeams),
         selectedCoopTeamId: userData.selectedCoopTeamId || '',
@@ -3488,6 +3729,7 @@ function exportUserData() {
         version: 1,
         xpNeeded: Math.max(0, Number(userData.xpNeeded ?? 1000)),
         showIngredients: Boolean(userData.showIngredients),
+        myTime: normalizeMyTimeSettings(userData.myTime),
         masteries: userData.masteries || {},
         coopTeams: normalizeCoopTeams(userData.coopTeams),
         selectedCoopTeamId: userData.selectedCoopTeamId || '',
@@ -3525,6 +3767,9 @@ function importUserData(file) {
       if ('showIngredients' in parsed) {
         userData.showIngredients = Boolean(parsed.showIngredients);
       }
+      if ('myTime' in parsed) {
+        userData.myTime = normalizeMyTimeSettings(parsed.myTime);
+      }
 
       if ('chefName' in parsed || 'level' in parsed || 'availableStoves' in parsed) {
         userData.chefName = typeof parsed.chefName === 'string' ? parsed.chefName : userData.chefName;
@@ -3547,12 +3792,14 @@ function importUserData(file) {
       saveUserData();
       syncProfileInputs(false);
       syncMyDexInputs(true);
+      syncMyTimeInputs(false);
       renderCoopTeamEditor();
       renderCoopPlanner();
       restoreLastCoopPlanPreview();
       renderMasteries();
       renderMyDex();
       renderFullDishDex();
+      renderMyTime();
       setDataStatus(t('dataLoadedMessage'));
     } catch (error) {
       console.error(error);
@@ -3572,12 +3819,14 @@ function deleteUserData() {
   ensureCoopTeamDefaults();
   syncProfileInputs(false);
   syncMyDexInputs(true);
+  syncMyTimeInputs(false);
   renderCoopTeamEditor();
   renderCoopPlanner();
   restoreLastCoopPlanPreview();
   renderMasteries();
   renderMyDex();
   renderFullDishDex();
+  renderMyTime();
   setDataStatus(t('dataDeleted'));
 }
 

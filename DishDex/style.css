@@ -200,6 +200,10 @@ h1 {
   grid-template-columns: repeat(5, minmax(160px, 1fr));
 }
 
+.six-mode-grid {
+  grid-template-columns: repeat(6, minmax(150px, 1fr));
+}
+
 .mode-card {
   border: 2px solid var(--border);
   background: var(--plain-cell);
@@ -379,7 +383,7 @@ td.dish-name { font-weight: 900; }
 }
 
 body.dark-theme .dish-type-tag {
-  color: #f0d0a8;
+  color: #5f351d;
 }
 
 
@@ -2551,5 +2555,179 @@ body:not(.dark-theme) .assignment-card .assignment-pills .requirement-pill .mast
 @media (min-width: 980px) {
   .assignment-list {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+
+/* My Time */
+.my-time-panel {
+  position: static;
+}
+
+.compact-clear-button {
+  width: fit-content;
+  max-width: 100%;
+  justify-self: start;
+  padding: 8px 14px;
+  border-radius: 999px;
+}
+
+body.dark-theme .compact-clear-button {
+  background: #4b2f1b;
+  color: #fff4e8;
+  border-color: #a87338;
+}
+
+body:not(.dark-theme) .compact-clear-button {
+  background: #fff2cc;
+  color: #3b2618;
+  border-color: #c89452;
+}
+
+.my-time-grid {
+  display: grid;
+  grid-template-columns: minmax(170px, 0.65fr) minmax(220px, 0.85fr) minmax(340px, 1.45fr) minmax(220px, 0.9fr);
+  gap: 14px;
+  align-items: stretch;
+}
+
+.time-input-card {
+  border: 2px solid var(--border);
+  background: var(--plain-cell);
+  color: var(--text);
+  border-radius: 16px;
+  padding: 12px;
+  display: grid;
+  gap: 10px;
+}
+
+.time-input-title {
+  color: var(--brown-dark);
+  font-weight: 900;
+}
+
+.compact-number-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(90px, 1fr));
+  gap: 10px;
+}
+
+.margin-groups {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 1fr));
+  gap: 12px;
+  align-items: stretch;
+}
+
+.margin-group {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px;
+  align-items: end;
+}
+
+.margin-group strong {
+  color: var(--brown-dark);
+  font-weight: 900;
+  padding-bottom: 11px;
+  white-space: nowrap;
+}
+
+.my-time-toggle {
+  align-self: stretch;
+  justify-content: center;
+}
+
+.my-time-window-summary {
+  margin-top: 12px;
+  margin-bottom: 0;
+  border: 2px solid var(--border);
+  border-radius: 14px;
+  background: var(--plain-cell);
+  color: var(--text);
+  padding: 10px 12px;
+  font-weight: 900;
+}
+
+body.dark-theme .time-input-card,
+body.dark-theme .my-time-window-summary,
+body.dark-theme .my-time-toggle {
+  background: #2b211b;
+  color: #fff4e8;
+}
+
+body.dark-theme .time-input-title,
+body.dark-theme .margin-group strong,
+body.dark-theme .my-time-toggle span {
+  color: #ffd5a2;
+}
+
+body:not(.dark-theme) .time-input-card,
+body:not(.dark-theme) .my-time-window-summary,
+body:not(.dark-theme) .my-time-toggle {
+  background: #fffaf4;
+  color: #3b2618;
+}
+
+body:not(.dark-theme) .time-input-title,
+body:not(.dark-theme) .margin-group strong,
+body:not(.dark-theme) .my-time-toggle span {
+  color: #5f351d;
+}
+
+
+@media (max-width: 1180px) {
+  .six-mode-grid { grid-template-columns: repeat(3, minmax(190px, 1fr)); }
+  .my-time-grid { grid-template-columns: repeat(2, minmax(220px, 1fr)); }
+  .margin-groups { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 720px) {
+  .six-mode-grid { grid-template-columns: 1fr; }
+  .my-time-grid { grid-template-columns: 1fr; }
+  .compact-number-grid { grid-template-columns: 1fr 1fr; }
+  .margin-groups { grid-template-columns: 1fr; }
+  .margin-group { grid-template-columns: 36px 1fr; }
+  .margin-group strong { padding-bottom: 11px; }
+}
+
+.secondary-button {
+  border: 2px solid var(--border);
+  background: var(--plain-cell);
+  color: var(--text);
+  font: inherit;
+  font-weight: 900;
+  cursor: pointer;
+}
+.secondary-button:hover { border-color: var(--brown); }
+
+
+/* Keep dish labels readable on light category rows in every theme. */
+td.dish-name .dish-type-tag,
+#myTimeScreen .dish-type-tag,
+.full-table .dish-type-tag {
+  color: #5f351d;
+  text-shadow: none;
+}
+
+body.dark-theme td.dish-name .dish-type-tag,
+body.dark-theme #myTimeScreen .dish-type-tag,
+body.dark-theme .full-table .dish-type-tag {
+  color: #5f351d;
+  text-shadow: none;
+}
+
+@media (max-width: 520px) {
+  .my-time-panel {
+    padding: 14px;
+  }
+
+  .time-input-card {
+    padding: 10px;
+  }
+
+  .compact-clear-button {
+    width: 100%;
+    justify-self: stretch;
   }
 }
