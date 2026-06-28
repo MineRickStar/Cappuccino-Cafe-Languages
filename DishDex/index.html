@@ -1,0 +1,659 @@
+<!-- DishDex/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cappuccino Café DishDex</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=20260624-mastery-req-v3">
+</head>
+<body class="dark-theme">
+  <main class="page">
+    <section id="welcomeScreen" class="screen welcome-screen">
+      <header class="hero welcome-hero">
+        <div class="title-block">
+          <div class="title-row">
+            <img src="cappred.png" alt="Cappuccino Café" class="title-logo" onerror="this.style.display='none'">
+            <div>
+              <p class="eyebrow">Cappuccino Café</p>
+              <h1>DishDex</h1>
+            </div>
+          </div>
+          <p class="subtitle" data-i18n="mainSubtitle">Access information about all dishes!</p>
+        </div>
+        <div class="status-card">
+          <span id="loadStatus">Loading Café data...</span>
+          <small id="dataSummary"></small>
+        </div>
+      </header>
+
+      <section class="panel welcome-panel">
+        <div class="theme-toggle-row">
+          <div>
+            <h2 data-i18n="chooseMode">Choose a mode</h2>
+            <p class="section-note" data-i18n="chooseModeNote">Select how you want to use DishDex.</p>
+          </div>
+          <div class="home-controls">
+            <label class="language-select">
+              <span data-i18n="languageLabel">🌐 Language</span>
+              <select id="languageSelect">
+                <option value="cs">Čeština</option>
+                <option value="da">Dansk</option>
+                <option value="de">Deutsch</option>
+                <option value="el">Ελληνικά</option>
+                <option value="en">🇺🇸 English</option>
+                <option value="es">Español</option>
+                <option value="fi">Suomi</option>
+                <option value="fr">Français</option>
+                <option value="hu">Magyar</option>
+                <option value="it">Italiano</option>
+                <option value="ja">日本語</option>
+                <option value="ko">한국어</option>
+                <option value="nl">Nederlands</option>
+                <option value="pl">Polski</option>
+                <option value="pt">🇧🇷 Português</option>
+                <option value="ru">Русский</option>
+                <option value="sv">Svenska</option>
+                <option value="tr">Türkçe</option>
+                <option value="zh_CN">简体中文</option>
+                <option value="zh_TW">繁體中文</option>
+              </select>
+            </label>
+            <label class="theme-toggle">
+              <span data-i18n="darkTheme">Dark Theme</span>
+              <input id="themeToggle" type="checkbox" checked>
+            </label>
+          </div>
+        </div>
+
+        <div class="mode-grid six-mode-grid">
+          <button id="openMyDex" class="mode-card" type="button">
+            <img src="MyDex.png" alt="" class="mode-icon" onerror="this.style.display='none'">
+            <span class="mode-title">MyDex</span>
+            <span class="mode-description" data-i18n="myDexDescription">Access your personal DishDex based on your level, XP and available time.</span>
+          </button>
+
+          <button id="openFullDishDex" class="mode-card" type="button">
+            <img src="DishDex.png" alt="" class="mode-icon" onerror="this.style.display='none'">
+            <span class="mode-title" data-i18n="fullDishDexTitle">Full DishDex</span>
+            <span class="mode-description" data-i18n="fullDishDexDescription">Access the complete DishDex with all information.</span>
+          </button>
+
+          <button id="openMyTime" class="mode-card" type="button">
+            <img src="Mytime.png" alt="" class="mode-icon" onerror="this.style.display='none'">
+            <span class="mode-title" data-i18n="myTimeTitle">My Time</span>
+            <span class="mode-description" data-i18n="myTimeDescription">Plan dishes according to your time.</span>
+          </button>
+
+          <button id="openCoopPlanner" class="mode-card" type="button">
+            <img src="Coop.png" alt="" class="mode-icon" onerror="this.style.display='none'">
+            <span class="mode-title" data-i18n="coopPlannerTitle">Co-Op Planner</span>
+            <span class="mode-description" data-i18n="coopPlannerDescription">Browse co-op missions and prepare team plans.</span>
+          </button>
+
+          <button id="openProfile" class="mode-card" type="button">
+            <img src="MyProfile.png" alt="" class="mode-icon" onerror="this.style.display='none'">
+            <span class="mode-title" data-i18n="myProfileTitle">My Profile</span>
+            <span class="mode-description" data-i18n="myProfileDescription">Save your chef name, level and default stove count.</span>
+          </button>
+
+          <button id="openMasteries" class="mode-card" type="button">
+            <img src="Masteries.png" alt="" class="mode-icon" onerror="this.style.display='none'">
+            <span class="mode-title" data-i18n="myMasteriesTitle">My Masteries</span>
+            <span class="mode-description" data-i18n="myMasteriesDescription">Register your dish mastery stars and apply them to MyDex.</span>
+          </button>
+        </div>
+      </section>
+    </section>
+
+    <section id="myDexScreen" class="screen hidden">
+      <header class="sub-hero">
+        <button class="back-button" type="button" data-back data-i18n="backButton">← Back</button>
+        <div class="title-row compact-title-row">
+          <img src="cappred.png" alt="Cappuccino Café" class="title-logo small-logo" onerror="this.style.display='none'">
+          <div>
+            <p class="eyebrow" data-i18n="personalRecommendations">Personal recommendations</p>
+            <h1>MyDex</h1>
+          </div>
+        </div>
+      </header>
+
+      <section class="panel inputs-panel">
+        <h2 data-i18n="myDexSettings">MyDex Settings</h2>
+        <div class="input-grid">
+          <label>
+            <span data-i18n="playerLevel">Player Level</span>
+            <input id="playerLevel" type="number" min="0" max="200" value="1">
+          </label>
+          <label>
+            <span data-i18n="xpNeeded">XP Needed</span>
+            <input id="xpNeeded" type="number" min="0" value="1000">
+          </label>
+          <label>
+            <span data-i18n="availableStoves">Available Stoves</span>
+            <input id="stoveCount" type="number" min="1" value="3">
+          </label>
+          <label>
+            <span data-i18n="holidayMode">Include holiday foods?</span>
+            <select id="holidayMode">
+              <option value="Exclude" data-i18n="exclude">Exclude</option>
+              <option value="Include" data-i18n="include">Include</option>
+              <option value="Auto" data-i18n="auto" selected>Auto</option>
+            </select>
+          </label>
+          <label class="inline-toggle setting-toggle">
+            <input id="showIngredientsToggle" type="checkbox">
+            <span data-i18n="showIngredients">Show ingredients?</span>
+          </label>
+        </div>
+        <p class="hint" data-i18n="myDexHint">Insert your data for personalized recommendations.</p>
+      </section>
+
+      <section class="panel">
+        <h2 data-i18n="bestSummaryTitle">Best of Summary</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th data-i18n="image">Image</th>
+                <th data-i18n="recommendation">Recommendation</th>
+                <th data-i18n="dish">Dish</th>
+                <th data-i18n="level">Level</th>
+                <th><span class="icon-heading"><img src="xp.png" alt="XP" class="header-icon"><small>/min</small></span></th>
+                <th><span class="icon-heading"><img src="cash.png" alt="Cash" class="header-icon"><small>/min</small></span></th>
+                <th data-i18n="portions">Portions</th>
+                <th data-i18n="duration">Duration</th>
+                <th data-i18n="category">Category</th>
+              </tr>
+            </thead>
+            <tbody id="bestSummaryBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2 data-i18n="recommendedMasteriesTitle">Recommended Masteries</h2>
+        <p class="section-note" data-i18n="recommendedMasteriesNote">Best mastery targets based on your Best of Summary dishes.</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th data-i18n="image">Image</th>
+                <th data-i18n="recommendation">Recommendation</th>
+                <th data-i18n="dish">Dish</th>
+                <th data-i18n="currentMastery">Current Mastery</th>
+                <th data-i18n="recommendedStar">Recommended Star</th>
+                <th data-i18n="benefit">Benefit</th>
+                <th data-i18n="requirement">Requirement</th>
+              </tr>
+            </thead>
+            <tbody id="recommendedMasteriesBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2 data-i18n="bestXpTitle">Best Dishes (XP)</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th data-i18n="image">Image</th>
+                <th data-i18n="recommendation">Recommendation</th>
+                <th data-i18n="dish">Dish</th>
+                <th data-i18n="level">Level</th>
+                <th><span class="icon-heading"><img src="xp.png" alt="XP" class="header-icon"><small>/min</small></span></th>
+                <th data-i18n="duration">Duration</th>
+                <th data-i18n="category">Category</th>
+              </tr>
+            </thead>
+            <tbody id="bestXpBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2 data-i18n="bestProfitTitle">Best Dishes (Profit)</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th data-i18n="image">Image</th>
+                <th data-i18n="recommendation">Recommendation</th>
+                <th data-i18n="dish">Dish</th>
+                <th data-i18n="level">Level</th>
+                <th><span class="icon-heading"><img src="cash.png" alt="Cash" class="header-icon"><small>/min</small></span></th>
+                <th data-i18n="duration">Duration</th>
+                <th data-i18n="category">Category</th>
+              </tr>
+            </thead>
+            <tbody id="bestProfitBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2 data-i18n="bestPortionsTitle">Best dishes (Portions)</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th data-i18n="image">Image</th>
+                <th data-i18n="recommendation">Recommendation</th>
+                <th data-i18n="dish">Dish</th>
+                <th data-i18n="level">Level</th>
+                <th data-i18n="portions">Portions</th>
+                <th data-i18n="duration">Duration</th>
+                <th data-i18n="category">Category</th>
+              </tr>
+            </thead>
+            <tbody id="bestPortionsBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2 data-i18n="xpPlansTitle">XP Needed Plans</h2>
+        <p class="section-note" data-i18n="xpPlansNote">Best level up plans to base your needs and availability.</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th data-i18n="image">Image</th>
+                <th data-i18n="plan">Plan</th>
+                <th data-i18n="dish">Dish</th>
+                <th data-i18n="xpEach">XP Each</th>
+                <th data-i18n="duration">Duration</th>
+                <th data-i18n="dishesNeeded">Dishes Needed</th>
+                <th data-i18n="batches">Batches</th>
+                <th data-i18n="totalCookTime">Total Cook Time</th>
+                <th data-i18n="stoves">Stoves</th>
+                <th data-i18n="note">Note</th>
+              </tr>
+            </thead>
+            <tbody id="xpPlansBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="split-panels">
+        <section class="panel">
+          <h2 data-i18n="specialDishes">Special Dishes</h2>
+          <p class="section-note" data-i18n="specialDishesNote">Special dishes are shown separately.</p>
+          <div id="specialDishesBody" class="dish-card-grid"></div>
+        </section>
+        <section class="panel">
+          <h2 data-i18n="holidayDishes">Holiday Dishes</h2>
+          <p class="section-note" data-i18n="holidayDishesNote">Holiday dishes are shown separately. Auto mode uses Christmas and Easter seasons.</p>
+          <div id="holidayDishesBody" class="dish-card-grid"></div>
+        </section>
+      </section>
+    </section>
+
+    <section id="myTimeScreen" class="screen hidden">
+      <header class="sub-hero">
+        <button class="back-button" type="button" data-back data-i18n="backButton">← Back</button>
+        <div class="title-row compact-title-row">
+          <img src="Mytime.png" alt="" class="title-logo small-logo" onerror="this.style.display='none'">
+          <div>
+            <p class="eyebrow" data-i18n="myTimeEyebrow">Time planning</p>
+            <h1 data-i18n="myTimeTitle">My Time</h1>
+          </div>
+        </div>
+      </header>
+
+      <section class="panel inputs-panel my-time-panel">
+        <h2 data-i18n="myTimeSettings">My Time Settings</h2>
+        <p class="section-note" data-i18n="myTimeQuestion">How long do you want to cook for?</p>
+        <div class="my-time-grid my-time-compact-grid">
+          <div class="time-input-card compact-time-card player-level-card">
+            <div class="compact-control-row single-input-row">
+              <span class="time-input-title"><span data-i18n="playerLevelShort">Player level</span>:</span>
+              <input id="myTimePlayerLevel" type="number" min="0" max="999" value="1">
+            </div>
+          </div>
+
+          <div class="time-input-card compact-time-card target-card">
+            <div class="compact-control-row">
+              <span class="time-input-title"><span data-i18n="targetShort">Target</span>:</span>
+              <label class="mini-number-field">
+                <span data-i18n="hoursShort">h</span>
+                <input id="myTimeHours" type="number" min="0" max="999" value="0">
+              </label>
+              <label class="mini-number-field">
+                <span data-i18n="minutesShort">min</span>
+                <input id="myTimeMinutes" type="number" min="0" max="59" value="0">
+              </label>
+              <button id="clearMyTimeTarget" class="secondary-button compact-clear-button" type="button" data-i18n="clearCookTime">Clear cook time</button>
+            </div>
+          </div>
+
+          <div class="time-input-card compact-time-card margin-card">
+            <span class="time-input-title"><span data-i18n="marginShort">Margin</span>:</span>
+            <div class="compact-margin-rows">
+              <div class="compact-margin-row">
+                <strong>+</strong>
+                <label class="mini-number-field">
+                  <span data-i18n="hoursShort">h</span>
+                  <input id="myTimeMarginPlusHours" type="number" min="0" max="999" value="0">
+                </label>
+                <label class="mini-number-field">
+                  <span data-i18n="minutesShort">min</span>
+                  <input id="myTimeMarginPlusMinutes" type="number" min="0" max="59" value="0">
+                </label>
+              </div>
+              <div class="compact-margin-row">
+                <strong>-</strong>
+                <label class="mini-number-field">
+                  <span data-i18n="hoursShort">h</span>
+                  <input id="myTimeMarginMinusHours" type="number" min="0" max="999" value="0">
+                </label>
+                <label class="mini-number-field">
+                  <span data-i18n="minutesShort">min</span>
+                  <input id="myTimeMarginMinusMinutes" type="number" min="0" max="59" value="0">
+                </label>
+                <button id="clearMyTimeMargin" class="secondary-button compact-clear-button" type="button" data-i18n="clearMargin">Clear margin</button>
+              </div>
+            </div>
+          </div>
+
+          <label class="inline-toggle setting-toggle my-time-toggle compact-masteries-toggle">
+            <input id="myTimeUseMasteriesToggle" type="checkbox" checked>
+            <span data-i18n="useRegisteredMasteries">Use my registered masteries</span>
+          </label>
+        </div>
+        <p id="myTimeWindowSummary" class="hint my-time-window-summary"></p>
+      </section>
+
+      <section class="panel">
+        <h2 data-i18n="myTimeBestMatches">Best matches</h2>
+        <p class="section-note" data-i18n="myTimeBestMatchesNote">Best dishes inside your chosen time window.</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th data-i18n="image">Image</th>
+                <th data-i18n="recommendation">Recommendation</th>
+                <th data-i18n="dish">Dish</th>
+                <th data-i18n="level">Level</th>
+                <th><span class="icon-heading"><img src="xp.png" alt="XP" class="header-icon"><small>/min</small></span></th>
+                <th><span class="icon-heading"><img src="cash.png" alt="Cash" class="header-icon"><small>/min</small></span></th>
+                <th data-i18n="portions">Portions</th>
+                <th data-i18n="duration">Duration</th>
+                <th data-i18n="category">Category</th>
+              </tr>
+            </thead>
+            <tbody id="myTimeBestBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2 data-i18n="myTimeAllMatches">All matching dishes</h2>
+        <p class="section-note" data-i18n="myTimeAllMatchesNote">All available dishes in this time window, sorted by level.</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th data-i18n="image">Image</th>
+                <th data-i18n="dish">Dish</th>
+                <th data-i18n="level">Level</th>
+                <th><span class="icon-heading"><img src="xp.png" alt="XP" class="header-icon"><small>/min</small></span></th>
+                <th><span class="icon-heading"><img src="cash.png" alt="Cash" class="header-icon"><small>/min</small></span></th>
+                <th data-i18n="portions">Portions</th>
+                <th data-i18n="duration">Duration</th>
+                <th data-i18n="category">Category</th>
+              </tr>
+            </thead>
+            <tbody id="myTimeAllBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+
+    <section id="fullDishDexScreen" class="screen hidden">
+      <header class="sub-hero">
+        <button class="back-button" type="button" data-back data-i18n="backButton">← Back</button>
+        <div class="title-row compact-title-row">
+          <img src="cappred.png" alt="Cappuccino Café" class="title-logo small-logo" onerror="this.style.display='none'">
+          <div>
+            <p class="eyebrow" data-i18n="completeDishList">Complete dish list</p>
+            <h1 data-i18n="fullDishDexTitle">Full DishDex</h1>
+          </div>
+        </div>
+      </header>
+      <section class="panel">
+        <h2 data-i18n="sortFullDishDex">Sort Full DishDex</h2>
+        <div class="sort-grid full-dishdex-options">
+          <label>
+            <span data-i18n="sortBy">Sort by</span>
+            <select id="fullSortSelect"></select>
+          </label>
+          <label class="full-mastery-toggle" for="fullUseMasteriesToggle">
+            <input id="fullUseMasteriesToggle" type="checkbox" checked>
+            <span data-i18n="useRegisteredMasteries">Use my registered masteries</span>
+          </label>
+        </div>
+      </section>
+      <section class="panel">
+        <h2 data-i18n="availableDishDex">Available DishDex</h2>
+        <p class="section-note" data-i18n="availableDishDexNote">Complete dish list with XP, profit, portions, time, category and requirements.</p>
+        <div class="table-wrap">
+          <table class="full-table">
+            <thead>
+              <tr>
+                <th data-i18n="image">Image</th>
+                <th data-i18n="dish">Dish</th>
+                <th data-i18n="level">Level</th>
+                <th><span class="icon-heading"><img src="xp.png" alt="XP" class="header-icon"><small>/min</small></span></th>
+                <th><span class="icon-heading"><img src="cash.png" alt="Cash" class="header-icon"><small>/min</small></span></th>
+                <th data-i18n="portions">Portions</th>
+                <th data-i18n="duration">Duration</th>
+                <th data-i18n="cost">Cost</th>
+                <th data-i18n="revenue">Revenue</th>
+                <th data-i18n="category">Category</th>
+                <th data-i18n="requirements">Requirements</th>
+              </tr>
+            </thead>
+            <tbody id="fullDishDexBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+
+    <section id="coopPlannerScreen" class="screen hidden">
+      <header class="sub-hero">
+        <button class="back-button" type="button" data-back data-i18n="backButton">← Back</button>
+        <div class="title-row compact-title-row">
+          <img src="Coopplanner.png" alt="" class="title-logo small-logo" onerror="this.style.display='none'">
+          <div>
+            <p class="eyebrow" data-i18n="coopPlannerEyebrow">Team cooking</p>
+            <h1 data-i18n="coopPlannerTitle">Co-Op Planner</h1>
+          </div>
+        </div>
+      </header>
+
+      <section class="panel coop-team-panel">
+        <div class="section-heading-row">
+          <div>
+            <h2 data-i18n="coopTeamTitle">Co-Op Team</h2>
+            <p class="section-note" data-i18n="coopTeamNote">Register up to five chefs and save up to ten teams.</p>
+          </div>
+          <div class="coop-team-actions">
+            <button id="newCoopTeamButton" type="button" class="action-button" data-i18n="newTeam">New team</button>
+            <button id="saveCoopTeamButton" type="button" class="action-button" data-i18n="saveTeam">Save team</button>
+            <button id="deleteCoopTeamButton" type="button" class="action-button danger-button" data-i18n="deleteTeam">Delete team</button>
+          </div>
+        </div>
+
+        <div class="coop-team-top-grid">
+          <label>
+            <span data-i18n="loadTeam">Load team</span>
+            <select id="coopTeamSelect"></select>
+          </label>
+          <label>
+            <span data-i18n="teamName">Team name</span>
+            <input id="coopTeamName" type="text" maxlength="40" autocomplete="off">
+          </label>
+          <button id="useProfileForLeaderButton" type="button" class="action-button profile-fill-button" data-i18n="useProfileForChef1">Use My Profile for Chef 1</button>
+        </div>
+
+        <label class="coop-masteries-toggle">
+          <input id="useMyMasteriesChef1Toggle" type="checkbox">
+          <span data-i18n="useMyMasteriesForChef1">Use my gold masteries for Chef 1</span>
+        </label>
+
+        <div class="coop-member-table-wrap">
+          <table class="coop-member-table">
+            <thead>
+              <tr>
+                <th data-i18n="chef">Chef</th>
+                <th data-i18n="chefName">Chef name</th>
+                <th data-i18n="level">Level</th>
+                <th data-i18n="stoves">Stoves</th>
+                <th data-i18n="actions">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="coopTeamMembersBody"></tbody>
+          </table>
+        </div>
+        <div id="coopGoldMasteryEditor" class="gold-mastery-editor hidden"></div>
+        <div id="coopManualAssignmentEditor" class="manual-assignment-editor hidden"></div>
+        <p id="coopTeamStatus" class="hint"></p>
+      </section>
+
+      <section class="panel">
+        <h2 data-i18n="coopListTitle">Available Co-Ops</h2>
+        <p class="section-note" data-i18n="coopListNote">Browse and plan your next Co-Op here!</p>
+        <label class="search-label">
+          <span data-i18n="coopSearch">Search co-op</span>
+          <input id="coopSearch" type="search" autocomplete="off" placeholder="Search co-op...">
+        </label>
+        <div class="table-wrap coop-list-scroll">
+          <table class="coop-table">
+            <thead>
+              <tr>
+                <th data-i18n="image">Image</th>
+                <th data-i18n="coopNumber">Co-Op</th>
+                <th data-i18n="duration">Duration</th>
+                <th data-i18n="rewardDetails">Reward Details</th>
+                <th data-i18n="requirements">Requirements</th>
+                <th data-i18n="plan">Plan</th>
+              </tr>
+            </thead>
+            <tbody id="coopListBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel coop-plan-preview-panel">
+        <h2 data-i18n="selectedCoopPlanTitle">Selected Co-Op Plan</h2>
+        <div id="coopPlanPreview" class="coop-plan-preview empty-coop-plan" data-i18n="noCoopSelected">Choose a co-op and click Plan!</div>
+      </section>
+    </section>
+
+    <section id="profileScreen" class="screen hidden">
+      <header class="sub-hero">
+        <button class="back-button" type="button" data-back data-i18n="backButton">← Back</button>
+        <div class="title-row compact-title-row">
+          <img src="MyProfile.png" alt="" class="title-logo small-logo" onerror="this.style.display='none'">
+          <div>
+            <p class="eyebrow">Cappuccino Café</p>
+            <h1 data-i18n="myProfileTitle">My Profile</h1>
+          </div>
+        </div>
+      </header>
+      <section class="panel profile-panel">
+        <h2 data-i18n="profileSettingsTitle">Chef Profile</h2>
+        <p class="section-note" data-i18n="profileSettingsNote">Your level sets the default stove count from CafeLevelXp.xml. You can still change stoves in MyDex.</p>
+        <div class="data-actions profile-data-actions">
+          <button id="profileLoadDataButton" type="button" class="action-button" data-i18n="loadData">Load data</button>
+          <button id="profileDownloadDataButton" type="button" class="action-button" data-i18n="downloadData">Download data</button>
+          <button id="profileDeleteDataButton" type="button" class="action-button danger-button" data-i18n="deleteData">Delete data</button>
+        </div>
+        <div class="input-grid profile-grid">
+          <label>
+            <span data-i18n="chefName">Chef name</span>
+            <input id="profileChefName" type="text" maxlength="40" autocomplete="off">
+          </label>
+          <label>
+            <span data-i18n="playerLevel">Player Level</span>
+            <input id="profileLevel" type="number" min="0" max="200" value="1">
+          </label>
+          <label>
+            <span data-i18n="availableStoves">Available Stoves</span>
+            <input id="profileStoves" type="number" min="1" value="3">
+          </label>
+        </div>
+        <p id="profileSaveStatus" class="hint"></p>
+      </section>
+    </section>
+
+    <section id="masteriesScreen" class="screen hidden">
+      <header class="sub-hero">
+        <button class="back-button" type="button" data-back data-i18n="backButton">← Back</button>
+        <div class="title-row compact-title-row">
+          <img src="Masteries.png" alt="" class="title-logo small-logo" onerror="this.style.display='none'">
+          <div>
+            <p class="eyebrow" data-i18n="masteriesEyebrow">Dish perks</p>
+            <h1 data-i18n="myMasteriesTitle">My Masteries</h1>
+          </div>
+        </div>
+      </header>
+      <section class="panel">
+        <div class="data-actions">
+          <button id="loadDataButton" type="button" class="action-button" data-i18n="loadData">Load data</button>
+          <button id="downloadDataButton" type="button" class="action-button" data-i18n="downloadData">Download data</button>
+          <button id="deleteDataButton" type="button" class="action-button danger-button" data-i18n="deleteData">Delete data</button>
+          <input id="dataFileInput" type="file" accept="application/json,.json" hidden>
+        </div>
+        <p id="masteryDataStatus" class="hint"></p>
+
+        <div class="mastery-toolbar">
+          <label class="search-label">
+            <span data-i18n="searchDish">Search dish</span>
+            <input id="masterySearch" type="search" autocomplete="off" placeholder="Search dish...">
+          </label>
+
+          <label class="mastery-view-label">
+            <span data-i18n="masteryView">View</span>
+            <select id="masteryViewMode">
+              <option value="vertical" data-i18n="masteryListVertical">List (vertical reader)</option>
+              <option value="horizontal" data-i18n="masteryListHorizontal">List (horizontal reader)</option>
+              <option value="cookbook" data-i18n="masteryCookbook">Cook book</option>
+            </select>
+          </label>
+        </div>
+
+        <div id="masteryBookControls" class="cookbook-controls hidden">
+          <button id="masteryBookPrev" type="button" class="action-button" data-i18n="previousPage">← Previous</button>
+          <span id="masteryBookPageStatus" class="cookbook-page-status"></span>
+          <button id="masteryBookNext" type="button" class="action-button" data-i18n="nextPage">Next →</button>
+        </div>
+
+        <div id="masteriesCookbook" class="masteries-cookbook hidden"></div>
+
+        <div id="masteryTableWrap" class="table-wrap mastery-table-wrap">
+          <table class="mastery-table">
+            <thead>
+              <tr>
+                <th data-i18n="image">Image</th>
+                <th data-i18n="dish">Dish</th>
+                <th data-i18n="mastery">Mastery</th>
+                <th data-i18n="effects">Effects</th>
+                <th data-i18n="level">Level</th>
+              </tr>
+            </thead>
+            <tbody id="masteriesBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js?v=20260624-mastery-req-v3" defer></script>
+</body>
+</html>

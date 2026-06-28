@@ -351,6 +351,21 @@
 <wod id="4159" n="Basic" g="Table" t="Picnicdarkpurple" walkable="0" rotatetype="1" cash="1500" gold="0" friends="0" goldNoFriends="0" releaseDate="1781751600" world="0" events="0" xp="0" level="5" />
 <wod id="4160" n="Basic" g="Table" t="Picniclightblue" walkable="0" rotatetype="1" cash="1500" gold="0" friends="0" goldNoFriends="0" releaseDate="1781751600" world="0" events="0" xp="0" level="5" />
 <wod id="4161" n="Basic" g="Table" t="Picnicorange2" walkable="0" rotatetype="1" cash="1500" gold="0" friends="0" goldNoFriends="0" releaseDate="1781751600" world="0" events="0" xp="0" level="5" />
+<wod id="4162" n="Basic" g="Counter" t="Basicblack2" walkable="0" rotatetype="2" cash="500" gold="0" friends="0" goldNoFriends="0" releaseDate="1782260076" world="0" events="0" xp="0" level="1" />
+<wod id="4163" n="Basic" g="Stove" t="Basicblack" walkable="0" rotatetype="3" cash="1000" gold="0" friends="0" goldNoFriends="0" releaseDate="1782260076" world="0" events="0" xp="0" level="0" />
+<wod id="4164" n="Basic" g="Stove" t="Basicblue" walkable="0" rotatetype="3" cash="1000" gold="0" friends="0" goldNoFriends="0" releaseDate="1782260076" world="0" events="0" xp="0" level="0" />
+<wod id="4165" n="Basic" g="Stove" t="Basicpink" walkable="0" rotatetype="3" cash="1000" gold="0" friends="0" goldNoFriends="0" releaseDate="1782260076" world="0" events="0" xp="0" level="0" />
+<wod id="4166" n="Basic" g="Stove" t="Basicgreen" walkable="0" rotatetype="3" cash="1000" gold="0" friends="0" goldNoFriends="0" releaseDate="1782260076" world="0" events="0" xp="0" level="0" />
+<wod id="4167" n="Static" g="Wall" t="Chesswhitered" cash="800" gold="0" friends="0" goldNoFriends="0" releaseDate="1782260076" world="0" events="0" xp="0" level="1" />
+<wod id="4168" n="Static" g="Wall" t="Chesswhitegreen" cash="800" gold="0" friends="0" goldNoFriends="0" releaseDate="1782260076" world="0" events="0" xp="0" level="1" />
+<wod id="4169" n="Basic" g="Stove" t="Springpastelyellow" walkable="0" rotatetype="3" cash="15000" gold="0" friends="0" goldNoFriends="0" releaseDate="1782260076" world="0" events="0" xp="0" level="1" />
+<wod id="4170" n="Basic" g="Stove" t="Springpastelorange" walkable="0" rotatetype="3" cash="15000" gold="0" friends="0" goldNoFriends="0" releaseDate="1782260076" world="0" events="0" xp="0" level="1" />
+<wod id="4171" n="Basic" g="Stove" t="Springpastelred" walkable="0" rotatetype="3" cash="15000" gold="0" friends="0" goldNoFriends="0" releaseDate="1782260076" world="0" events="0" xp="0" level="1" />
+<wod id="4172" n="Basic" g="Stove" t="Springpastelblue" walkable="0" rotatetype="3" cash="15000" gold="0" friends="0" goldNoFriends="0" releaseDate="1782260076" world="0" events="0" xp="0" level="1" />
+<wod id="4173" n="Basic" g="Stove" t="Springpastelpurple" walkable="0" rotatetype="3" cash="15000" gold="0" friends="0" goldNoFriends="0" releaseDate="1782260076" world="0" events="0" xp="0" level="1" />
+<wod id="4174" n="Basic" g="Deco" t="Treeblossom3" walkable="0" rotatetype="2" cash="25000" gold="0" friends="0" goldNoFriends="0" releaseDate="1782260076" world="0" events="0" xp="0" level="5" />
+<wod id="4176" n="Basic" g="Counter" t="fHmoneblack" cash="2444" gold="0" friends="0" goldNoFriends="0" releaseDate="1782260076" world="0" events="0" xp="0" level="5" />
+<wod id="4177" n="Basic" g="Counter" t="fHmtwoblack" cash="2444" gold="0" friends="0" goldNoFriends="0" releaseDate="1782260076" world="0" events="0" xp="0" level="5" /><wod id="4175" n="Basic" g="Deco" t="Treeblossom4" walkable="0" rotatetype="2" cash="25000" gold="0" friends="0" goldNoFriends="0" releaseDate="1782260076" world="0" events="0" xp="0" level="5" />
 <wod id="9518" n="Basic" g="Deco" t="Vanshelfwhite" walkable="0" rotatetype="2" cash="0" gold="5" friends="0" goldNoFriends="0" releaseDate="1781838000" world="0" events="0" xp="0" level="10" />
 <wod id="9519" n="Basic" g="Deco" t="Vanshelfblack" walkable="0" rotatetype="2" cash="0" gold="5" friends="0" goldNoFriends="0" releaseDate="1781838000" world="0" events="0" xp="0" level="10" />
 <wod id="9520" n="Basic" g="Deco" t="Ladycashierw" walkable="0" rotatetype="2" cash="18000" gold="0" friends="0" goldNoFriends="0" releaseDate="1781838000" world="0" events="0" xp="0" level="10" />
@@ -640,7 +655,7 @@
 
 <wod id="2216" n="Basic" g="Dish" t="Pizzasalad" events="0" xp="56" incomePerServing="8" servings="117" duration="30" level="4" dishcategory="5" requirements="1327+1#1318+1#1314+1#1305+1#1312+1#1402+1" />
 <wod id="1207" n="Basic" g="Dish" t="Mixedsalad" events="0" xp="110" incomePerServing="5" servings="130" duration="60" level="4" dishcategory="3" requirements="1327+1#1326+1#1320+1#1314+1#1406+1" />
-<wod id="2236" n="Basic" g="Dish" t="Cappuccino" events="0" xp="5" incomePerServing="20" servings="50" duration="1" level="4" dishcategory="0" requirements="1346+1#1409+1" />
+<wod id="2236" n="Basic" g="Dish" t="Cappuccino" events="0" xp="5" incomePerServing="20" servings="50" duration="2" level="4" dishcategory="0" requirements="1346+1#1409+1" />
 
 <wod id="1208" n="Basic" g="Dish" t="Toast" events="0" xp="221" incomePerServing="4" servings="260" duration="120" level="5" dishcategory="5" requirements="1305+1#1321+1#1312+1#1402+1" />
 <wod id="2222" n="Basic" g="Dish" t="Chocolatewaffles" events="0" xp="602" incomePerServing="4" servings="700" duration="360" level="5" dishcategory="0" requirements="1312+1#1308+1#1311+1#1307+3#1408+1" />
@@ -853,6 +868,10 @@
 <wod id="1508" n="Marketplace" g="Background" t="Summer" />
 <wod id="1509" n="Cafe" g="Background" t="Villagesummer" />
 <wod id="1510" n="Static" g="Background" t="Villagenightsummer" />
+<wod id="1511" n="Cafe" g="Background" t="Villagesummerrain" />
+<wod id="1512" n="Static" g="Background" t="Villagenightsummerrain" />
+<wod id="1513" n="Marketplace" g="Background" t="Normalnightrain" />
+<wod id="1514" n="Marketplace" g="Background" t="Summerrain" />
 <wod id="1601" n="Basic" g="Moving" t="-" />
 <wod id="1602" n="Npcwaiter" g="Moving" t="-" />
 <wod id="1603" n="Plateholder" g="Moving" t="-" />
