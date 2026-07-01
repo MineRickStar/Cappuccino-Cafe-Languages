@@ -156,7 +156,7 @@
   <text id="mastery" name="Stelle" />
   <text id="masteryTotalForGold" name="Totale: {0} piatti richiesti per l&apos;Oro" />
   <text id="masteryBookPage" name="Pagina" />
-  <text id="masteryCookbook" name="Ricettario" />
+  <text id="masteryCookbook" name="Cook Book (Legacy)" />
   <text id="masteryListHorizontal" name="Lista (lettura orizzontale)" />
   <text id="masteryListVertical" name="Lista (lettura verticale)" />
   <text id="masteryView" name="Visualizza" />
@@ -306,4 +306,14 @@
   <text id="xpPlansNote" name="Il piano migliore per incrementare di livello, in base ai tuoi bisogni e alle tue disponibilità." />
   <text id="xpPlansTitle" name="Pianificazione basata sugli XP richiesti" />
   <text id="xpUpper" name="XP" />
+
+  <!-- DishDex profile/FashionDex additions -->
+  <text id="toFashionDex" name="To FashionDex" />
+  <text id="fashionDexDescription" name="Open Cappuccino Fashion FashionDex." />
+  <text id="profileLevelUnlocksTitle" name="Level {0} unlocks:" />
+  <text id="fridges" name="Fridges" />
+  <text id="counters" name="Counters" />
+  <text id="waiters" name="Waiters" />
+  <text id="instantCookings" name="Instant cookings" />
+  <text id="masteryCompletionProgress" name="Mastery completion progress:" />
 </dishdex>
