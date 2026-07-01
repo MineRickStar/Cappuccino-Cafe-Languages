@@ -138,7 +138,7 @@
   <text id="masteriesEyebrow" name="Dish perks" />
   <text id="mastery" name="Mastery" />
   <text id="masteryBookPage" name="Page" />
-  <text id="masteryCookbook" name="Cook book" />
+  <text id="masteryCookbook" name="Cook Book (Legacy)" />
   <text id="masteryListHorizontal" name="List (horizontal reader)" />
   <text id="masteryListVertical" name="List (vertical reader)" />
   <text id="masteryView" name="View" />
@@ -291,4 +291,14 @@
   <text id="xpPlansNote" name="Best level up plans to base your needs and availability." />
   <text id="xpPlansTitle" name="XP Needed Plans" />
   <text id="xpUpper" name="XP" />
+
+  <!-- DishDex profile/FashionDex additions -->
+  <text id="toFashionDex" name="To FashionDex" />
+  <text id="fashionDexDescription" name="Open Cappuccino Fashion FashionDex." />
+  <text id="profileLevelUnlocksTitle" name="Level {0} unlocks:" />
+  <text id="fridges" name="Fridges" />
+  <text id="counters" name="Counters" />
+  <text id="waiters" name="Waiters" />
+  <text id="instantCookings" name="Instant cookings" />
+  <text id="masteryCompletionProgress" name="Mastery completion progress:" />
 </dishdex>

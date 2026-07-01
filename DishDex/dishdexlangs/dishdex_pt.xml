@@ -138,7 +138,7 @@
   <text id="masteriesEyebrow" name="Bônus dos pratos" />
   <text id="mastery" name="Estrelas" />
   <text id="masteryBookPage" name="Página" />
-  <text id="masteryCookbook" name="Livro de receitas" />
+  <text id="masteryCookbook" name="Livro de receitas (legado)" />
   <text id="masteryListHorizontal" name="Lista (leitura horizontal)" />
   <text id="masteryListVertical" name="Lista (leitura vertical)" />
   <text id="masteryView" name="Visualização" />
@@ -291,4 +291,14 @@
   <text id="xpPlansNote" name="Melhores planos para subir de nível com base nas suas necessidades e disponibilidade." />
   <text id="xpPlansTitle" name="Planos de XP necessário" />
   <text id="xpUpper" name="XP" />
+
+  <!-- DishDex profile/FashionDex additions -->
+  <text id="toFashionDex" name="Ir para o FashionDex" />
+  <text id="fashionDexDescription" name="Abrir o FashionDex do Cappuccino Fashion." />
+  <text id="profileLevelUnlocksTitle" name="Nível {0} desbloqueia:" />
+  <text id="fridges" name="Geladeiras" />
+  <text id="counters" name="Balcões" />
+  <text id="waiters" name="Garçons" />
+  <text id="instantCookings" name="Preparos instantâneos" />
+  <text id="masteryCompletionProgress" name="Progresso de conclusão das estrelas:" />
 </dishdex>

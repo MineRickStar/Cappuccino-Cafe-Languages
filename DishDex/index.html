@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20260629-special-auto-v1">
+  <link rel="stylesheet" href="style.css?v=20260701-profile-fashiondex-v3">
 </head>
 <body class="dark-theme">
   <main class="page">
@@ -27,6 +27,10 @@
         <div class="status-card">
           <span id="loadStatus">Loading Café data...</span>
           <small id="dataSummary"></small>
+          <a id="openFashionDexShortcut" class="data-shortcut fashiondex-shortcut" href="https://ant-spl.github.io/Cappuccino-Fashion/fashiondex/#home" target="_blank" rel="noopener noreferrer">
+            <img src="fashiondex.png" alt="" onerror="this.style.display='none'">
+            <span data-i18n="toFashionDex">To FashionDex</span>
+          </a>
         </div>
       </header>
 
@@ -75,6 +79,7 @@
             <span class="mode-title">MyDex</span>
             <span class="mode-description" data-i18n="myDexDescription">Access your personal DishDex based on your level, XP and available time.</span>
           </button>
+
 
           <button id="openFullDishDex" class="mode-card" type="button">
             <img src="DishDex.png" alt="" class="mode-icon" onerror="this.style.display='none'">
@@ -568,13 +573,8 @@
       </header>
       <section class="panel profile-panel">
         <h2 data-i18n="profileSettingsTitle">Chef Profile</h2>
-        <p class="section-note" data-i18n="profileSettingsNote">Your level sets the default stove count from CafeLevelXp.xml. You can still change stoves in MyDex.</p>
-        <div class="data-actions profile-data-actions">
-          <button id="profileLoadDataButton" type="button" class="action-button" data-i18n="loadData">Load data</button>
-          <button id="profileDownloadDataButton" type="button" class="action-button" data-i18n="downloadData">Download data</button>
-          <button id="profileDeleteDataButton" type="button" class="action-button danger-button" data-i18n="deleteData">Delete data</button>
-        </div>
-        <div class="input-grid profile-grid">
+        <p class="section-note" data-i18n="profileSettingsNote">Your profile is saved locally in this browser only.</p>
+        <div class="input-grid profile-grid profile-grid-wide">
           <label>
             <span data-i18n="chefName">Chef name</span>
             <input id="profileChefName" type="text" maxlength="40" autocomplete="off">
@@ -588,6 +588,36 @@
             <input id="profileStoves" type="number" min="1" value="3">
           </label>
         </div>
+        <div class="data-actions profile-data-actions">
+          <button id="profileLoadDataButton" type="button" class="action-button" data-i18n="loadData">Load data</button>
+          <button id="profileDownloadDataButton" type="button" class="action-button" data-i18n="downloadData">Download data</button>
+          <button id="profileDeleteDataButton" type="button" class="action-button danger-button" data-i18n="deleteData">Delete data</button>
+        </div>
+        <section class="profile-unlocks-panel" aria-live="polite">
+          <h3 id="profileUnlocksTitle">Level 1 unlocks:</h3>
+          <div class="profile-unlocks-grid">
+            <article class="profile-unlock-card">
+              <strong id="profileUnlockStoves">3</strong>
+              <span data-i18n="stoves">Stoves</span>
+            </article>
+            <article class="profile-unlock-card">
+              <strong id="profileUnlockFridges">1</strong>
+              <span data-i18n="fridges">Fridges</span>
+            </article>
+            <article class="profile-unlock-card">
+              <strong id="profileUnlockCounters">3</strong>
+              <span data-i18n="counters">Counters</span>
+            </article>
+            <article class="profile-unlock-card">
+              <strong id="profileUnlockWaiters">1</strong>
+              <span data-i18n="waiters">Waiters</span>
+            </article>
+            <article class="profile-unlock-card">
+              <strong id="profileUnlockInstantCookings">12</strong>
+              <span data-i18n="instantCookings">Instant cookings</span>
+            </article>
+          </div>
+        </section>
         <p id="profileSaveStatus" class="hint"></p>
       </section>
     </section>
@@ -612,6 +642,16 @@
         </div>
         <p id="masteryDataStatus" class="hint"></p>
 
+        <div id="masteryCompletionProgress" class="mastery-completion-card">
+          <div class="mastery-completion-header">
+            <span data-i18n="masteryCompletionProgress">Mastery completion progress:</span>
+            <strong id="masteryCompletionText">0 / 0 (0%)</strong>
+          </div>
+          <div class="mastery-progress-track" aria-hidden="true">
+            <div id="masteryCompletionFill" class="mastery-progress-fill"></div>
+          </div>
+        </div>
+
         <div class="mastery-toolbar">
           <label class="search-label">
             <span data-i18n="searchDish">Search dish</span>
@@ -623,7 +663,7 @@
             <select id="masteryViewMode">
               <option value="vertical" data-i18n="masteryListVertical">List (vertical reader)</option>
               <option value="horizontal" data-i18n="masteryListHorizontal">List (horizontal reader)</option>
-              <option value="cookbook" data-i18n="masteryCookbook">Cook book</option>
+              <option value="cookbook" data-i18n="masteryCookbook">Cook Book (Legacy)</option>
             </select>
           </label>
         </div>
@@ -654,6 +694,6 @@
     </section>
   </main>
 
-  <script src="script.js?v=20260629-special-auto-v1" defer></script>
+  <script src="script.js?v=20260701-profile-fashiondex-v3" defer></script>
 </body>
 </html>

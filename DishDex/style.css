@@ -129,6 +129,35 @@ h1 {
   font-weight: 600;
 }
 
+.data-shortcut {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+  padding: 10px 12px;
+  border: 2px solid var(--border);
+  border-radius: 14px;
+  background: var(--plain-cell);
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 900;
+  white-space: nowrap;
+  transition: transform 150ms ease, border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.data-shortcut:hover {
+  transform: translateY(-2px);
+  border-color: var(--border-strong);
+  box-shadow: 0 10px 20px rgba(123, 78, 28, 0.18);
+}
+
+.data-shortcut img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
 .panel {
   background: var(--card);
   border: 2px solid var(--border);
@@ -204,6 +233,14 @@ h1 {
   grid-template-columns: repeat(6, minmax(150px, 1fr));
 }
 
+.seven-mode-grid {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.external-mode-card {
+  text-decoration: none;
+}
+
 .mode-card {
   border: 2px solid var(--border);
   background: var(--plain-cell);
@@ -272,9 +309,7 @@ h1 {
 body.dark-theme .danger-button { color: #ff9a91; }
 
 .inputs-panel {
-  position: sticky;
-  top: 0;
-  z-index: 5;
+  position: static;
 }
 
 .input-grid,
@@ -705,6 +740,96 @@ td.effects-cell {
   margin-bottom: 14px;
 }
 
+.profile-grid-wide {
+  grid-template-columns: minmax(240px, 2fr) minmax(160px, 1fr) minmax(180px, 1fr);
+  align-items: end;
+}
+
+.profile-unlocks-panel {
+  margin-top: 18px;
+  border: 2px solid var(--border);
+  border-radius: 20px;
+  padding: 18px;
+  background: rgba(255, 248, 230, 0.35);
+}
+
+body.dark-theme .profile-unlocks-panel {
+  background: rgba(39, 25, 17, 0.58);
+}
+
+.profile-unlocks-panel h3 {
+  margin: 0 0 14px;
+  color: var(--brown-dark);
+  font-size: 1.15rem;
+}
+
+.profile-unlocks-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.profile-unlock-card {
+  border: 2px solid var(--border);
+  border-radius: 14px;
+  background: var(--plain-cell);
+  padding: 14px;
+  min-height: 88px;
+  display: grid;
+  align-content: center;
+  gap: 4px;
+}
+
+.profile-unlock-card strong {
+  color: var(--brown-dark);
+  font-size: 1.45rem;
+  line-height: 1;
+}
+
+.profile-unlock-card span {
+  color: var(--muted);
+  font-weight: 900;
+}
+
+.mastery-completion-card {
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  background: var(--plain-cell);
+  padding: 12px 14px;
+  margin: 10px 0 16px;
+}
+
+.mastery-completion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--brown-dark);
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+
+.mastery-completion-header strong {
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.mastery-progress-track {
+  height: 14px;
+  border: 2px solid var(--border);
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+
+.mastery-progress-fill {
+  width: 0%;
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #b87b24, #f0c04f);
+  transition: width 180ms ease;
+}
+
 .coop-team-summary-list.compact-card-grid {
   display: grid;
   gap: 8px;
@@ -767,8 +892,11 @@ td.effects-cell {
 
   .input-grid,
   .profile-grid,
+  .profile-grid-wide,
   .mode-grid,
-  .four-mode-grid { grid-template-columns: 1fr; }
+  .four-mode-grid,
+  .seven-mode-grid,
+  .profile-unlocks-grid { grid-template-columns: 1fr; }
 
   .split-panels { grid-template-columns: 1fr; }
   .inputs-panel { position: static; }
@@ -2690,12 +2818,17 @@ body:not(.dark-theme) .my-time-toggle span {
 
 @media (max-width: 1180px) {
   .six-mode-grid { grid-template-columns: repeat(3, minmax(190px, 1fr)); }
+  .seven-mode-grid { grid-template-columns: repeat(3, minmax(190px, 1fr)); }
+  .profile-unlocks-grid { grid-template-columns: repeat(3, minmax(160px, 1fr)); }
   .my-time-grid { grid-template-columns: repeat(2, minmax(220px, 1fr)); max-width: none; }
   .margin-groups { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 720px) {
   .six-mode-grid { grid-template-columns: 1fr; }
+  .seven-mode-grid { grid-template-columns: 1fr; }
+  .profile-unlocks-grid { grid-template-columns: 1fr; }
+  .mastery-completion-header { align-items: flex-start; flex-direction: column; }
   .my-time-grid { grid-template-columns: 1fr; }
   .compact-number-grid { grid-template-columns: 1fr 1fr; }
   .margin-groups { grid-template-columns: 1fr; }
