@@ -35,8 +35,8 @@
 	<alerts>
 		<text id="alert_addcash_copy" name="Aqui você pode comprar ouro/Cafédólares." />
 		<text id="alert_addcash_title" name="Caixa" />
-		<text id="alert_addFriend_copy" name="Você gostaria de incluir {0} como amigo?" />
-		<text id="alert_addFriend_denied_copy" name="{0} rejeitou seu pedido. Credo!" />
+		<text id="alert_addFriend_copy" name="Você gostaria de adicionar {0} como amigo?" />
+		<text id="alert_addFriend_denied_copy" name="{0} rejeitou seu pedido. Tente outra pessoa!" />
 		<text id="alert_addFriend_denied_title" name="Pedido rejeitado!" />
 		<text id="alert_addFriend_title" name="Pedido de amizade" />
 		<text id="alert_addgold_copy" name="Você tem que se registrar primeiro para fazer compras aqui!" />
