@@ -265,6 +265,8 @@ Se você estocá-la, as porções existentes serão perdidas!" />
 		<text id="cookstep_shakshuka2" name="Arrumando molho" />
 		<text id="cookstep_matildacake1" name="Misturando chocolate" />
 		<text id="cookstep_matildacake2" name="Assando bolo" />
+		<text id="cookstep_birthdaycake1" name="Singing happy birthday" />
+		<text id="cookstep_birthdaycake2" name="Frosting cake" />
 		<text id="cookstep_blackforestcherrycake1" name="Misturando ingredientes" />
 		<text id="cookstep_blackforestcherrycake2" name="Assando bolo" />
 		<text id="cookstep_cheeseburger1" name="Fritando carne moída" />
@@ -1341,6 +1343,10 @@ Apenas disponível por tempo limitado!" />
 		<text id="preparestep_matildacake_flour" name="Levitar farinha" />
 		<text id="preparestep_matildacake_cream" name="Jogar a lata de creme com força" />
 		<text id="preparestep_matildacake_cocktailcherry" name="Adicionar cerejas" />
+		<text id="preparestep_birthdaycake_chocolate" name="Melt chocolate happily" />
+		<text id="preparestep_birthdaycake_cream" name="Whip cream joyfulyy" />
+		<text id="preparestep_birthdaycake_eggs" name="Separate eggs laughing" />
+		<text id="preparestep_birthdaycake_flour" name="Sift flour celebrating" />
 		<text id="preparestep_corncake_cinnamon" name="Moer canela" />
 		<text id="preparestep_feijoada_beans" name="Cozinhar feijões" />
 		<text id="preparestep_feijoada_bacon" name="Cortar pedaços de bacon" />
@@ -1651,6 +1657,7 @@ Apenas disponível por tempo limitado!" />
 		<text id="preparestep_sweetpizza_cinnamon" name="Espalhar canela" />
 		<text id="preparestep_shakshuka_parsley" name="Picar salsinha" />
 		<text id="preparestep_matildacake_vanilla" name="Raspar baunilha" />
+		<text id="preparestep_birthdaycake_vanilla" name="Ask how old is vanilla" />
 		<text id="preparestep_cottagepotatoes_parsley" name="Picar salsinha" />
 		<text id="preparestep_bananasplit_vanilla" name="raspar baunilha" />
 		<text id="preparestep_blackforestcherrycake_vanilla" name="Raspar baunilha" />
@@ -1784,6 +1791,7 @@ Apenas disponível por tempo limitado!" />
 		<text id="recipe_sweetpizza" name="Pizza Doce" />
 		<text id="recipe_shakshuka" name="Ovos no Purgatório" />
 		<text id="recipe_matildacake" name="Bolo Matilda" />
+		<text id="recipe_birthdaycake" name="Icy Birthday Cake" />
 		<text id="recipe_beefstew" name="Carne Ensopada" />
 		<text id="recipe_blackforestcherrycake" name="Bolo Floresta Negra" />
 		<text id="recipe_cheeseburger" name="X-Burger" />
@@ -1873,6 +1881,14 @@ Apenas disponível por tempo limitado!" />
 		<text id="recipe_smoothiemaker_guarana" name="Guaraná da Amazônia" />
 		<text id="recipe_smoothiemaker_pinacolada" name="Piña Colada" />
 		<text id="recipe_smoothiemaker_tomatojuice" name="Suco de Tomate" />
+		<text id="recipe_smoothiemaker_swimmingpool" name="Swimming Pool" />
+		<text id="recipe_smoothiemaker_caipirinha" name="Caipirinha" />
+		<text id="recipe_smoothiemaker_pinklady" name="Pink Lady" />
+		<text id="recipe_smoothiemaker_mojito" name="Mojito" />
+		<text id="recipe_smoothiemaker_grasshopper" name="Grasshopper" />
+		<text id="recipe_smoothiemaker_longisland" name="Long Island" />
+		<text id="recipe_smoothiemaker_maitai" name="Mai Tai" />
+		<text id="recipe_smoothiemaker_whiterussian" name="White Russian" />
 	</recipes_fastfood>
 	<server>
 		<mail>

@@ -263,6 +263,8 @@
 		<text id="cookstep_shakshuka2" name="Salsa a fuego lento" />
 		<text id="cookstep_cheeseburger1" name="Freír carne picada" />
 		<text id="cookstep_cheeseburger2" name="Disponer hamburguesa" />
+		<text id="cookstep_birthdaycake1" name="Singing happy birthday" />
+		<text id="cookstep_birthdaycake2" name="Frosting cake" />
 		<text id="cookstep_cheesedish1" name="Colocar queso" />
 		<text id="cookstep_cheesedish2" name="Madurar queso" />
 		<text id="cookstep_cheesefondue1" name="Hacer pan" />
@@ -1320,6 +1322,10 @@
 		<text id="preparestep_cheeseburger_cheese" name="Cortar queso" />
 		<text id="preparestep_cheeseburger_flour" name="Colar harina" />
 		<text id="preparestep_cheeseburger_mincemeat" name="Sazonar carne picada" />
+		<text id="preparestep_birthdaycake_chocolate" name="Melt chocolate happily" />
+		<text id="preparestep_birthdaycake_cream" name="Whip cream joyfulyy" />
+		<text id="preparestep_birthdaycake_eggs" name="Separate eggs laughing" />
+		<text id="preparestep_birthdaycake_flour" name="Sift flour celebrating" />
 		<text id="preparestep_cheeseburger_tomato" name="Cortar tomates" />
 		<text id="preparestep_cheesedish_cheese" name="Cortar queso" />
 		<text id="preparestep_cheesefondue_cheese" name="Derretir queso" />
@@ -1630,6 +1636,7 @@
 		<text id="preparestep_sweetpizza_cinnamon" name="Sprinkle cinnamon" />
 		<text id="preparestep_shakshuka_parsley" name="Pica el perejil" />
 		<text id="preparestep_cottagepotatoes_parsley" name="Pica el perejil" />
+		<text id="preparestep_birthdaycake_vanilla" name="Ask how old is vanilla" />
 		<text id="preparestep_bananasplit_vanilla" name="Raspar vainilla" />
 		<text id="preparestep_blackforestcherrycake_vanilla" name="Raspar la vainilla" />
 		<text id="preparestep_pizzasalad_chili" name="Picar chile" />
@@ -1763,6 +1770,7 @@
 		<text id="recipe_sweetpizza" name="Pizza Dulce" />
 		<text id="recipe_shakshuka" name="Shakshuka" />
 		<text id="recipe_blackforestcherrycake" name="Torta selva negra" />
+		<text id="recipe_birthdaycake" name="Icy Birthday Cake" />
 		<text id="recipe_cheeseburger" name="Hamburguesa con queso" />
 		<text id="recipe_cheesedish" name="Surtido de quesos" />
 		<text id="recipe_cheesefondue" name="Fondue de queso" />
@@ -1852,6 +1860,14 @@
 		<text id="recipe_smoothiemaker_guarana" name="Guaraná brasileño" />
 		<text id="recipe_smoothiemaker_pinacolada" name="Piña Colada" />
 		<text id="recipe_smoothiemaker_tomatojuice" name="Jugo de tomate" />
+		<text id="recipe_smoothiemaker_swimmingpool" name="Swimming Pool" />
+		<text id="recipe_smoothiemaker_caipirinha" name="Caipirinha" />
+		<text id="recipe_smoothiemaker_pinklady" name="Pink Lady" />
+		<text id="recipe_smoothiemaker_mojito" name="Mojito" />
+		<text id="recipe_smoothiemaker_grasshopper" name="Grasshopper" />
+		<text id="recipe_smoothiemaker_longisland" name="Long Island" />
+		<text id="recipe_smoothiemaker_maitai" name="Mai Tai" />
+		<text id="recipe_smoothiemaker_whiterussian" name="White Russian" />
 	</recipes_fastfood>
 	<server>
 		<mail>
