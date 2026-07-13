@@ -389,6 +389,15 @@
 <wod id="4198" n="Basic" g="Table" t="Golden2" walkable="0" rotatetype="3" cash="99999" gold="0" friends="0" goldNoFriends="0" releaseDate="1783566000" world="0" events="0" xp="0" level="10" />
 <wod id="4199" n="Basic" g="Stove" t="Basicgolden" walkable="0" rotatetype="3" cash="99999" gold="0" friends="0" goldNoFriends="0" releaseDate="1783566000" world="0" events="0" xp="0" level="10" />
 <wod id="4200" n="Basic" g="Deco" t="Patixa" walkable="0" rotatetype="2" cash="0" gold="2" friends="0" goldNoFriends="0" releaseDate="1783825200" world="0" events="0" xp="0" level="10" />
+<wod id="4201" n="Static" g="Tile" t="Springwoodlightlavender" walkable="1" rotatetype="0" cash="3500" gold="0" friends="0" goldNoFriends="0" releaseDate="1783911600" world="0" events="0" xp="0" level="10" />
+<wod id="4202" n="Basic" g="Table" t="Wickerorange" walkable="0" rotatetype="1" cash="5000" gold="0" friends="0" goldNoFriends="0" releaseDate="1783911600" world="0" events="0" xp="0" level="10" />
+<wod id="4203" n="Basic" g="Table" t="Wickerlavender" walkable="0" rotatetype="1" cash="5000" gold="0" friends="0" goldNoFriends="0" releaseDate="1783911600" world="0" events="0" xp="0" level="10" />
+<wod id="4204" n="Basic" g="Chair" t="Daisywickerchairlavender" walkable="0" rotatetype="3" cash="9000" gold="0" friends="0" goldNoFriends="0" releaseDate="1783911600" world="0" events="0" xp="0" level="10" />
+<wod id="4205" n="Basic" g="Deco" t="Bush1" walkable="0" rotatetype="2" cash="15000" gold="0" friends="0" goldNoFriends="0" releaseDate="1783911600" world="0" events="0" xp="0" level="10" />
+<wod id="4206" n="Basic" g="Deco" t="Bush2" walkable="0" rotatetype="2" cash="15000" gold="0" friends="0" goldNoFriends="0" releaseDate="1783911600" world="0" events="0" xp="0" level="10" />
+<wod id="4207" n="Basic" g="Deco" t="Bush3" walkable="0" rotatetype="2" cash="15000" gold="0" friends="0" goldNoFriends="0" releaseDate="1783911600" world="0" events="0" xp="0" level="10" />
+<wod id="4208" n="Basic" g="Deco" t="Bush4" walkable="0" rotatetype="2" cash="15000" gold="0" friends="0" goldNoFriends="0" releaseDate="1783911600" world="0" events="0" xp="0" level="10" />
+<wod id="4209" n="Static" g="Wall" t="Daisystrawberryneolavender" cash="6000" gold="0" friends="0" goldNoFriends="0" releaseDate="1783911600" world="0" events="0" xp="0" level="10" />
 
 <wod id="9518" n="Basic" g="Deco" t="Vanshelfwhite" walkable="0" rotatetype="2" cash="0" gold="5" friends="0" goldNoFriends="0" releaseDate="1781838000" world="0" events="0" xp="0" level="10" />
 <wod id="9519" n="Basic" g="Deco" t="Vanshelfblack" walkable="0" rotatetype="2" cash="0" gold="5" friends="0" goldNoFriends="0" releaseDate="1781838000" world="0" events="0" xp="0" level="10" />
