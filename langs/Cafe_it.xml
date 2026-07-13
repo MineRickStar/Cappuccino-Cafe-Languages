@@ -267,6 +267,10 @@
 		<text id="cookstep_birthdaycake2" name="Glassando la torta" />
 		<text id="cookstep_chickennuggets1" name="Frying nuggets" />
 		<text id="cookstep_chickennuggets2" name="Frying more nuggets" />
+		<text id="cookstep_lavenderlemoncake1" name="Mixing ingredients" />
+		<text id="cookstep_lavenderlemoncake2" name="Baking until golden" />
+		<text id="cookstep_potatosoup1" name="Boiling potatoes" />
+		<text id="cookstep_potatosoup2" name="Mixing soup" />
 		<text id="cookstep_cheeseburger1" name="Rosolando il macinato" />
 		<text id="cookstep_cheeseburger2" name="Farcendo l&apos;hamburger" />
 		<text id="cookstep_cheesedish1" name="Disponendo il formaggio" />
@@ -1333,6 +1337,15 @@
 		<text id="preparestep_chickennuggets_chicken" name="Cut chicken" />
 		<text id="preparestep_chickennuggets_flour" name="Coat in flour" />
 		<text id="preparestep_chickennuggets_oil" name="Heat oil" />
+		<text id="preparestep_lavenderlemoncake_beetroot" name="Make purple dye" />
+		<text id="preparestep_lavenderlemoncake_cream" name="Whip cream" />
+		<text id="preparestep_lavenderlemoncake_citrus" name="Slice lemons" />
+		<text id="preparestep_lavenderlemoncake_flour" name="Sift flour" />
+		<text id="preparestep_potatosoup_potato" name="Peel potatoes" />
+		<text id="preparestep_potatosoup_onion" name="Chop onion" />
+		<text id="preparestep_potatosoup_beetroot" name="Slice beetroot" />
+		<text id="preparestep_potatosoup_cream" name="Pour cream" />
+		<text id="preparestep_potatosoup_carrot" name="Dice carrots" />
 		<text id="preparestep_blackforestcherrycake_flour" name="Setaccia la farina" />
 		<text id="preparestep_cheeseburger_cheese" name="Taglia il formaggio" />
 		<text id="preparestep_cheeseburger_flour" name="Setaccia la farina" />
@@ -1645,6 +1658,8 @@
 		<text id="preparestep_matildacake_vanilla" name="Raschia la vaniglia" />
 		<text id="preparestep_birthdaycake_vanilla" name="Chiedi l&apos;età alla vaniglia" />
 		<text id="preparestep_chickennuggets_coriander" name="Chop coriander" />
+		<text id="preparestep_lavenderlemoncake_vanilla" name="Add vanilla" />
+		<text id="preparestep_potatosoup_chili" name="Chop chili" />
 		<text id="preparestep_cottagepotatoes_parsley" name="Trita il prezzemolo" />
 		<text id="preparestep_bananasplit_vanilla" name="Raschia la vaniglia" />
 		<text id="preparestep_blackforestcherrycake_vanilla" name="Raschia la vaniglia" />
@@ -1780,6 +1795,8 @@
 		<text id="recipe_matildacake" name="Torta Matilda" />
 		<text id="recipe_birthdaycake" name="Torta di Buon Compleanno" />
 		<text id="recipe_chickennuggets" name="Chicken Nuggets" />
+		<text id="recipe_lavenderlemoncake" name="Lavender Lemon Cake" />
+		<text id="recipe_potatosoup" name="Potato Soup" />
 		<text id="recipe_blackforestcherrycake" name="Torta Foresta Nera" />
 		<text id="recipe_cheeseburger" name="Cheeseburger" />
 		<text id="recipe_cheesedish" name="Formaggi misti" />
