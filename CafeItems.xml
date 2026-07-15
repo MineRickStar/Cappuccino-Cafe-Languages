@@ -779,6 +779,7 @@
 
 <wod id="1226" n="Basic" g="Dish" t="Chocolatecake" events="0" xp="2030" incomePerServing="1" servings="1500" duration="840" level="29" dishcategory="0" requirements="1312+1#1307+1#1308+1#1311+1#1408+1" />
 <wod id="2249" n="Basic" g="Dish" t="Bakedalaska" events="0" xp="2598" incomePerServing="1" servings="2295" duration="1200" level="29" dishcategory="0" requirements="1308+1#1311+1#1325+1#1408+1" />
+<wod id="2273" n="Basic" g="Dish" t="Tofusandwich" events="0" xp="49" incomePerServing="10" servings="172" duration="15" level="29" dishcategory="4" requirements="1343+1#1327+1#1314+1#1312+1#1308+1#1406+1" />
 
 <wod id="1247" n="Basic" g="Dish" t="Pizzatonno" events="0" xp="1443" incomePerServing="2" servings="1200" duration="540" level="30" dishcategory="5" requirements="1305+1#1312+1#1318+1#1327+1#1329+1#1405+1" />
 <wod id="2242" n="Basic" g="Dish" t="Carrotcake" events="0" xp="2283" incomePerServing="1" servings="2450" duration="960" level="30" dishcategory="0" requirements="1338+1#1312+1#1342+1#1307+1#1330+1#1408+1" />
@@ -818,6 +819,7 @@
 <wod id="2263" n="Basic" g="Dish" t="Sweetpizza" events="0" xp="2964" incomePerServing="2" servings="1170" duration="1080" level="40" dishcategory="0" requirements="1312+1#1307+2#1328+1#1346+1#1409+1" />
 
 <wod id="1234" n="Basic" g="Dish" t="Porkroastwithcrackling" events="0" xp="6605" incomePerServing="3" servings="3000" duration="2880" level="41" dishcategory="1" requirements="1315+2#1338+4#1318+1#1313+2#1407+1" />
+<wod id="2274" n="Basic" g="Dish" t="Tofupizza" events="0" xp="231" incomePerServing="15" servings="294" duration="60" level="41" dishcategory="4" requirements="1343+3#1318+1#1312+1#1308+1#1313+1#1406+1" />
 
 <wod id="2243" n="Basic" g="Dish" t="Carrotjuice" events="0" xp="28" incomePerServing="25" servings="81" duration="6" level="42" dishcategory="0" requirements="1338+1#1325+1#1408+1" />
 
