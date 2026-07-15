@@ -277,6 +277,10 @@
 		<text id="cookstep_cakewithtoy2" name="Ordering toys" />
 		<text id="cookstep_goldencake1" name="Mixing golden batter" />
 		<text id="cookstep_goldencake2" name="Regretting expenses" />
+		<text id="cookstep_tofusandwich1" name="Spreading sauce" />
+		<text id="cookstep_tofusandwich2" name="Stacking sandwich" />
+		<text id="cookstep_tofupizza1" name="Heating sauce" />
+		<text id="cookstep_tofupizza2" name="Baking pizza" />
 		<text id="cookstep_chocmousse1" name="Blandar ingredienser" />
 		<text id="cookstep_chocmousse2" name="Kyler mousse" />
 		<text id="cookstep_chocolatecake1" name="Blandar ingredienser" />
@@ -1370,6 +1374,16 @@
 		<text id="preparestep_goldencake_goldeneggs" name="Question egg investment" />
 		<text id="preparestep_goldencake_flour" name="Sift flour" />
 		<text id="preparestep_goldencake_cream" name="Whip cream" />
+		<text id="preparestep_tofusandwich_tofu" name="Slice tofu" />
+		<text id="preparestep_tofusandwich_tomato" name="Make ketchup" />
+		<text id="preparestep_tofusandwich_lettuce" name="Wash lettuce" />
+		<text id="preparestep_tofusandwich_flour" name="Sift flour" />
+		<text id="preparestep_tofusandwich_cream" name="Make sauce" />
+		<text id="preparestep_tofupizza_tofu" name="Slice tofu" />
+		<text id="preparestep_tofupizza_onion" name="Slice onion" />
+		<text id="preparestep_tofupizza_flour" name="Sift flour" />
+		<text id="preparestep_tofupizza_cream" name="Spread cream" />
+		<text id="preparestep_tofupizza_garlic" name="Make garlic sauce" />
 		<text id="preparestep_chiliconcarne_tomato" name="Skär upp tomater" />
 		<text id="preparestep_chocmousse_chocolate" name="Hacka choklad" />
 		<text id="preparestep_chocmousse_cream" name="Vispa grädde" />
@@ -1690,6 +1704,8 @@
 		<text id="preparestep_chocochipcake_vanilla" name="Add vanilla" />
 		<text id="preparestep_cakewithtoy_nutmeg" name="Grate nutmeg" />
 		<text id="preparestep_goldencake_nutmeg" name="Grate nutmeg" />
+		<text id="preparestep_tofusandwich_parsley" name="Chop parsley" />
+		<text id="preparestep_tofupizza_parsley" name="Chop parsley" />
 		<text id="preparestep_cottagepotatoes_parsley" name="Hacka persilja" />
 		<text id="preparestep_bananasplit_vanilla" name="Skrapa vanilj" />
 		<text id="preparestep_blackforestcherrycake_vanilla" name="Skrapa vanilj" />
@@ -1830,6 +1846,8 @@
 		<text id="recipe_chocochipcake" name="Choco Chip Cake" />
 		<text id="recipe_cakewithtoy" name="Cake with Toy" />
 		<text id="recipe_goldencake" name="Golden Cake" />
+		<text id="recipe_tofusandwich" name="Tofu Sandwich" />
+		<text id="recipe_tofupizza" name="Tofu Pizza" />
 		<text id="recipe_chocmousse" name="Chokladmousse" />
 		<text id="recipe_chocolatecake" name="Chokladtårta" />
 		<text id="recipe_chocolatecheesecake" name="Choklad Cheesecake" />

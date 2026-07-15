@@ -277,6 +277,10 @@
 		<text id="cookstep_cakewithtoy2" name="Ordering toys" />
 		<text id="cookstep_goldencake1" name="Mixing golden batter" />
 		<text id="cookstep_goldencake2" name="Regretting expenses" />
+		<text id="cookstep_tofusandwich1" name="Spreading sauce" />
+		<text id="cookstep_tofusandwich2" name="Stacking sandwich" />
+		<text id="cookstep_tofupizza1" name="Heating sauce" />
+		<text id="cookstep_tofupizza2" name="Baking pizza" />
 		<text id="cookstep_cheesedish1" name="Colocar queso" />
 		<text id="cookstep_cheesedish2" name="Madurar queso" />
 		<text id="cookstep_cheesefondue1" name="Hacer pan" />
@@ -1368,6 +1372,16 @@
 		<text id="preparestep_goldencake_goldeneggs" name="Question egg investment" />
 		<text id="preparestep_goldencake_flour" name="Sift flour" />
 		<text id="preparestep_goldencake_cream" name="Whip cream" />
+		<text id="preparestep_tofusandwich_tofu" name="Slice tofu" />
+		<text id="preparestep_tofusandwich_tomato" name="Make ketchup" />
+		<text id="preparestep_tofusandwich_lettuce" name="Wash lettuce" />
+		<text id="preparestep_tofusandwich_flour" name="Sift flour" />
+		<text id="preparestep_tofusandwich_cream" name="Make sauce" />
+		<text id="preparestep_tofupizza_tofu" name="Slice tofu" />
+		<text id="preparestep_tofupizza_onion" name="Slice onion" />
+		<text id="preparestep_tofupizza_flour" name="Sift flour" />
+		<text id="preparestep_tofupizza_cream" name="Spread cream" />
+		<text id="preparestep_tofupizza_garlic" name="Make garlic sauce" />
 		<text id="preparestep_cheeseburger_tomato" name="Cortar tomates" />
 		<text id="preparestep_cheesedish_cheese" name="Cortar queso" />
 		<text id="preparestep_cheesefondue_cheese" name="Derretir queso" />
@@ -1685,6 +1699,8 @@
 		<text id="preparestep_chocochipcake_vanilla" name="Add vanilla" />
 		<text id="preparestep_cakewithtoy_nutmeg" name="Grate nutmeg" />
 		<text id="preparestep_goldencake_nutmeg" name="Grate nutmeg" />
+		<text id="preparestep_tofusandwich_parsley" name="Chop parsley" />
+		<text id="preparestep_tofupizza_parsley" name="Chop parsley" />
 		<text id="preparestep_bananasplit_vanilla" name="Raspar vainilla" />
 		<text id="preparestep_blackforestcherrycake_vanilla" name="Raspar la vainilla" />
 		<text id="preparestep_pizzasalad_chili" name="Picar chile" />
@@ -1825,6 +1841,8 @@
 		<text id="recipe_chocochipcake" name="Choco Chip Cake" />
 		<text id="recipe_cakewithtoy" name="Cake with Toy" />
 		<text id="recipe_goldencake" name="Golden Cake" />
+		<text id="recipe_tofusandwich" name="Tofu Sandwich" />
+		<text id="recipe_tofupizza" name="Tofu Pizza" />
 		<text id="recipe_cheeseburger" name="Hamburguesa con queso" />
 		<text id="recipe_cheesedish" name="Surtido de quesos" />
 		<text id="recipe_cheesefondue" name="Fondue de queso" />

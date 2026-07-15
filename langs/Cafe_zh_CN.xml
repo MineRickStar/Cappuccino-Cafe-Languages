@@ -280,6 +280,10 @@
 		<text id="cookstep_cakewithtoy2" name="Ordering toys" />
 		<text id="cookstep_goldencake1" name="Mixing golden batter" />
 		<text id="cookstep_goldencake2" name="Regretting expenses" />
+		<text id="cookstep_tofusandwich1" name="Spreading sauce" />
+		<text id="cookstep_tofusandwich2" name="Stacking sandwich" />
+		<text id="cookstep_tofupizza1" name="Heating sauce" />
+		<text id="cookstep_tofupizza2" name="Baking pizza" />
 		<text id="cookstep_blackforestcherrycake1" name="混合配料" />
 		<text id="cookstep_blackforestcherrycake2" name="烘焙蛋糕" />
 		<text id="cookstep_cheeseburger1" name="煎肉末" />
@@ -1397,6 +1401,16 @@
 		<text id="preparestep_goldencake_goldeneggs" name="Question egg investment" />
 		<text id="preparestep_goldencake_flour" name="Sift flour" />
 		<text id="preparestep_goldencake_cream" name="Whip cream" />
+		<text id="preparestep_tofusandwich_tofu" name="Slice tofu" />
+		<text id="preparestep_tofusandwich_tomato" name="Make ketchup" />
+		<text id="preparestep_tofusandwich_lettuce" name="Wash lettuce" />
+		<text id="preparestep_tofusandwich_flour" name="Sift flour" />
+		<text id="preparestep_tofusandwich_cream" name="Make sauce" />
+		<text id="preparestep_tofupizza_tofu" name="Slice tofu" />
+		<text id="preparestep_tofupizza_onion" name="Slice onion" />
+		<text id="preparestep_tofupizza_flour" name="Sift flour" />
+		<text id="preparestep_tofupizza_cream" name="Spread cream" />
+		<text id="preparestep_tofupizza_garlic" name="Make garlic sauce" />
 		<text id="preparestep_bananasplit_cream" name="打发奶油" />
 		<text id="preparestep_bananasplit_milk" name="量牛奶" />
 		<text id="preparestep_bananasplit_sugar" name="称量白糖" />
@@ -1714,6 +1728,8 @@
 		<text id="preparestep_chocochipcake_vanilla" name="Add vanilla" />
 		<text id="preparestep_cakewithtoy_nutmeg" name="Grate nutmeg" />
 		<text id="preparestep_goldencake_nutmeg" name="Grate nutmeg" />
+		<text id="preparestep_tofusandwich_parsley" name="Chop parsley" />
+		<text id="preparestep_tofupizza_parsley" name="Chop parsley" />
 		<text id="preparestep_cottagepotatoes_parsley" name="Chop parsley" />
 		<text id="preparestep_bananasplit_vanilla" name="削香草末" />
 		<text id="preparestep_blackforestcherrycake_vanilla" name="刮香草夹" />
@@ -1854,6 +1870,8 @@
 		<text id="recipe_chocochipcake" name="Choco Chip Cake" />
 		<text id="recipe_cakewithtoy" name="Cake with Toy" />
 		<text id="recipe_goldencake" name="Golden Cake" />
+		<text id="recipe_tofusandwich" name="Tofu Sandwich" />
+		<text id="recipe_tofupizza" name="Tofu Pizza" />
 		<text id="recipe_beefstew" name="炖汤" />
 		<text id="recipe_blackforestcherrycake" name="黑森林蛋糕" />
 		<text id="recipe_cheeseburger" name="吉士汉堡" />
