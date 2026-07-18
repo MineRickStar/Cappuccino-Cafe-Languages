@@ -241,7 +241,7 @@ Se você estocá-la, as porções existentes serão perdidas!" />
 		<text id="cookstep_chickenbiryani2" name="Temperando arroz" />
 		<text id="cookstep_cottagepotatoes1" name="Preparando batatas" />
 		<text id="cookstep_cottagepotatoes2" name="Espalhando ricota" />
-		<text id="cookstep_cuzcuzcomovo1" name="Fazendo cuzcuz" />
+		<text id="cookstep_cuzcuzcomovo1" name="Fazendo cuscuz" />
 		<text id="cookstep_cuzcuzcomovo2" name="Fritando ovos" />
 		<text id="cookstep_malaichickennaan1" name="Preparando a massa" />
 		<text id="cookstep_malaichickennaan2" name="Dobrando pão" />
@@ -1889,7 +1889,7 @@ Apenas disponível por tempo limitado!" />
 		<text id="recipe_butterchicken" name="Frango com Manteiga" />
 		<text id="recipe_chickenbiryani" name="Biryani de Frango" />
 		<text id="recipe_cottagepotatoes" name="Batatas com Ricota" />
-		<text id="recipe_cuzcuzcomovo" name="Cuzcuz com Ovo" />
+		<text id="recipe_cuzcuzcomovo" name="Cuscuz com Ovo" />
 		<text id="recipe_malaichickennaan" name="Frango com Pão Indiano" />
 		<text id="recipe_veganplate" name="Prato Vegano" />
 		<text id="recipe_neapolitancake" name="Bolo Napolitano" />
